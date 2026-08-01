@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./sytle.css">
+    <link rel="stylesheet" href="./sytle.css" />
   </head>
   <body>
     <header class="py-[17.5px] bg-[#1F0F0D]">
@@ -47,7 +47,7 @@
     </header>
 
     <main>
-      <section class="bg-[url(./images/bg.jpg)] bg-cover bg-center h-[905px]">
+      <section class="bg-[url(./images/bg.jpg)] bg-cover bg-center h-[970px]">
         <div class="max-w-[1120px] mx-auto px-5">
           <div>
             <p class="text-[#FF3D2E] text-[16px] pt-35">
@@ -69,126 +69,663 @@
                 </button>
               </div>
             </div>
+            <div class="w-[190px] space-y-4">
+              <!-- SPEED CARD -->
+              <div
+                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
+              >
+                <div class="flex justify-between items-start">
+                  <div>
+                    <p class="text-gray-400 uppercase text-xs tracking-wider">
+                      Maksimal Tezlik
+                    </p>
 
-            <div>
-              <div class="bg-[#00000066]">
-                <h3 class="text-[#FFFFFF66] text-[16px]">MAKSIMAL TEZLIK</h3>
-                <p class="text-[#FF3D2E] text-[30px]">354</p>
+                    <span class="text-[10px] text-gray-500"> KM/H </span>
+                  </div>
+
+                  <div class="text-right">
+                    <h2 class="text-[#ff5038] text-5xl font-light leading-none">
+                      354
+                    </h2>
+
+                    <span class="text-[10px] text-gray-500">
+                      Maks : 366.1
+                    </span>
+                  </div>
+                </div>
+
+                <div class="w-full h-[2px] bg-[#3d2a2a] mt-4 rounded-full">
+                  <div class="w-[92%] h-full bg-[#ff5038] rounded-full"></div>
+                </div>
+              </div>
+
+              <!-- LEAN ANGLE -->
+              <div
+                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
+              >
+                <div class="flex justify-between items-center">
+                  <p class="uppercase text-gray-400 text-xs tracking-wide">
+                    Qiyalik Burchagi
+                  </p>
+
+                  <h2 class="text-white text-5xl font-light">64°</h2>
+                </div>
+
+                <div class="flex justify-center mt-6">
+                  <div class="relative w-28 h-14 overflow-hidden">
+                    <!-- Kulrang yoy -->
+                    <div
+                      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-28 rounded-full border-[5px] border-gray-700 border-b-0"
+                    ></div>
+
+                    <!-- Qizil yoy -->
+                    <div
+                      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-28 rounded-full border-[5px] border-red-500 border-r-transparent border-t-red-500 border-l-red-500 border-b-0 rotate-[-45deg]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LAP TIME -->
+              <div
+                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
+              >
+                <p class="uppercase text-gray-400 text-xs tracking-wide">
+                  Oxirgi Aylanish
+                </p>
+
+                <h2 class="text-[#00e676] text-4xl font-light mt-3">
+                  1:31.209
+                </h2>
               </div>
             </div>
-            </div>
           </div>
+        </div>
       </section>
 
-      <section class="bg-[#262A31]">
-        <div class="max-w-[1120px] w-full mx-auto px-5">
-          <div class=" px-5 flex gap-19">
-            <div class="">
-            <p class="text-[#FF3D2E] text-[16px] pb-2 pt-5">KELGUSI GRAN-PRI</p>
-            <h3 class="text-white text-[36px] pb-2">MISANO JAHON <br> TRASSASI</h3>
-            <p class="text-[#8A9099] text-[16px] pb-4">San-Marino va Rimini Rivyerasi <br> Gran-prisi</p>
+      <section class="bg-black pb-25 pt-20">
+        <div class="max-w-[1120px] bg-[#262A31] w-full mx-auto px-5">
+          <div class="flex items-center gap-13">
+            <div>
+              <p class="text-[#FF3D2E] text-[16px] pb-2 pt-5">
+                KELGUSI GRAN-PRI
+              </p>
+              <h3 class="text-white text-[36px] pb-2">
+                MISANO JAHON <br />
+                TRASSASI
+              </h3>
+              <p class="text-[#8A9099] text-[16px] pb-4">
+                San-Marino va Rimini Rivyerasi <br />
+                Gran-prisi
+              </p>
             </div>
-
-            <div class="pt-17 flex gap-6 items-center">
+            <div class="flex gap-6 items-center">
               <div>
                 <h4 class="text-[36px] text-white">02</h4>
                 <p class="text-[16px] text-[#8A9099]">KUN</p>
               </div>
               <p class="text-[#8A9099] text-[36px]">:</p>
-                <div>
+              <div>
                 <h4 class="text-[36px] text-white">14</h4>
                 <p class="text-[16px] text-[#8A9099]">SOAT</p>
               </div>
               <p class="text-[#8A9099] text-[36px]">:</p>
-                <div>
+              <div>
                 <h4 class="text-[36px] text-white">39</h4>
                 <p class="text-[16px] text-[#8A9099]">MIN</p>
               </div>
               <p class="text-[#8A9099] text-[36px]">:</p>
-                <div>
+              <div>
                 <h4 class="text-[36px] text-[#FF3D2E]">12</h4>
                 <p class="text-[16px] text-[#8A9099] pl-4">SEK</p>
               </div>
-              <img  src="./images/SVG (2).png" alt="">
-              <button class="bg-[#FFFFFF1A] rounded-[5px] text-white w-35 h-25">TO'LIQ <br> JADVAL</button>
-              <div>
-            </div>
+              <img src="./images/SVG (2).png" alt="" />
+              <button class="bg-[#FFFFFF1A] rounded-[5px] text-white w-35 h-25">
+                TO'LIQ <br />
+                JADVAL
+              </button>
             </div>
           </div>
+        </div>
       </section>
 
       <section class="bg-black">
         <div class="max-w-[1120px] w-full mx-auto px-5">
-        <div class="flex justify-between items-center">
-          <div>
-              <h1 class="text-white py-5 text-[52px]">REYTINGLAR</h1>
+          <div class="flex justify-between items-center">
+            <div>
+              <h1 class="text-white py-5 text-[52px] font-bold">REYTINGLAR</h1>
+            </div>
+            <div class="flex gap-[10px]">
+              <button class="bg-[#FF3D2E] w-30 h-14 text-[14px] text-white">
+                MOTOGP
+              </button>
+              <button
+                class="bg-[#FFFFFF0D] w-30 h-14 text-[14px] text-[#8A9099]"
+              >
+                MOTO2
+              </button>
+              <button
+                class="bg-[#FFFFFF0D] w-30 h-14 text-[14px] text-[#8A9099]"
+              >
+                MOTO3
+              </button>
+            </div>
           </div>
-          <div class="">
-            <button class="bg-[#FF3D2E] w-30 h-14 text-[14px] text-white">MOTOGP</button>
-          </div>
-          <div class="">
-            <button class="bg-[#FFFFFF0D] w-30 h-14 text-[14px] text-[#8A9099]">MOTO2</button>
-          </div>
-          <div class="">
-            <button class="bg-[#FFFFFF0D] w-30 h-14 text-[14px] text-[#8A9099]">MOTO3</button>
-          </div>
-        </div>
           <div
-            class="relative overflow-x-auto bg-neutral-primary-soft shadow-xs rounded-base border border-default"
+            class="relative pb-25 overflow-x-auto bg-neutral-primary-soft shadow-xs rounded-base border border-default"
           >
             <table class="w-full text-sm text-left rtl:text-right text-body">
               <thead
                 class="text-sm text-body bg-neutral-secondary-soft border-b rounded-base border-default"
               >
                 <tr>
-                  <th scope="col" class="px-6 py-3 font-medium">
+                  <th scope="col" class="px-6 text-[#8A9099] py-3 font-medium">
                     O'RIN
                   </th>
-                  <th scope="col" class="px-6 py-3 font-medium">Color</th>
-                  <th scope="col" class="px-6 py-3 font-medium">Category</th>
-                  <th scope="col" class="px-6 py-3 font-medium">Price</th>
-                  <th scope="col" class="px-6 py-3 font-medium">Stock</th>
+                  <th scope="col" class="px-6 py-3 text-[#8A9099] font-medium">
+                    POYGACHI
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-[#8A9099] font-medium">
+                    JAMOA
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-[#8A9099] font-medium">
+                    MOTOSIKL
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-[#8A9099] font-medium">
+                    OCHKOLAR
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="bg-neutral-primary border-b border-default">
                   <th
                     scope="row"
-                    class="px-6 py-4 font-medium text-heading whitespace-nowrap"
+                    class="px-6 py-4 font-medium text-heading text-[48px] text-[#FF3D2E] whitespace-nowrap"
                   >
-                    Apple MacBook Pro 17"
+                    01
                   </th>
-                  <td class="px-6 py-4">Silver</td>
-                  <td class="px-6 py-4">Laptop</td>
-                  <td class="px-6 py-4">$2999</td>
-                  <td class="px-6 py-4">231</td>
+                  <td
+                    class="px-6 py-4 text-white flex items-center gap-5 text-[18px]"
+                  >
+                    <img
+                      class="rounded-[50%]"
+                      src="./images/table.png"
+                      alt=""
+                    />FRANCHESKO BAGNAIA <br />
+                    ITALIYA
+                  </td>
+                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
+                    Ducati Lenovo Team
+                  </td>
+                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
+                    Ducati Desmosedici
+                  </td>
+                  <td class="px-6 py-4 text-[24px] text-white pl-15">298</td>
                 </tr>
                 <tr class="bg-neutral-primary border-b border-default">
                   <th
                     scope="row"
-                    class="px-6 py-4 font-medium text-heading whitespace-nowrap"
+                    class="px-6 py-4 font-medium text-heading text-[48px] text-[#FFFFFF33] whitespace-nowrap"
                   >
-                    Microsoft Surface Pro
+                    02
                   </th>
-                  <td class="px-6 py-4">White</td>
-                  <td class="px-6 py-4">Laptop PC</td>
-                  <td class="px-6 py-4">$1999</td>
-                  <td class="px-6 py-4">423</td>
+                  <td
+                    class="px-6 py-4 text-white flex items-center gap-5 text-[18px]"
+                  >
+                    <img
+                      class="rounded-[50%]"
+                      src="./images/table2.png"
+                      alt=""
+                    />XORXE MARTIN <br />
+                    ISPANIYA
+                  </td>
+                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
+                    Prima Pramac Racing
+                  </td>
+                  <td class="px-6 py-4 text-[#8A9099]">Ducati Desmosedici</td>
+                  <td class="px-6 py-4 text-[24px] text-white pl-15">293</td>
                 </tr>
                 <tr class="bg-neutral-primary">
                   <th
                     scope="row"
-                    class="px-6 py-4 font-medium text-heading whitespace-nowrap"
+                    class="px-6 py-4 font-medium text-heading text-[48px] text-[#FFFFFF33] whitespace-nowrap"
                   >
-                    Magic Mouse 2
+                    03
                   </th>
-                  <td class="px-6 py-4">Black</td>
-                  <td class="px-6 py-4">Accessories</td>
-                  <td class="px-6 py-4">$99</td>
-                  <td class="px-6 py-4">121</td>
+                  <td
+                    class="px-6 py-4 text-white flex items-center gap-5 text-[18px]"
+                  >
+                    <img
+                      class="rounded-[50%]"
+                      src="./images/table3.png"
+                      alt=""
+                    />MARK MARKES <br />
+                    ISPANIYA
+                  </td>
+                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
+                    Gresini Racing MotoGP
+                  </td>
+                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
+                    Ducati Desmosedici
+                  </td>
+                  <td class="px-6 py-4 text-[24px] text-white pl-15">229</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#121317] py-20">
+        <div class="max-w-[1120px] w-full mx-auto px-5">
+          <div>
+            <h1 class="text-[52px] text-white font-bold pb-10">
+              GRID / SO'NGGI YANGILIKLAR
+            </h1>
+          </div>
+          <div class="flex gap-10">
+            <div class="w-450">
+              <img class="pb-3" src="./images/owl card 1.png" alt="" />
+              <h3 class="text-white pb-2.5 text-[22px]">
+                TEXNIK YANGILANISH: DUCATI ARAGON UCHUN YANGI AERODINAMIK
+                PAKETNI TAQDIM ETDI
+              </h3>
+              <p class="text-[16px] pb-2.5 text-[#8A9099]">
+                Ducati Corse aerodinamik kuch chegaralarini kengaytirmoqda...
+              </p>
+              <p class="text-[12px] text-[#8A9099]">14 OKT 2024 5 MIN O'QISH</p>
+            </div>
+
+            <div class="w-450">
+              <img class="pb-3" src="./images/owl card 2.png" alt="" />
+              <h3 class="text-white pb-2.5 text-[22px]">
+                QIYALIK MAHORATI: AKOSTA QANDAY QILIB FIZIKA QONUNLARINI
+                O'ZGARTIRMOQDA
+              </h3>
+              <p class="text-[16px] pb-2.5 text-[#8A9099]">
+                MotoGP debyutanti tomonidan amalga oshirilgan 66 darajali
+                qiyalik haqida batafsil ma'lumotlar.
+              </p>
+              <p class="text-[12px] text-[#8A9099]">12 OKT 2024 8 MIN O'QISH</p>
+            </div>
+
+            <div class="w-450">
+              <img class="pb-3" src="./images/owl card 3.png" alt="" />
+              <h3 class="text-white pb-2.5 text-[22px]">
+                SHINA STRATEGIYASIDAGI XAOS: YOMG'IR ASOSIY POYGANING TAQDIRINI
+                HAL QILISHI MUMKIN
+              </h3>
+              <p class="text-[16px] pb-2.5 text-[#8A9099]">
+                Phillip Island trassasida kutilayotgan yomg'ir jamoalarni
+                sozlamalarni o'zgartirishga majbur…
+              </p>
+              <p class="text-[12px] text-[#8A9099]">10 OKT 2024 4 MIN O'QISH</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-black py-20">
+        <div class="max-w-[1120px] w-full mx-auto px-5">
+          <div>
+            <p class="text-[16px] text-[#FF3D2E]">MUHANDISLIK CHO'QQISI</p>
+            <h1 class="text-[52px] text-white font-bold pb-10">
+              AFSONAVIY MASHINALAR
+            </h1>
+          </div>
+          <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-8">
+            <!-- Ducati -->
+            <div
+              class="bg-[#15161A] border border-[#23252A] p-5 hover:border-red-600 transition duration-300"
+            >
+              <div class="flex justify-between items-start">
+                <div>
+                  <span
+                    class="bg-[#D92D20] text-white text-[10px] px-3 py-1 uppercase font-semibold"
+                  >
+                    Zavod Sinfi
+                  </span>
+
+                  <h2 class="text-white text-3xl italic mt-4">
+                    DUCATI DESMOSEDICI GP24
+                  </h2>
+                </div>
+
+                <span class="text-6xl text-gray-600 font-light"> 01 </span>
+              </div>
+
+              <div class="bg-[#0F1013] p-4 mt-8">
+                <img
+                  src="./images/1.png"
+                  class="w-full h-[260px] object-cover"
+                />
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 mt-5">
+                <div class="bg-[#1B1D22] border-l-2 border-red-600 p-4">
+                  <p class="text-gray-500 uppercase text-[10px]">Dvigatel</p>
+                  <p class="text-white mt-2 leading-8">
+                    1000cc • V4 • 4-Taktli
+                  </p>
+                </div>
+
+                <div class="bg-[#1B1D22] border-l-2 border-red-600 p-4">
+                  <p class="text-gray-500 uppercase text-[10px]">
+                    Maks. Tezlik
+                  </p>
+                  <p class="text-white mt-2">&gt; 360 KM/H</p>
+                </div>
+
+                <div class="bg-[#1B1D22] border-l-2 border-red-600 p-4">
+                  <p class="text-gray-500 uppercase text-[10px]">Vazni</p>
+                  <p class="text-white mt-2">157 KG</p>
+                </div>
+
+                <div class="bg-[#1B1D22] border-l-2 border-red-600 p-4">
+                  <p class="text-gray-500 uppercase text-[10px]">Quvvat</p>
+                  <p class="text-white mt-2">&gt; 250 HP</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- KTM -->
+            <div
+              class="bg-[#15161A] border border-[#23252A] p-5 hover:border-orange-500 transition duration-300"
+            >
+              <div class="flex justify-between items-start">
+                <div>
+                  <span
+                    class="bg-[#3A3B40] text-white text-[10px] px-3 py-1 uppercase font-semibold"
+                  >
+                    Zavod Sinfi
+                  </span>
+
+                  <h2 class="text-white text-3xl italic mt-4">KTM RC16</h2>
+                </div>
+
+                <span class="text-6xl text-gray-600 font-light"> 02 </span>
+              </div>
+
+              <div class="bg-[#0F1013] p-4 mt-8">
+                <img
+                  src="./images/2.png"
+                  class="w-full h-[260px] object-cover"
+                />
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 mt-5">
+                <div class="bg-[#1B1D22] border-l-2 border-gray-500 p-4">
+                  <p class="text-gray-500 uppercase text-[10px]">Dvigatel</p>
+                  <p class="text-white mt-2">1000cc • V4 • 4-Taktli</p>
+                </div>
+
+                <div class="bg-[#1B1D22] border-l-2 border-gray-500 p-4">
+                  <p class="text-gray-500 uppercase text-[10px]">
+                    Maks. Tezlik
+                  </p>
+                  <p class="text-white mt-2">358 KM/H</p>
+                </div>
+
+                <div class="bg-[#1B1D22] border-l-2 border-gray-500 p-4">
+                  <p class="text-gray-500 uppercase text-[10px]">Vazni</p>
+                  <p class="text-white mt-2">157 KG</p>
+                </div>
+
+                <div class="bg-[#1B1D22] border-l-2 border-gray-500 p-4">
+                  <p class="text-gray-500 uppercase text-[10px]">Quvvat</p>
+                  <p class="text-white mt-2">&gt; 250 HP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#070709] py-20">
+        <div
+          class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center"
+        >
+          <!-- Left -->
+          <div>
+            <p class="text-red-500 uppercase tracking-widest text-sm mb-5">
+              Jonli ma'lumotlar oqimi
+            </p>
+
+            <h2
+              class="text-white text-5xl lg:text-6xl italic font-light leading-tight"
+            >
+              REAL VAQTDA <br />
+              INTELLEKT
+            </h2>
+
+            <p class="text-gray-400 mt-8 leading-8 max-w-lg">
+              Poyganing har bir millisekundasi qayd etiladi. Bizning telemetriya
+              tizimimiz har bir mototsiklning qiyalik burchagi, tormoz bosimi va
+              drossel javobi haqida chuqur tushuncha beradi.
+            </p>
+
+            <div class="mt-12 space-y-7">
+              <div class="flex items-center gap-5 group cursor-pointer">
+                <div
+                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300"
+                ></div>
+                <span class="text-white italic text-xl">
+                  TORMOZLANISH TAHLILI
+                </span>
+              </div>
+
+              <div class="flex items-center gap-5 group cursor-pointer">
+                <div
+                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300"
+                ></div>
+                <span class="text-white italic text-xl">
+                  YOQILG'I XARITASI TAHLILI
+                </span>
+              </div>
+
+              <div class="flex items-center gap-5 group cursor-pointer">
+                <div
+                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300"
+                ></div>
+                <span class="text-white italic text-xl">
+                  SHINA HARORATI DATCHIKLARI
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="border border-gray-800 bg-[#0c0c10] p-10">
+            <!-- Speed -->
+            <div class="flex justify-center mb-14">
+              <div class="relative w-72 h-72 flex items-center justify-center">
+                <!-- Circle -->
+                <div
+                  class="absolute inset-0 rounded-full border-[14px] border-gray-800"
+                ></div>
+
+                <!-- Red Arc -->
+                <div
+                  class="absolute inset-0 rounded-full border-[14px] border-transparent border-t-red-500 border-l-red-500 rotate-[40deg]"
+                ></div>
+
+                <div class="text-center">
+                  <h1 class="text-white text-7xl font-bold">342</h1>
+                  <p class="text-gray-500 tracking-[8px] text-xs mt-1">KM/H</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-10">
+              <div class="text-center">
+                <p class="text-gray-500 text-xs uppercase mb-4">DROSSEL</p>
+
+                <div
+                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden"
+                >
+                  <div class="bg-green-400 w-full h-[82%] mt-auto"></div>
+                </div>
+
+                <p class="text-gray-400 mt-3 text-sm">82%</p>
+              </div>
+
+              <div class="text-center">
+                <p class="text-gray-500 text-xs uppercase mb-4">TORMOZ</p>
+
+                <div
+                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden"
+                >
+                  <div class="bg-red-500 w-full h-[14%] mt-auto"></div>
+                </div>
+
+                <p class="text-gray-400 mt-3 text-sm">14%</p>
+              </div>
+
+              <div class="text-center">
+                <p class="text-gray-500 text-xs uppercase mb-4">G-KUCHLANISH</p>
+
+                <div
+                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden"
+                >
+                  <div class="bg-yellow-400 w-full h-[36%] mt-auto"></div>
+                </div>
+
+                <p class="text-gray-400 mt-3 text-sm">1.86</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#070709] py-20">
+        <div class="max-w-7xl mx-auto px-5">
+          <!-- Title -->
+          <h2 class="text-4xl md:text-5xl italic font-bold text-white mb-14">
+            AFSONALAR <span class="text-red-500">ZALI</span>
+          </h2>
+
+          <!-- Cards -->
+          <div
+            class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide"
+          >
+            <!-- Card -->
+            <div
+              class="relative min-w-[260px] md:min-w-[290px] h-[430px] snap-start group overflow-hidden bg-black"
+            >
+              <img
+                src="./images/section 7 image 1.png"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 duration-500 group-hover:scale-105"
+                alt=""
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+              ></div>
+
+              <span
+                class="absolute top-5 left-5 text-5xl text-gray-500 font-light"
+              >
+                #46
+              </span>
+
+              <div class="absolute bottom-7 left-6">
+                <p class="text-red-500 text-xs uppercase tracking-widest">
+                  9 Karra Jahon Chempioni
+                </p>
+
+                <h3 class="text-white italic text-4xl leading-none mt-2">
+                  VALENTINO ROSSI
+                </h3>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="relative min-w-[260px] md:min-w-[290px] h-[430px] snap-start group overflow-hidden bg-black"
+            >
+              <img
+                src="./images/section 7 image 2.png"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 duration-500 group-hover:scale-105"
+                alt=""
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+              ></div>
+
+              <span class="absolute top-5 left-5 text-5xl text-gray-500">
+                #93
+              </span>
+
+              <div class="absolute bottom-7 left-6">
+                <p class="text-red-500 text-xs uppercase tracking-widest">
+                  8 Karra Jahon Chempioni
+                </p>
+
+                <h3 class="text-white italic text-4xl leading-none mt-2">
+                  MARK MARKEZ
+                </h3>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="relative min-w-[260px] md:min-w-[290px] h-[430px] snap-start group overflow-hidden bg-black"
+            >
+              <img
+                src="./images/section 7 image 3.png"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 duration-500 group-hover:scale-105"
+                alt=""
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+              ></div>
+
+              <span class="absolute top-5 left-5 text-5xl text-gray-500">
+                #99
+              </span>
+
+              <div class="absolute bottom-7 left-6">
+                <p class="text-red-500 text-xs uppercase tracking-widest">
+                  5 Karra Jahon Chempioni
+                </p>
+
+                <h3 class="text-white italic text-4xl leading-none mt-2">
+                  XORXE LORENTSO
+                </h3>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="relative min-w-[260px] md:min-w-[290px] h-[430px] snap-start group overflow-hidden bg-black"
+            >
+              <img
+                src="./images/section 7 image 4.png"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 duration-500 group-hover:scale-105"
+                alt=""
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+              ></div>
+
+              <span class="absolute top-5 left-5 text-5xl text-gray-500">
+                #27
+              </span>
+
+              <div class="absolute bottom-7 left-6">
+                <p class="text-red-500 text-xs uppercase tracking-widest">
+                  2 Karra Jahon Chempioni
+                </p>
+
+                <h3 class="text-white italic text-4xl leading-none mt-2">
+                  KEYSI STONER
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
