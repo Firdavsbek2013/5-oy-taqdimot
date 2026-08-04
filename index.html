@@ -9,85 +9,151 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./sytle.css" />
+    <link rel="stylesheet" href="./css/sytle.css" />
   </head>
   <body>
-    <header class="py-[17.5px] bg-[#1F0F0D]">
+    <header class="bg-[#1F0F0D] py-[17.5px]">
       <div
-        class="max-w-[1120px] mx-auto w-full px-5 justify-between flex items-center"
+        class="max-w-[1120px] mx-auto px-5 flex items-center justify-between"
       >
-        <a href="">
-          <img src="./images/Link.png" alt="" />
+        <!-- Logo -->
+        <a href="#">
+          <img src="./images/Link.png" alt="Logo" class="w-auto h-10" />
         </a>
 
-        <ul class="flex items-center gap-10 text-[#FFB4A9]">
+        <ul class="flex gap-10 max-[550px]:hidden">
           <li>
-            <a href="">POYGALAR</a>
+            <a href="./pages/about.html" class="nav-link">POYGALAR</a>
           </li>
           <li>
-            <a href="">JAMOALAR</a>
+            <a href="#" class="nav-link">JAMOALAR</a>
           </li>
           <li>
-            <a href="">JADVAL</a>
+            <a href="#" class="nav-link">JADVAL</a>
           </li>
           <li>
-            <a href="">TELEMETRIYA</a>
+            <a href="#" class="nav-link">TELEMETRIYA</a>
           </li>
           <li>
-            <a href="">JURNAL</a>
+            <a href="#" class="nav-link">JURNAL</a>
           </li>
         </ul>
-        <div class="flex items-center gap-5">
-          <p class="text-white text-[12px]">JONLI TOMOSHA QILING</p>
-          <button class="bg-[#FF3D2E] rounded-[5px] text-white text-[14px] p-4">
+
+        <!-- Desktop Right -->
+        <div class="hidden lg:flex items-center gap-5">
+          <p class="text-white text-xs whitespace-nowrap">
+            JONLI TOMOSHA QILING
+          </p>
+
+          <button
+            class="bg-[#FF3D2E] hover:bg-red-600 duration-300 rounded-md px-5 py-3 text-white text-sm"
+          >
             OBUNA BO'LING
           </button>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          data-collapse-toggle="mobile-menu"
+          type="button"
+          class="lg:hidden text-white"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="hidden lg:hidden bg-[#1F0F0D]" id="mobile-menu">
+        <ul class="flex flex-col px-5 py-4 text-[#FFB4A9] space-y-4">
+          <li><a href="./pages/about.html">POYGALAR</a></li>
+          <li><a href="#">JAMOALAR</a></li>
+          <li><a href="#">JADVAL</a></li>
+          <li><a href="#">TELEMETRIYA</a></li>
+          <li><a href="#">JURNAL</a></li>
+
+          <li class="pt-4 border-t border-gray-700">
+            <p class="text-white text-xs mb-3">JONLI TOMOSHA QILING</p>
+
+            <button
+              class="w-full bg-[#FF3D2E] hover:bg-red-600 duration-300 rounded-md py-3 text-white"
+            >
+              OBUNA BO'LING
+            </button>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
-      <section class="bg-[url(./images/bg.jpg)] bg-cover bg-center h-[970px]">
-        <div class="max-w-[1120px] mx-auto px-5">
-          <div>
-            <p class="text-[#FF3D2E] text-[16px] pt-35">
-              2024 MOTOGP JAHON CHEMPIONATI
-            </p>
-            <h1 class="text-[96px] text-white font-bold">
-              APEXNI / <br />
-              QUVALAB
-            </h1>
-            <div class="flex gap-6 items-center pb-5">
-              <div>
-                <button class="text-white bg-[#FF3D2E] rounded-[5px] pb-5 p-3">
+      <section
+        class="bg-[url('./images/bg.jpg')] bg-cover bg-center min-h-screen flex items-center"
+      >
+        <div class="max-w-[1120px] mx-auto w-full px-5 py-16">
+          <div
+            class="flex flex-col lg:flex-row justify-between items-start gap-10"
+          >
+            <!-- Left Content -->
+            <div class="max-w-[650px]">
+              <p
+                class="text-[#FF3D2E] text-sm sm:text-base uppercase tracking-wider mb-4"
+              >
+                2024 MOTOGP JAHON CHEMPIONATI
+              </p>
+
+              <h1
+                class="text-5xl sm:text-6xl md:text-7xl lg:text-[96px] font-bold text-white leading-none"
+              >
+                APEXNI /<br />
+                QUVALAB
+              </h1>
+
+              <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                <button
+                  class="bg-[#FF3D2E] hover:bg-red-600 duration-300 text-white rounded-md px-6 py-4"
+                >
                   MAVSUMNI O'RGANISH
                 </button>
-              </div>
-              <div>
-                <button class="text-white border rounded-[5px] pb-5 p-3">
+
+                <button
+                  class="border border-white text-white hover:bg-white hover:text-black duration-300 rounded-md px-6 py-4"
+                >
                   JONLI MA'LUMOTLAR
                 </button>
               </div>
             </div>
-            <div class="w-[190px] space-y-4">
-              <!-- SPEED CARD -->
+
+            <!-- Right Cards -->
+            <div class="w-full max-w-[300px] space-y-4">
+              <!-- SPEED -->
               <div
                 class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
               >
                 <div class="flex justify-between items-start">
                   <div>
-                    <p class="text-gray-400 uppercase text-xs tracking-wider">
+                    <p class="text-gray-400 uppercase text-xs">
                       Maksimal Tezlik
                     </p>
-
-                    <span class="text-[10px] text-gray-500"> KM/H </span>
+                    <span class="text-[10px] text-gray-500">KM/H</span>
                   </div>
 
                   <div class="text-right">
-                    <h2 class="text-[#ff5038] text-5xl font-light leading-none">
+                    <h2
+                      class="text-[#ff5038] text-4xl sm:text-5xl font-light leading-none"
+                    >
                       354
                     </h2>
-
                     <span class="text-[10px] text-gray-500">
                       Maks : 366.1
                     </span>
@@ -104,21 +170,21 @@
                 class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
               >
                 <div class="flex justify-between items-center">
-                  <p class="uppercase text-gray-400 text-xs tracking-wide">
+                  <p class="uppercase text-gray-400 text-xs">
                     Qiyalik Burchagi
                   </p>
 
-                  <h2 class="text-white text-5xl font-light">64°</h2>
+                  <h2 class="text-white text-4xl sm:text-5xl font-light">
+                    64°
+                  </h2>
                 </div>
 
                 <div class="flex justify-center mt-6">
                   <div class="relative w-28 h-14 overflow-hidden">
-                    <!-- Kulrang yoy -->
                     <div
                       class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-28 rounded-full border-[5px] border-gray-700 border-b-0"
                     ></div>
 
-                    <!-- Qizil yoy -->
                     <div
                       class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-28 rounded-full border-[5px] border-red-500 border-r-transparent border-t-red-500 border-l-red-500 border-b-0 rotate-[-45deg]"
                     ></div>
@@ -130,11 +196,9 @@
               <div
                 class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
               >
-                <p class="uppercase text-gray-400 text-xs tracking-wide">
-                  Oxirgi Aylanish
-                </p>
+                <p class="uppercase text-gray-400 text-xs">Oxirgi Aylanish</p>
 
-                <h2 class="text-[#00e676] text-4xl font-light mt-3">
+                <h2 class="text-[#00e676] text-3xl sm:text-4xl font-light mt-3">
                   1:31.209
                 </h2>
               </div>
@@ -143,44 +207,66 @@
         </div>
       </section>
 
-      <section class="bg-black pb-25 pt-20">
-        <div class="max-w-[1120px] bg-[#262A31] w-full mx-auto px-5">
-          <div class="flex items-center gap-13">
+      <section class="bg-black py-20">
+        <div class="max-w-[1120px] mx-auto px-5">
+          <div
+            class="bg-[#262A31] p-6 lg:p-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8"
+          >
+            <!-- Left -->
             <div>
-              <p class="text-[#FF3D2E] text-[16px] pb-2 pt-5">
+              <p class="text-[#FF3D2E] text-sm sm:text-base mb-2">
                 KELGUSI GRAN-PRI
               </p>
-              <h3 class="text-white text-[36px] pb-2">
+
+              <h3 class="text-white text-3xl lg:text-[36px] font-bold mb-2">
                 MISANO JAHON <br />
                 TRASSASI
               </h3>
-              <p class="text-[#8A9099] text-[16px] pb-4">
+
+              <p class="text-[#8A9099] text-sm sm:text-base">
                 San-Marino va Rimini Rivyerasi <br />
                 Gran-prisi
               </p>
             </div>
-            <div class="flex gap-6 items-center">
-              <div>
-                <h4 class="text-[36px] text-white">02</h4>
-                <p class="text-[16px] text-[#8A9099]">KUN</p>
+
+            <!-- Right -->
+            <div class="flex flex-col sm:flex-row items-center gap-6">
+              <!-- Countdown -->
+              <div class="flex items-center gap-4 sm:gap-6">
+                <div class="text-center">
+                  <h4 class="text-3xl lg:text-[36px] text-white">02</h4>
+                  <p class="text-sm text-[#8A9099]">KUN</p>
+                </div>
+
+                <p class="text-2xl lg:text-[36px] text-[#8A9099]">:</p>
+
+                <div class="text-center">
+                  <h4 class="text-3xl lg:text-[36px] text-white">14</h4>
+                  <p class="text-sm text-[#8A9099]">SOAT</p>
+                </div>
+
+                <p class="text-2xl lg:text-[36px] text-[#8A9099]">:</p>
+
+                <div class="text-center">
+                  <h4 class="text-3xl lg:text-[36px] text-white">39</h4>
+                  <p class="text-sm text-[#8A9099]">MIN</p>
+                </div>
+
+                <p class="text-2xl lg:text-[36px] text-[#8A9099]">:</p>
+
+                <div class="text-center">
+                  <h4 class="text-3xl lg:text-[36px] text-[#FF3D2E]">12</h4>
+                  <p class="text-sm text-[#8A9099]">SEK</p>
+                </div>
               </div>
-              <p class="text-[#8A9099] text-[36px]">:</p>
-              <div>
-                <h4 class="text-[36px] text-white">14</h4>
-                <p class="text-[16px] text-[#8A9099]">SOAT</p>
-              </div>
-              <p class="text-[#8A9099] text-[36px]">:</p>
-              <div>
-                <h4 class="text-[36px] text-white">39</h4>
-                <p class="text-[16px] text-[#8A9099]">MIN</p>
-              </div>
-              <p class="text-[#8A9099] text-[36px]">:</p>
-              <div>
-                <h4 class="text-[36px] text-[#FF3D2E]">12</h4>
-                <p class="text-[16px] text-[#8A9099] pl-4">SEK</p>
-              </div>
-              <img src="./images/SVG (2).png" alt="" />
-              <button class="bg-[#FFFFFF1A] rounded-[5px] text-white w-35 h-25">
+
+              <!-- Flag -->
+              <img src="./images/SVG (2).png" alt="" class="w-12 sm:w-14" />
+
+              <!-- Button -->
+              <button
+                class="bg-[#FFFFFF1A] hover:bg-[#ffffff2d] duration-300 text-white rounded-md px-8 py-4 whitespace-nowrap"
+              >
                 TO'LIQ <br />
                 JADVAL
               </button>
@@ -189,126 +275,128 @@
         </div>
       </section>
 
-      <section class="bg-black">
-        <div class="max-w-[1120px] w-full mx-auto px-5">
-          <div class="flex justify-between items-center">
-            <div>
-              <h1 class="text-white py-5 text-[52px] font-bold">REYTINGLAR</h1>
-            </div>
-            <div class="flex gap-[10px]">
-              <button class="bg-[#FF3D2E] w-30 h-14 text-[14px] text-white">
+      <section class="bg-black py-20">
+        <div class="max-w-[1120px] mx-auto px-5">
+          <!-- Top -->
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8"
+          >
+            <h1 class="text-white text-4xl lg:text-[52px] font-bold">
+              REYTINGLAR
+            </h1>
+
+            <div
+              class="flex items-center gap-2 bg-[#0F1014] p-2 w-fit rounded-md"
+            >
+              <button
+                class="bg-[#FF5543] text-white px-5 py-2 text-xs uppercase rounded transition-all duration-300"
+              >
                 MOTOGP
               </button>
+
               <button
-                class="bg-[#FFFFFF0D] w-30 h-14 text-[14px] text-[#8A9099]"
+                class="bg-[#1D2026] text-gray-300 px-5 py-2 text-xs uppercase rounded hover:bg-[#FF5543] hover:text-white transition-all duration-300"
               >
                 MOTO2
               </button>
+
               <button
-                class="bg-[#FFFFFF0D] w-30 h-14 text-[14px] text-[#8A9099]"
+                class="bg-[#1D2026] text-gray-300 px-5 py-2 text-xs uppercase rounded hover:bg-[#FF5543] hover:text-white transition-all duration-300"
               >
                 MOTO3
               </button>
             </div>
           </div>
-          <div
-            class="relative pb-25 overflow-x-auto bg-neutral-primary-soft shadow-xs rounded-base border border-default"
-          >
-            <table class="w-full text-sm text-left rtl:text-right text-body">
-              <thead
-                class="text-sm text-body bg-neutral-secondary-soft border-b rounded-base border-default"
-              >
+
+          <!-- Table -->
+          <div class="overflow-x-auto rounded-lg border border-[#2c2c2c]">
+            <table class="min-w-[900px] w-full">
+              <thead class="bg-[#111111]">
                 <tr>
-                  <th scope="col" class="px-6 text-[#8A9099] py-3 font-medium">
-                    O'RIN
-                  </th>
-                  <th scope="col" class="px-6 py-3 text-[#8A9099] font-medium">
-                    POYGACHI
-                  </th>
-                  <th scope="col" class="px-6 py-3 text-[#8A9099] font-medium">
-                    JAMOA
-                  </th>
-                  <th scope="col" class="px-6 py-3 text-[#8A9099] font-medium">
-                    MOTOSIKL
-                  </th>
-                  <th scope="col" class="px-6 py-3 text-[#8A9099] font-medium">
-                    OCHKOLAR
-                  </th>
+                  <th class="px-6 py-4 text-left text-[#8A9099]">O'RIN</th>
+                  <th class="px-6 py-4 text-left text-[#8A9099]">POYGACHI</th>
+                  <th class="px-6 py-4 text-left text-[#8A9099]">JAMOA</th>
+                  <th class="px-6 py-4 text-left text-[#8A9099]">MOTOSIKL</th>
+                  <th class="px-6 py-4 text-left text-[#8A9099]">OCHKOLAR</th>
                 </tr>
               </thead>
+
               <tbody>
-                <tr class="bg-neutral-primary border-b border-default">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-heading text-[48px] text-[#FF3D2E] whitespace-nowrap"
-                  >
+                <tr class="border-t border-[#2c2c2c]">
+                  <td class="px-6 py-5 text-5xl font-bold text-[#FF3D2E]">
                     01
-                  </th>
-                  <td
-                    class="px-6 py-4 text-white flex items-center gap-5 text-[18px]"
-                  >
-                    <img
-                      class="rounded-[50%]"
-                      src="./images/table.png"
-                      alt=""
-                    />FRANCHESKO BAGNAIA <br />
-                    ITALIYA
                   </td>
-                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
-                    Ducati Lenovo Team
+
+                  <td class="px-6 py-5">
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="./images/table.png"
+                        class="w-14 h-14 rounded-full"
+                      />
+
+                      <div>
+                        <h3 class="text-white text-lg">FRANCHESKO BAGNAIA</h3>
+
+                        <p class="text-[#8A9099] text-sm">ITALIYA</p>
+                      </div>
+                    </div>
                   </td>
-                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
-                    Ducati Desmosedici
-                  </td>
-                  <td class="px-6 py-4 text-[24px] text-white pl-15">298</td>
+
+                  <td class="px-6 text-[#8A9099]">Ducati Lenovo Team</td>
+
+                  <td class="px-6 text-[#8A9099]">Ducati Desmosedici</td>
+
+                  <td class="px-6 text-white text-2xl font-semibold">298</td>
                 </tr>
-                <tr class="bg-neutral-primary border-b border-default">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-heading text-[48px] text-[#FFFFFF33] whitespace-nowrap"
-                  >
-                    02
-                  </th>
-                  <td
-                    class="px-6 py-4 text-white flex items-center gap-5 text-[18px]"
-                  >
-                    <img
-                      class="rounded-[50%]"
-                      src="./images/table2.png"
-                      alt=""
-                    />XORXE MARTIN <br />
-                    ISPANIYA
+
+                <tr class="border-t border-[#2c2c2c]">
+                  <td class="px-6 py-5 text-5xl font-bold text-[#666]">02</td>
+
+                  <td class="px-6 py-5">
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="./images/table2.png"
+                        class="w-14 h-14 rounded-full"
+                      />
+
+                      <div>
+                        <h3 class="text-white text-lg">XORXE MARTIN</h3>
+
+                        <p class="text-[#8A9099] text-sm">ISPANIYA</p>
+                      </div>
+                    </div>
                   </td>
-                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
-                    Prima Pramac Racing
-                  </td>
-                  <td class="px-6 py-4 text-[#8A9099]">Ducati Desmosedici</td>
-                  <td class="px-6 py-4 text-[24px] text-white pl-15">293</td>
+
+                  <td class="px-6 text-[#8A9099]">Prima Pramac Racing</td>
+
+                  <td class="px-6 text-[#8A9099]">Ducati Desmosedici</td>
+
+                  <td class="px-6 text-white text-2xl font-semibold">293</td>
                 </tr>
-                <tr class="bg-neutral-primary">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 font-medium text-heading text-[48px] text-[#FFFFFF33] whitespace-nowrap"
-                  >
-                    03
-                  </th>
-                  <td
-                    class="px-6 py-4 text-white flex items-center gap-5 text-[18px]"
-                  >
-                    <img
-                      class="rounded-[50%]"
-                      src="./images/table3.png"
-                      alt=""
-                    />MARK MARKES <br />
-                    ISPANIYA
+
+                <tr class="border-t border-[#2c2c2c]">
+                  <td class="px-6 py-5 text-5xl font-bold text-[#666]">03</td>
+
+                  <td class="px-6 py-5">
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="./images/table3.png"
+                        class="w-14 h-14 rounded-full"
+                      />
+
+                      <div>
+                        <h3 class="text-white text-lg">MARK MARKES</h3>
+
+                        <p class="text-[#8A9099] text-sm">ISPANIYA</p>
+                      </div>
+                    </div>
                   </td>
-                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
-                    Gresini Racing MotoGP
-                  </td>
-                  <td class="px-6 py-4 text-[#8A9099] text-[16px]">
-                    Ducati Desmosedici
-                  </td>
-                  <td class="px-6 py-4 text-[24px] text-white pl-15">229</td>
+
+                  <td class="px-6 text-[#8A9099]">Gresini Racing MotoGP</td>
+
+                  <td class="px-6 text-[#8A9099]">Ducati Desmosedici</td>
+
+                  <td class="px-6 text-white text-2xl font-semibold">229</td>
                 </tr>
               </tbody>
             </table>
@@ -318,48 +406,87 @@
 
       <section class="bg-[#121317] py-20">
         <div class="max-w-[1120px] w-full mx-auto px-5">
-          <div>
-            <h1 class="text-[52px] text-white font-bold pb-10">
-              GRID / SO'NGGI YANGILIKLAR
-            </h1>
-          </div>
-          <div class="flex gap-10">
-            <div class="w-450">
-              <img class="pb-3" src="./images/owl card 1.png" alt="" />
-              <h3 class="text-white pb-2.5 text-[22px]">
+          <!-- Title -->
+          <h1
+            class="text-3xl sm:text-4xl lg:text-[52px] font-bold text-white mb-10"
+          >
+            GRID / SO'NGGI YANGILIKLAR
+          </h1>
+
+          <!-- Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="group">
+              <img
+                src="./images/owl card 1.png"
+                alt=""
+                class="w-full rounded-md object-cover"
+              />
+
+              <h3
+                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300"
+              >
                 TEXNIK YANGILANISH: DUCATI ARAGON UCHUN YANGI AERODINAMIK
                 PAKETNI TAQDIM ETDI
               </h3>
-              <p class="text-[16px] pb-2.5 text-[#8A9099]">
+
+              <p class="mt-3 text-[#8A9099] text-sm lg:text-base">
                 Ducati Corse aerodinamik kuch chegaralarini kengaytirmoqda...
               </p>
-              <p class="text-[12px] text-[#8A9099]">14 OKT 2024 5 MIN O'QISH</p>
+
+              <p class="mt-4 text-xs text-[#8A9099]">
+                14 OKT 2024 • 5 MIN O'QISH
+              </p>
             </div>
 
-            <div class="w-450">
-              <img class="pb-3" src="./images/owl card 2.png" alt="" />
-              <h3 class="text-white pb-2.5 text-[22px]">
+            <!-- Card 2 -->
+            <div class="group">
+              <img
+                src="./images/owl card 2.png"
+                alt=""
+                class="w-full rounded-md object-cover"
+              />
+
+              <h3
+                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300"
+              >
                 QIYALIK MAHORATI: AKOSTA QANDAY QILIB FIZIKA QONUNLARINI
                 O'ZGARTIRMOQDA
               </h3>
-              <p class="text-[16px] pb-2.5 text-[#8A9099]">
+
+              <p class="mt-3 text-[#8A9099] text-sm lg:text-base">
                 MotoGP debyutanti tomonidan amalga oshirilgan 66 darajali
                 qiyalik haqida batafsil ma'lumotlar.
               </p>
-              <p class="text-[12px] text-[#8A9099]">12 OKT 2024 8 MIN O'QISH</p>
+
+              <p class="mt-4 text-xs text-[#8A9099]">
+                12 OKT 2024 • 8 MIN O'QISH
+              </p>
             </div>
 
-            <div class="w-450">
-              <img class="pb-3" src="./images/owl card 3.png" alt="" />
-              <h3 class="text-white pb-2.5 text-[22px]">
+            <!-- Card 3 -->
+            <div class="group">
+              <img
+                src="./images/owl card 3.png"
+                alt=""
+                class="w-full rounded-md object-cover"
+              />
+
+              <h3
+                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300"
+              >
                 SHINA STRATEGIYASIDAGI XAOS: YOMG'IR ASOSIY POYGANING TAQDIRINI
                 HAL QILISHI MUMKIN
               </h3>
-              <p class="text-[16px] pb-2.5 text-[#8A9099]">
+
+              <p class="mt-3 text-[#8A9099] text-sm lg:text-base">
                 Phillip Island trassasida kutilayotgan yomg'ir jamoalarni
                 sozlamalarni o'zgartirishga majbur…
               </p>
-              <p class="text-[12px] text-[#8A9099]">10 OKT 2024 4 MIN O'QISH</p>
+
+              <p class="mt-4 text-xs text-[#8A9099]">
+                10 OKT 2024 • 4 MIN O'QISH
+              </p>
             </div>
           </div>
         </div>
@@ -598,139 +725,613 @@
         </div>
       </section>
 
-      <section class="bg-[#070709] py-20">
-        <div class="max-w-7xl mx-auto px-5">
+      <section class="bg-[#070709] py-16">
+        <div class="max-w-[1120px] mx-auto px-5">
           <!-- Title -->
-          <h2 class="text-4xl md:text-5xl italic font-bold text-white mb-14">
-            AFSONALAR <span class="text-red-500">ZALI</span>
+          <h2 class="text-3xl md:text-4xl italic font-bold text-white mb-10">
+            AFSONALAR <span class="text-[#FF5543]">ZALI</span>
           </h2>
 
           <!-- Cards -->
-          <div
-            class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide"
-          >
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Card -->
-            <div
-              class="relative min-w-[260px] md:min-w-[290px] h-[430px] snap-start group overflow-hidden bg-black"
-            >
+            <div class="relative overflow-hidden rounded-md group h-[420px]">
               <img
                 src="./images/section 7 image 1.png"
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 duration-500 group-hover:scale-105"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 duration-500"
                 alt=""
               />
 
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
               ></div>
 
               <span
-                class="absolute top-5 left-5 text-5xl text-gray-500 font-light"
+                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50"
               >
                 #46
               </span>
 
-              <div class="absolute bottom-7 left-6">
-                <p class="text-red-500 text-xs uppercase tracking-widest">
+              <div class="absolute bottom-5 left-5">
+                <p class="text-[#FF5543] text-[10px] uppercase">
                   9 Karra Jahon Chempioni
                 </p>
 
-                <h3 class="text-white italic text-4xl leading-none mt-2">
-                  VALENTINO ROSSI
-                </h3>
+                <h3 class="text-white italic text-3xl">VALENTINO ROSSI</h3>
               </div>
             </div>
 
             <!-- Card -->
-            <div
-              class="relative min-w-[260px] md:min-w-[290px] h-[430px] snap-start group overflow-hidden bg-black"
-            >
+            <div class="relative overflow-hidden rounded-md group h-[420px]">
               <img
                 src="./images/section 7 image 2.png"
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 duration-500 group-hover:scale-105"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 duration-500"
                 alt=""
               />
 
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
               ></div>
 
-              <span class="absolute top-5 left-5 text-5xl text-gray-500">
+              <span
+                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50"
+              >
                 #93
               </span>
 
-              <div class="absolute bottom-7 left-6">
-                <p class="text-red-500 text-xs uppercase tracking-widest">
+              <div class="absolute bottom-5 left-5">
+                <p class="text-[#FF5543] text-[10px] uppercase">
                   8 Karra Jahon Chempioni
                 </p>
 
-                <h3 class="text-white italic text-4xl leading-none mt-2">
-                  MARK MARKEZ
-                </h3>
+                <h3 class="text-white italic text-3xl">MARK MARKEZ</h3>
               </div>
             </div>
 
             <!-- Card -->
-            <div
-              class="relative min-w-[260px] md:min-w-[290px] h-[430px] snap-start group overflow-hidden bg-black"
-            >
+            <div class="relative overflow-hidden rounded-md group h-[420px]">
               <img
                 src="./images/section 7 image 3.png"
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 duration-500 group-hover:scale-105"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 duration-500"
                 alt=""
               />
 
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
               ></div>
 
-              <span class="absolute top-5 left-5 text-5xl text-gray-500">
+              <span
+                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50"
+              >
                 #99
               </span>
 
-              <div class="absolute bottom-7 left-6">
-                <p class="text-red-500 text-xs uppercase tracking-widest">
+              <div class="absolute bottom-5 left-5">
+                <p class="text-[#FF5543] text-[10px] uppercase">
                   5 Karra Jahon Chempioni
                 </p>
 
-                <h3 class="text-white italic text-4xl leading-none mt-2">
-                  XORXE LORENTSO
-                </h3>
+                <h3 class="text-white italic text-3xl">XORXE LORENTSO</h3>
               </div>
             </div>
 
             <!-- Card -->
-            <div
-              class="relative min-w-[260px] md:min-w-[290px] h-[430px] snap-start group overflow-hidden bg-black"
-            >
+            <div class="relative overflow-hidden rounded-md group h-[420px]">
               <img
                 src="./images/section 7 image 4.png"
-                class="w-full h-full object-cover grayscale group-hover:grayscale-0 duration-500 group-hover:scale-105"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 duration-500"
                 alt=""
               />
 
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
               ></div>
 
-              <span class="absolute top-5 left-5 text-5xl text-gray-500">
+              <span
+                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50"
+              >
                 #27
               </span>
 
-              <div class="absolute bottom-7 left-6">
-                <p class="text-red-500 text-xs uppercase tracking-widest">
+              <div class="absolute bottom-5 left-5">
+                <p class="text-[#FF5543] text-[10px] uppercase">
                   2 Karra Jahon Chempioni
                 </p>
 
-                <h3 class="text-white italic text-4xl leading-none mt-2">
-                  KEYSI STONER
-                </h3>
+                <h3 class="text-white italic text-3xl">KEYSI STONER</h3>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="bg-[#18191F] py-20">
+        <div class="max-w-7xl mx-auto px-5">
+          <!-- Title -->
+          <h2 class="text-5xl font-extrabold italic text-white mb-12">
+            AFSONAVIY <span class="text-red-500">TRASSALAR</span>
+          </h2>
+
+          <!-- Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+            <!-- Card 1 -->
+            <div class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300">
+              <div class="flex justify-center mb-12">
+                <img
+                  src="./images/section 8 card image1.png"
+                  class="w-24"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="text-white italic text-xl mb-6">MUDJELLO TRASSASI</h3>
+
+              <div class="space-y-3 text-xs uppercase tracking-widest">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Davlat</span>
+                  <span class="text-gray-200">Italiya</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Uzunlik</span>
+                  <span class="text-gray-200">5.245 km</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Aylanish rekordi</span>
+                  <span class="text-green-500">1:44.504</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300">
+              <div class="flex justify-center mb-12">
+                <img
+                  src="./images/section 8 card image2.png"
+                  class="w-24"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="text-white italic text-xl mb-6">PHILLIP ISLAND</h3>
+
+              <div class="space-y-3 text-xs uppercase tracking-widest">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Davlat</span>
+                  <span class="text-gray-200">Avstraliya</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Uzunlik</span>
+                  <span class="text-gray-200">4.445 km</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Aylanish rekordi</span>
+                  <span class="text-green-500">1:27.246</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300">
+              <div class="flex justify-center mb-12">
+                <img
+                  src="./images/section 8 card image3.png"
+                  class="w-24"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="text-white italic text-xl mb-6">SILVERSTOUN</h3>
+
+              <div class="space-y-3 text-xs uppercase tracking-widest">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Davlat</span>
+                  <span class="text-gray-200">Buyuk Britaniya</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Uzunlik</span>
+                  <span class="text-gray-200">5.906 km</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Aylanish rekordi</span>
+                  <span class="text-green-500">1:57.767</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300">
+              <div class="flex justify-center mb-12">
+                <img
+                  src="./images/section 8 card image 4.png"
+                  class="w-24"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="text-white italic text-xl mb-6">MOTEGI</h3>
+
+              <div class="space-y-3 text-xs uppercase tracking-widest">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Davlat</span>
+                  <span class="text-gray-200">Yaponiya</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Uzunlik</span>
+                  <span class="text-gray-200">4.801 km</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Aylanish rekordi</span>
+                  <span class="text-green-500">1:43.198</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#111111]">
+        <div class="max-w-7xl mx-auto">
+          <!-- Top -->
+          <div class="grid lg:grid-cols-2">
+            <!-- Left -->
+            <div class="flex items-center px-6 md:px-12 py-16">
+              <div class="max-w-md">
+                <p
+                  class="text-[#ff4b3e] uppercase text-sm tracking-widest mb-6"
+                >
+                  TAHRIRIYAT MAQOLASI
+                </p>
+
+                <h2
+                  class="text-white italic uppercase font-light leading-none text-4xl md:text-6xl"
+                >
+                  ISLE OF MAN TT:
+                  <br />
+                  O'LIM YOKI
+                  <br />
+                  SHARAFLI
+                  <br />
+                  G'ALABA
+                </h2>
+
+                <p class="text-gray-400 leading-8 mt-8">
+                  Dunyoning eng xavfli yo'l poygasi dunyosiga sayohat.
+                  Mashinalar, xavf-xatarlar va 377 millik tog' yo'lini zabt
+                  etgan afsonalar haqida chuqur tahlil.
+                </p>
+
+                <button
+                  class="mt-10 bg-white text-black px-8 py-4 uppercase italic font-semibold relative hover:bg-red-500 hover:text-white duration-300"
+                >
+                  MAQOLANI O'QISH
+
+                  <span
+                    class="absolute bottom-0 right-0 w-4 h-4 bg-[#111111] [clip-path:polygon(100%_0,0_100%,100%_100%)]"
+                  >
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right -->
+            <div>
+              <img
+                src="./images/section 9 image.png"
+                alt=""
+                class="w-full h-full object-cover min-h-[350px]"
+              />
+            </div>
+          </div>
+
+          <!-- Bottom Stats -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 border-t border-gray-800">
+            <!-- Item -->
+            <div
+              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800"
+            >
+              <h3 class="text-white text-5xl font-bold">75</h3>
+              <p class="text-gray-500 uppercase text-xs mt-3">Yillik tarix</p>
+            </div>
+
+            <div
+              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800"
+            >
+              <h3 class="text-white text-5xl font-bold">366.1</h3>
+              <p class="text-gray-500 uppercase text-xs mt-3">
+                Maks. tezlik (km/h)
+              </p>
+            </div>
+
+            <div
+              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800"
+            >
+              <h3 class="text-white text-5xl font-bold">22</h3>
+              <p class="text-gray-500 uppercase text-xs mt-3">
+                Mavsumdagi poygalar
+              </p>
+            </div>
+
+            <div class="text-center py-10">
+              <h3 class="text-[#ff4b3e] text-5xl font-bold">0.01s</h3>
+              <p class="text-gray-500 uppercase text-xs mt-3">
+                Eng yaqin finish
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#18191F] py-20">
+        <div class="max-w-4xl mx-auto px-5">
+          <!-- Title -->
+          <h2
+            class="text-center text-4xl md:text-5xl italic font-bold text-white mb-14"
+          >
+            KO'P SO'RALADIGAN
+            <span class="text-[#ff4d3d]">SAVOLLAR</span>
+          </h2>
+
+          <!-- Accordion -->
+          <div id="accordion-collapse" data-accordion="collapse">
+            <!-- Item -->
+            <h2 id="accordion-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800 group"
+                data-accordion-target="#accordion-body-1"
+                aria-expanded="false"
+                aria-controls="accordion-body-1"
+              >
+                <span class="text-white italic uppercase text-sm md:text-base">
+                  Jonli telemetriyaga qanday kirish mumkin?
+                </span>
+
+                <span class="text-[#ff4d3d] text-2xl font-bold">+</span>
+              </button>
+            </h2>
+
+            <div id="accordion-body-1" class="hidden">
+              <div class="pb-6 text-gray-400">
+                Jonli telemetriyaga Premium a'zolik orqali kirishingiz mumkin.
+              </div>
+            </div>
+
+            <!-- Item -->
+            <h2 id="accordion-heading-2">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800"
+                data-accordion-target="#accordion-body-2"
+              >
+                <span class="text-white italic uppercase text-sm md:text-base">
+                  Apex Junior dasturi uchun minimal yosh qancha?
+                </span>
+
+                <span class="text-[#ff4d3d] text-2xl font-bold">+</span>
+              </button>
+            </h2>
+
+            <div id="accordion-body-2" class="hidden">
+              <div class="pb-6 text-gray-400">
+                Minimal yosh odatda 12 yoshdan boshlanadi.
+              </div>
+            </div>
+
+            <!-- Item -->
+            <h2 id="accordion-heading-3">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800"
+                data-accordion-target="#accordion-body-3"
+              >
+                <span class="text-white italic uppercase text-sm md:text-base">
+                  Rasmiy jamoa merchandayzini qayerdan sotib olish mumkin?
+                </span>
+
+                <span class="text-[#ff4d3d] text-2xl font-bold">+</span>
+              </button>
+            </h2>
+
+            <div id="accordion-body-3" class="hidden">
+              <div class="pb-6 text-gray-400">
+                Rasmiy internet do'koni orqali xarid qilishingiz mumkin.
+              </div>
+            </div>
+
+            <!-- Item -->
+            <h2 id="accordion-heading-4">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800"
+                data-accordion-target="#accordion-body-4"
+              >
+                <span class="text-white italic uppercase text-sm md:text-base">
+                  Apex tahririyat kengashiga qanday qo'shilish mumkin?
+                </span>
+
+                <span class="text-[#ff4d3d] text-2xl font-bold">+</span>
+              </button>
+            </h2>
+
+            <div id="accordion-body-4" class="hidden">
+              <div class="pb-6 text-gray-400">
+                Saytdagi murojaat formasi orqali ariza yuborishingiz mumkin.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#ff3b30] py-10">
+        <div
+          class="max-w-7xl mx-auto px-5 flex flex-col lg:flex-row items-center justify-between gap-8"
+        >
+          <!-- Left -->
+          <div class="max-w-xl">
+            <h2
+              class="text-white text-3xl md:text-4xl italic uppercase font-semibold"
+            >
+              ICHKI DOIRAGA QO'SHILING
+            </h2>
+
+            <p class="text-white/80 text-sm mt-4 leading-6">
+              Eksklyuziv texnik hisobotlar va poyga tahlillarini
+              to'g'ridan-to'g'ri elektron pochtangizga oling.
+            </p>
+          </div>
+
+          <!-- Right -->
+          <form class="flex flex-col sm:flex-row w-full lg:w-auto">
+            <input
+              type="email"
+              placeholder="ELEKTRON POCHTA MANZILINGIZ"
+              class="bg-[#cf3128] text-white placeholder:text-white/60 uppercase text-xs px-5 py-4 w-full sm:w-[320px] border-none focus:ring-0 focus:outline-none"
+            />
+
+            <button
+              type="submit"
+              class="bg-white text-black italic font-bold uppercase text-xs px-8 py-4 relative hover:bg-black hover:text-white transition duration-300"
+            >
+              OBUNA BO'LISH
+
+              <!-- Pastki burchak -->
+              <span
+                class="absolute bottom-0 right-0 w-4 h-4 bg-[#ff3b30]"
+                style="clip-path: polygon(100% 0, 0 100%, 100% 100%)"
+              ></span>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="bg-black text-gray-300">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Logo -->
+          <div>
+            <h2 class="text-4xl font-bold text-white">
+              APEX<span class="text-red-600">/</span>
+            </h2>
+
+            <p class="mt-6 text-gray-400 leading-7">
+              Motosport intellekti, muhandislik va cheksiz tezlikka intilish
+              bo‘yicha dunyodagi yetakchi nashr.
+            </p>
+
+            <div class="flex gap-3 mt-8">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition"
+              >
+                🌐
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition"
+              >
+                🔗
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition"
+              >
+                ✉️
+              </a>
+            </div>
+          </div>
+
+          <!-- Poygalar -->
+          <div>
+            <h3
+              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5"
+            >
+              POYGALAR
+            </h3>
+
+            <ul class="space-y-4">
+              <li><a href="#" class="hover:text-red-500">MotoGP</a></li>
+              <li><a href="#" class="hover:text-red-500">Superbike</a></li>
+              <li><a href="#" class="hover:text-red-500">Isle of Man TT</a></li>
+              <li><a href="#" class="hover:text-red-500">Bardoshlilik</a></li>
+            </ul>
+          </div>
+
+          <!-- Texnik -->
+          <div>
+            <h3
+              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5"
+            >
+              TEXNIK
+            </h3>
+
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="hover:text-red-500">Telemetriya markazi</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500"
+                  >Dvigatel xususiyatlari</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-red-500">Aero tahlili</a></li>
+              <li><a href="#" class="hover:text-red-500">Arxiv</a></li>
+            </ul>
+          </div>
+
+          <!-- Tahririyat -->
+          <div>
+            <h3
+              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5"
+            >
+              TAHRIRIYAT
+            </h3>
+
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="hover:text-red-500">Maxfiylik siyosati</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500"
+                  >Xizmat ko‘rsatish shartlari</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-500"
+                  >Tahririyat standartlari</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-red-500">Bog‘lanish</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500"
+        >
+          <p>© 2024 APEX Motorsport. Barcha huquqlar himoyalangan.</p>
+
+          <p class="mt-3 md:mt-0">
+            Dizayn holati:
+            <span class="text-green-400">●</span>
+            <span class="text-white">NORMAL</span>
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.jotfor.ms/agent/embedjs/019f8d4dc1187000863ec7524c2174217463/embed.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
