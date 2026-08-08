@@ -12,88 +12,82 @@
     <link rel="stylesheet" href="./css/sytle.css" />
   </head>
   <body>
-    <header class="bg-[#1F0F0D] py-[17.5px]">
-      <div
-        class="max-w-[1120px] mx-auto px-5 flex items-center justify-between"
-      >
-        <!-- Logo -->
-        <a href="#">
-          <img src="./images/Link.png" alt="Logo" class="w-auto h-10" />
-        </a>
+    <header class="bg-[#1F0F0D]">
+      <nav class="max-w-[1120px] mx-auto px-5 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="../index.html">
+            <img src="../images/Link.png" alt="" />
+          </a>
 
-        <ul class="flex gap-10 max-[550px]:hidden">
-          <li>
-            <a href="./pages/about.html" class="nav-link">POYGALAR</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">JAMOALAR</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">JADVAL</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">TELEMETRIYA</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">JURNAL</a>
-          </li>
-        </ul>
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center gap-10">
+            <ul class="flex gap-10">
+              <li><a class="nav-link" href="#">POYGALAR</a></li>
+              <li>
+                <a class="nav-link" href="./pages/about.html">CHEMPIONAT</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./pages/PORFILE.html">PROFILE</a>
+              </li>
+              <li><a class="nav-link" href="#">TELEMETRIYA</a></li>
+              <li><a class="nav-link" href="#">JURNAL</a></li>
+            </ul>
 
-        <!-- Desktop Right -->
-        <div class="hidden lg:flex items-center gap-5">
-          <p class="text-white text-xs whitespace-nowrap">
-            JONLI TOMOSHA QILING
-          </p>
+            <div class="flex items-center gap-5">
+              <p class="text-white text-xs">JONLI TOMOSHA QILING</p>
 
+              <button class="bg-[#FF3D2E] text-white rounded-md px-6 py-3">
+                OBUNA BO'LING
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Button -->
           <button
-            class="bg-[#FF3D2E] hover:bg-red-600 duration-300 rounded-md px-5 py-3 text-white text-sm"
+            data-collapse-toggle="mobile-menu"
+            type="button"
+            class="lg:hidden text-white"
           >
-            OBUNA BO'LING
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
           </button>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <button
-          data-collapse-toggle="mobile-menu"
-          type="button"
-          class="lg:hidden text-white"
-        >
-          <svg
-            class="w-8 h-8"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-      </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden pt-8">
+          <ul class="space-y-8 text-[#FFB4A9]">
+            <li><a href="./pages/about.html" class="block">POYGALAR</a></li>
 
-      <!-- Mobile Menu -->
-      <div class="hidden lg:hidden bg-[#1F0F0D]" id="mobile-menu">
-        <ul class="flex flex-col px-5 py-4 text-[#FFB4A9] space-y-4">
-          <li><a href="./pages/about.html">POYGALAR</a></li>
-          <li><a href="#">JAMOALAR</a></li>
-          <li><a href="#">JADVAL</a></li>
-          <li><a href="#">TELEMETRIYA</a></li>
-          <li><a href="#">JURNAL</a></li>
+            <li><a href="#" class="block">CHEMPIONAT</a></li>
 
-          <li class="pt-4 border-t border-gray-700">
-            <p class="text-white text-xs mb-3">JONLI TOMOSHA QILING</p>
+            <li><a href="#" class="block">PROFILE</a></li>
 
-            <button
-              class="w-full bg-[#FF3D2E] hover:bg-red-600 duration-300 rounded-md py-3 text-white"
-            >
-              OBUNA BO'LING
-            </button>
-          </li>
-        </ul>
-      </div>
+            <li><a href="#" class="block">TELEMETRIYA</a></li>
+
+            <li><a href="#" class="block">JURNAL</a></li>
+          </ul>
+
+          <hr class="border-[#3d2b2b] my-8" />
+
+          <p class="text-white text-sm mb-5">JONLI TOMOSHA QILING</p>
+
+          <button class="w-full bg-[#FF3D2E] text-white py-4 rounded-md">
+            OBUNA BO'LING
+          </button>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -121,13 +115,13 @@
 
               <div class="flex flex-col sm:flex-row gap-4 mt-8">
                 <button
-                  class="bg-[#FF3D2E] hover:bg-red-600 duration-300 text-white rounded-md px-6 py-4"
+                  class="bg-[#FF3D2E] cursor-pointer hover:bg-red-600 duration-300 text-white rounded-md px-6 py-4"
                 >
                   MAVSUMNI O'RGANISH
                 </button>
 
                 <button
-                  class="border border-white text-white hover:bg-white hover:text-black duration-300 rounded-md px-6 py-4"
+                  class="border border-white cursor-pointer text-white hover:bg-white hover:text-black duration-300 rounded-md px-6 py-4"
                 >
                   JONLI MA'LUMOTLAR
                 </button>
@@ -265,7 +259,7 @@
 
               <!-- Button -->
               <button
-                class="bg-[#FFFFFF1A] hover:bg-[#ffffff2d] duration-300 text-white rounded-md px-8 py-4 whitespace-nowrap"
+                class="bg-[#FFFFFF1A] cursor-pointer hover:bg-[#ffffff2d] duration-300 text-white rounded-md px-8 py-4 whitespace-nowrap"
               >
                 TO'LIQ <br />
                 JADVAL
@@ -289,19 +283,19 @@
               class="flex items-center gap-2 bg-[#0F1014] p-2 w-fit rounded-md"
             >
               <button
-                class="bg-[#FF5543] text-white px-5 py-2 text-xs uppercase rounded transition-all duration-300"
+                class="bg-[#FF5543] cursor-pointer text-white px-5 py-2 text-xs uppercase rounded transition-all duration-300"
               >
                 MOTOGP
               </button>
 
               <button
-                class="bg-[#1D2026] text-gray-300 px-5 py-2 text-xs uppercase rounded hover:bg-[#FF5543] hover:text-white transition-all duration-300"
+                class="bg-[#1D2026] cursor-pointer text-gray-300 px-5 py-2 text-xs uppercase rounded hover:bg-[#FF5543] hover:text-white transition-all duration-300"
               >
                 MOTO2
               </button>
 
               <button
-                class="bg-[#1D2026] text-gray-300 px-5 py-2 text-xs uppercase rounded hover:bg-[#FF5543] hover:text-white transition-all duration-300"
+                class="bg-[#1D2026] cursor-pointer text-gray-300 px-5 py-2 text-xs uppercase rounded hover:bg-[#FF5543] hover:text-white transition-all duration-300"
               >
                 MOTO3
               </button>
@@ -410,7 +404,7 @@
           <h1
             class="text-3xl sm:text-4xl lg:text-[52px] font-bold text-white mb-10"
           >
-            GRID / SO'NGGI YANGILIKLAR
+            GRID <span class="text-[#FF3D2E]">/</span> SO'NGGI YANGILIKLAR
           </h1>
 
           <!-- Cards -->
@@ -1009,7 +1003,7 @@
                 </p>
 
                 <button
-                  class="mt-10 bg-white text-black px-8 py-4 uppercase italic font-semibold relative hover:bg-red-500 hover:text-white duration-300"
+                  class="mt-10 cursor-pointer bg-white text-black px-8 py-4 uppercase italic font-semibold relative hover:bg-red-500 hover:text-white duration-300"
                 >
                   MAQOLANI O'QISH
 
@@ -1198,7 +1192,7 @@
 
             <button
               type="submit"
-              class="bg-white text-black italic font-bold uppercase text-xs px-8 py-4 relative hover:bg-black hover:text-white transition duration-300"
+              class="bg-white cursor-pointer text-black italic font-bold uppercase text-xs px-8 py-4 relative hover:bg-black hover:text-white transition duration-300"
             >
               OBUNA BO'LISH
 
@@ -1329,9 +1323,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.jotfor.ms/agent/embedjs/019f8d4dc1187000863ec7524c2174217463/embed.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

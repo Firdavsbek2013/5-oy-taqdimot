@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/sytle.css" />
+  </head>
+  <body>
+    <header class="bg-[#1F0F0D]">
+      <nav class="max-w-[1120px] mx-auto px-5 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="../index.html">
+            <img src="../images/Link.png" alt="" />
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center gap-10">
+            <ul class="flex gap-10">
+              <li><a class="nav-link" href="#">POYGALAR</a></li>
+              <li>
+                <a class="nav-link" href="./pages/about.html">CHEMPIONAT</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./pages/PORFILE.html">PROFILE</a>
+              </li>
+              <li><a class="nav-link" href="#">TELEMETRIYA</a></li>
+              <li><a class="nav-link" href="#">JURNAL</a></li>
+            </ul>
+
+            <div class="flex items-center gap-5">
+              <p class="text-white text-xs">JONLI TOMOSHA QILING</p>
+
+              <button class="bg-[#FF3D2E] text-white rounded-md px-6 py-3">
+                OBUNA BO'LING
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Button -->
+          <button
+            data-collapse-toggle="mobile-menu"
+            type="button"
+            class="lg:hidden text-white"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden pt-8">
+          <ul class="space-y-8 text-[#FFB4A9]">
+            <li><a href="./pages/about.html" class="block">POYGALAR</a></li>
+
+            <li><a href="#" class="block">CHEMPIONAT</a></li>
+
+            <li><a href="#" class="block">PROFILE</a></li>
+
+            <li><a href="#" class="block">TELEMETRIYA</a></li>
+
+            <li><a href="#" class="block">JURNAL</a></li>
+          </ul>
+
+          <hr class="border-[#3d2b2b] my-8" />
+
+          <p class="text-white text-sm mb-5">JONLI TOMOSHA QILING</p>
+
+          <button class="w-full bg-[#FF3D2E] text-white py-4 rounded-md">
+            OBUNA BO'LING
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-black py-10 max-[380px]:py-5">
+        <div class="max-w-7xl mx-auto px-4 max-[380px]:px-3">
+          <div
+            class="flex flex-col lg:flex-row border border-red-900 overflow-hidden"
+          >
+            <!-- ================= SIDEBAR ================= -->
+            <aside
+              class="w-full lg:w-64 bg-[#090909] border-r border-red-900 max-[380px]:border-r-0 max-[380px]:border-b max-[380px]:border-red-900"
+            >
+              <div class="p-6 max-[380px]:p-4">
+                <h3
+                  class="text-xs uppercase tracking-[4px] text-gray-500 mb-8 max-[380px]:mb-4 max-[380px]:text-[9px] max-[380px]:tracking-[2px]"
+                >
+                  Poyga Boshqaruvi
+                </h3>
+
+                <div class="md:flex">
+                  <ul
+                    class="flex-column space-y space-y-4 text-sm font-medium text-body md:me-4 mb-4 md:mb-0"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-flex items-center px-4 py-2.5 text-white bg-brand rounded-base active w-full"
+                        aria-current="page"
+                      >
+                      <img src="../images/asosiy icon .png" alt="">
+                        ASOSIY
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-flex items-center px-4 py-3 rounded-base hover:text-heading hover:bg-neutral-secondary-soft w-full"
+                      >
+                      <img src="../images/yangiliklar icon.png" alt="">
+                        SO'NGI YANGILIKLAR
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-flex items-center px-4 py-3 rounded-base hover:text-heading hover:bg-neutral-secondary-soft w-full"
+                      >
+                      <img src="../images/jonli icon.png" alt="">
+                        JONLI TELEMETRIYA
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="inline-flex items-center px-4 py-3 rounded-base hover:text-heading hover:bg-neutral-secondary-soft w-full"
+                      >
+                      <img src="../images/poyga icon.png" alt="">
+                        POYGA NATIJALARI
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="inline-flex items-center px-4 py-3 text-fg-disabled rounded-base cursor-not-allowed w-full"
+                      >
+                      POYGACHILAR
+                      REYTINGI
+                      </a>
+                    </li>
+                  </ul>
+                  <div
+                    class="p-6 bg-neutral-secondary text-medium text-body rounded-base w-full"
+                  >
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- ================= MAIN ================= -->
+            <div
+              class="relative flex-1 min-h-[700px] bg-cover bg-center max-[380px]:min-h-[650px]"
+              style="background-image: url(&quot;../images/bg.png&quot;)"
+            >
+              <!-- DARK OVERLAY -->
+              <div class="absolute inset-0 bg-black/70"></div>
+
+              <!-- CONTENT -->
+              <div class="relative h-full flex flex-col justify-end">
+                <!-- DRIVER INFO -->
+                <div class="p-8 lg:p-14 max-[380px]:p-5 max-[380px]:pb-32">
+                  <!-- NUMBER + COUNTRY -->
+                  <div
+                    class="flex items-center gap-3 mb-6 max-[380px]:gap-2 max-[380px]:mb-4"
+                  >
+                    <span
+                      class="bg-red-600 px-3 py-1 font-bold text-black max-[380px]:px-2 max-[380px]:py-1 max-[380px]:text-sm"
+                    >
+                      93
+                    </span>
+
+                    <span
+                      class="uppercase tracking-[3px] text-gray-300 max-[380px]:tracking-[1px] max-[380px]:text-[9px]"
+                    >
+                      ISPANIYA
+                    </span>
+                    <img src="../images/spain flag.png" alt="" />
+                  </div>
+
+                  <!-- NAME -->
+                  <h2
+                    class="text-6xl md:text-7xl font-extrabold text-white leading-none max-[380px]:text-5xl"
+                  >
+                    MARK
+                  </h2>
+
+                  <h2
+                    class="text-6xl md:text-7xl font-extrabold text-red-600 leading-none mb-4 max-[380px]:text-5xl max-[380px]:mb-3"
+                  >
+                    MARKEZ
+                  </h2>
+
+                  <p
+                    class="uppercase tracking-[6px] text-gray-400 max-[380px]:tracking-[2px] max-[380px]:text-[9px]"
+                  >
+                    Gresini Racing MotoGP
+                  </p>
+                </div>
+
+                <!-- BIKE -->
+                <div
+                  class="absolute bottom-44 right-10 text-right max-[380px]:bottom-36 max-[380px]:right-5"
+                >
+                  <p
+                    class="text-xs tracking-[4px] text-gray-400 max-[380px]:text-[8px] max-[380px]:tracking-[2px]"
+                  >
+                    Hozirda Faol
+                  </p>
+
+                  <h2
+                    class="text-5xl font-black text-white max-[380px]:text-3xl"
+                  >
+                    GP23
+                  </h2>
+
+                  <p class="text-gray-400 max-[380px]:text-xs">Ducati</p>
+                </div>
+
+                <!-- ================= STATS ================= -->
+                <div class="grid grid-cols-2 md:grid-cols-5 bg-[#181818]">
+                  <!-- 1 -->
+                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                    <p
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                    >
+                      Chempionatlar
+                    </p>
+
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                      08
+                    </h3>
+                  </div>
+
+                  <!-- 2 -->
+                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                    <p
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                    >
+                      Gran Pri
+                    </p>
+
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                      85
+                    </h3>
+                  </div>
+
+                  <!-- 3 -->
+                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                    <p
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                    >
+                      Shoxsupalar
+                    </p>
+
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                      140
+                    </h3>
+                  </div>
+
+                  <!-- 4 -->
+                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                    <p
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                    >
+                      Poyga G'alaba
+                    </p>
+
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                      92
+                    </h3>
+                  </div>
+
+                  <!-- 5 -->
+                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                    <p
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                    >
+                      Eng Tez Aylana
+                    </p>
+
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                      59
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#090909] py-20 max-[380px]:py-10">
+        <div class="max-w-7xl mx-auto px-5 max-[380px]:px-3">
+          <!-- ================= TABS ================= -->
+          <div class="w-full overflow-x-auto max-[380px]:overflow-x-auto">
+            <ul
+              class="flex gap-10 border-b border-gray-800 mb-16 text-xs uppercase tracking-[4px] min-w-max max-[380px]:gap-6 max-[380px]:mb-10 max-[380px]:tracking-[1px]"
+              id="bio-tabs"
+              data-tabs-toggle="#bio-content"
+              role="tablist"
+            >
+              <!-- BIO -->
+              <li role="presentation" class="shrink-0">
+                <button
+                  class="pb-4 border-b-2 border-red-500 text-red-400 whitespace-nowrap max-[380px]:pb-3 max-[380px]:text-[9px]"
+                  id="bio-tab"
+                  data-tabs-target="#bio"
+                  type="button"
+                  role="tab"
+                  aria-controls="bio"
+                  aria-selected="true"
+                >
+                  Biografiya
+                </button>
+              </li>
+
+              <!-- STAT -->
+              <li role="presentation" class="shrink-0">
+                <button
+                  class="pb-4 text-gray-400 hover:text-white whitespace-nowrap max-[380px]:pb-3 max-[380px]:text-[9px]"
+                  id="stat-tab"
+                  data-tabs-target="#stat"
+                  type="button"
+                  role="tab"
+                  aria-controls="stat"
+                  aria-selected="false"
+                >
+                  Karyera Statistikasi
+                </button>
+              </li>
+
+              <!-- SEASON -->
+              <li role="presentation" class="shrink-0">
+                <button
+                  class="pb-4 text-gray-400 hover:text-white whitespace-nowrap max-[380px]:pb-3 max-[380px]:text-[9px]"
+                  id="season-tab"
+                  data-tabs-target="#season"
+                  type="button"
+                  role="tab"
+                  aria-controls="season"
+                  aria-selected="false"
+                >
+                  Mavsum
+                </button>
+              </li>
+
+              <!-- BIKE -->
+              <li role="presentation" class="shrink-0">
+                <button
+                  class="pb-4 text-gray-400 hover:text-white whitespace-nowrap max-[380px]:pb-3 max-[380px]:text-[9px]"
+                  id="bike-tab"
+                  data-tabs-target="#bike"
+                  type="button"
+                  role="tab"
+                  aria-controls="bike"
+                  aria-selected="false"
+                >
+                  Mashinalar
+                </button>
+              </li>
+
+              <!-- GALLERY -->
+              <li role="presentation" class="shrink-0">
+                <button
+                  class="pb-4 text-gray-400 hover:text-white whitespace-nowrap max-[380px]:pb-3 max-[380px]:text-[9px]"
+                  id="gallery-tab"
+                  data-tabs-target="#gallery"
+                  type="button"
+                  role="tab"
+                  aria-controls="gallery"
+                  aria-selected="false"
+                >
+                  Galereya
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ================= CONTENT ================= -->
+          <div id="bio-content">
+            <!-- BIOGRAFIYA -->
+            <div id="bio" role="tabpanel" aria-labelledby="bio-tab">
+              <div
+                class="grid lg:grid-cols-3 gap-16 max-[380px]:grid-cols-1 max-[380px]:gap-8"
+              >
+                <!-- LEFT -->
+                <div class="lg:col-span-2">
+                  <h2
+                    class="text-5xl font-extrabold uppercase text-white mb-10 max-[380px]:text-3xl max-[380px]:mb-6"
+                  >
+                    Servera Chumolisi
+                  </h2>
+
+                  <div
+                    class="space-y-8 text-gray-400 leading-9 text-lg max-[380px]:space-y-5 max-[380px]:text-sm max-[380px]:leading-7"
+                  >
+                    <p>
+                      Mark Markes Alenta (1993-yil 17-fevralda tug'ilgan) —
+                      ispaniyalik professional Gran-pri motopoygachisi,
+                      2024-yildan buyon MotoGP toifasida Gresini Racing MotoGP
+                      jamoasi sharafini himoya qilmoqda. U barcha davrlarning
+                      eng muvaffaqiyatli motopoygachilaridan biri bo'lib, sakkiz
+                      karra Gran-pri jahon chempioni hisoblanadi.
+                    </p>
+
+                    <p>
+                      O'zining tajovuzkor haydash uslubi va tirsakda yiqilishdan
+                      saqlanib qolish qobiliyati bilan tanilgan Markning yo'li
+                      tezkor yuksalish va afsonaviy matonat bilan belgilangan.
+                      2020-yildan boshlangan karyerasiga xavf soluvchi
+                      jarohatlar seriyasidan so'ng, uning Ducati GP23
+                      mototsiklida Gresini jamoasiga o'tishi motorsport
+                      tarixidagi eng kutilgan burilishlardan biri bo'ldi.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- RIGHT CARD -->
+                <div>
+                  <div
+                    class="bg-[#16181f] rounded-xl p-8 border border-gray-800 max-[380px]:p-5"
+                  >
+                    <h3
+                      class="uppercase tracking-[5px] text-white mb-8 max-[380px]:tracking-[3px] max-[380px]:text-sm"
+                    >
+                      Bir Qarashda
+                    </h3>
+
+                    <div class="space-y-6 max-[380px]:space-y-5">
+                      <div
+                        class="flex justify-between gap-3 max-[380px]:text-xs"
+                      >
+                        <span class="text-gray-500"> Tug'ilgan sana </span>
+
+                        <span class="text-white"> 17.02.1993 </span>
+                      </div>
+
+                      <div
+                        class="flex justify-between gap-3 max-[380px]:text-xs"
+                      >
+                        <span class="text-gray-500"> Bo'yi / Vazni </span>
+
+                        <span class="text-white"> 169sm / 64kg </span>
+                      </div>
+
+                      <div
+                        class="flex justify-between gap-3 max-[380px]:text-xs"
+                      >
+                        <span class="text-gray-500"> Tug'ilgan joyi </span>
+
+                        <span class="text-white text-right">
+                          Servera, Ispaniya
+                        </span>
+                      </div>
+
+                      <div
+                        class="flex justify-between gap-3 max-[380px]:text-xs"
+                      >
+                        <span class="text-gray-500"> Birinchi Gran-pri </span>
+
+                        <span class="text-white"> 2008 </span>
+                      </div>
+
+                      <div
+                        class="flex justify-between gap-3 max-[380px]:text-xs"
+                      >
+                        <span class="text-gray-500"> Birinchi G'alaba </span>
+
+                        <span class="text-white"> 2010 </span>
+                      </div>
+
+                      <div
+                        class="flex justify-between gap-3 max-[380px]:text-xs"
+                      >
+                        <span class="text-gray-500"> Jahon Unvonlari </span>
+
+                        <span class="text-red-500"> 8 </span>
+                      </div>
+                    </div>
+
+                    <button
+                      class="mt-10 w-full bg-red-500 hover:bg-red-600 duration-300 py-4 rounded-lg uppercase tracking-[4px] text-white font-semibold max-[380px]:mt-7 max-[380px]:py-3 max-[380px]:text-[9px] max-[380px]:tracking-[2px]"
+                    >
+                      Jonli Telemetriya
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STAT -->
+            <div id="stat" class="hidden text-white py-20 max-[380px]:py-10">
+              <h2 class="text-4xl font-bold max-[380px]:text-2xl">
+                Karyera Statistikasi
+              </h2>
+            </div>
+
+            <!-- SEASON -->
+            <div id="season" class="hidden text-white py-20 max-[380px]:py-10">
+              <h2 class="text-4xl font-bold max-[380px]:text-2xl">Mavsum</h2>
+            </div>
+
+            <!-- BIKE -->
+            <div id="bike" class="hidden text-white py-20 max-[380px]:py-10">
+              <h2 class="text-4xl font-bold max-[380px]:text-2xl">
+                Mashinalar
+              </h2>
+            </div>
+
+            <!-- GALLERY -->
+            <div id="gallery" class="hidden text-white py-20 max-[380px]:py-10">
+              <h2 class="text-4xl font-bold max-[380px]:text-2xl">Galereya</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-[#08090b] py-16 px-5 max-[380px]:px-3 max-[380px]:py-10"
+      >
+        <div class="max-w-6xl mx-auto">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-[1.7fr_0.8fr] gap-8 max-[380px]:gap-10"
+          >
+            <!-- KARYERA TAHLILI -->
+            <div>
+              <h2
+                class="text-3xl font-black uppercase text-white mb-6 max-[380px]:text-2xl max-[380px]:mb-4"
+              >
+                KARYERA TAHLILI
+              </h2>
+
+              <!-- TABLE -->
+              <div
+                class="overflow-x-auto rounded-lg border border-[#292c32] max-[380px]:w-full"
+              >
+                <table class="w-full min-w-[850px] text-left">
+                  <thead class="bg-[#1a1d22]">
+                    <tr class="text-[10px] uppercase text-gray-400">
+                      <th class="px-4 py-4">YIL</th>
+                      <th class="px-4 py-4">TOIFA</th>
+                      <th class="px-4 py-4">JAMOA</th>
+                      <th class="px-4 py-4">MOTOSIKL</th>
+                      <th class="px-4 py-4">G‘ALABALAR</th>
+                      <th class="px-4 py-4">OCHKOLAR</th>
+                      <th class="px-4 py-4">O‘RIN</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <!-- 2023 -->
+                    <tr class="border-t border-[#202329] bg-[#0d0f12]">
+                      <td class="px-4 py-5 text-white">2023</td>
+                      <td class="px-4 py-5 text-white">MotoGP</td>
+
+                      <td class="px-4 py-5 text-gray-400">Repsol<br />Honda</td>
+
+                      <td class="px-4 py-5 text-gray-400">RC213V</td>
+
+                      <td class="px-4 py-5 text-white">0</td>
+                      <td class="px-4 py-5 text-white">96</td>
+                      <td class="px-4 py-5 text-white">14-chi</td>
+                    </tr>
+
+                    <!-- 2019 -->
+                    <tr class="border-t border-[#302b2d] bg-[#252123]">
+                      <td class="px-4 py-5 text-white">2019</td>
+                      <td class="px-4 py-5 text-white">MotoGP</td>
+
+                      <td class="px-4 py-5 text-gray-400">Repsol<br />Honda</td>
+
+                      <td class="px-4 py-5 text-gray-400">RC213V</td>
+
+                      <td class="px-4 py-5 text-white">12</td>
+
+                      <td class="px-4 py-5 text-green-400 font-medium">420</td>
+
+                      <td class="px-4 py-5 text-red-400">1-chi</td>
+                    </tr>
+
+                    <!-- 2018 -->
+                    <tr class="border-t border-[#202329] bg-[#0d0f12]">
+                      <td class="px-4 py-5 text-white">2018</td>
+                      <td class="px-4 py-5 text-white">MotoGP</td>
+
+                      <td class="px-4 py-5 text-gray-400">Repsol<br />Honda</td>
+
+                      <td class="px-4 py-5 text-gray-400">RC213V</td>
+
+                      <td class="px-4 py-5 text-white">9</td>
+                      <td class="px-4 py-5 text-white">321</td>
+
+                      <td class="px-4 py-5 text-red-400">1-chi</td>
+                    </tr>
+
+                    <!-- 2017 -->
+                    <tr class="border-t border-[#202329] bg-[#0d0f12]">
+                      <td class="px-4 py-5 text-white">2017</td>
+                      <td class="px-4 py-5 text-white">MotoGP</td>
+
+                      <td class="px-4 py-5 text-gray-400">Repsol<br />Honda</td>
+
+                      <td class="px-4 py-5 text-gray-400">RC213V</td>
+
+                      <td class="px-4 py-5 text-white">6</td>
+                      <td class="px-4 py-5 text-white">298</td>
+
+                      <td class="px-4 py-5 text-red-400">1-chi</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- YANGILIKLAR -->
+            <div>
+              <h3
+                class="text-xs font-bold uppercase tracking-[4px] text-gray-400 mb-7 max-[380px]:text-[9px] max-[380px]:tracking-[3px]"
+              >
+                MARKESGA OID SO‘NGGI<br />
+                YANGILIKLAR
+              </h3>
+
+              <!-- NEWS 1 -->
+              <div
+                class="border-b border-[#252225] pb-5 mb-5 max-[380px]:pb-4 max-[380px]:mb-4"
+              >
+                <h4
+                  class="text-base font-bold uppercase leading-6 text-white max-[380px]:text-sm max-[380px]:leading-5"
+                >
+                  "MEN O‘SHA ESKI MARK ESMANMAN, LEKIN YANGIGA TAYYORMAN"
+                </h4>
+
+                <p
+                  class="mt-3 text-[9px] uppercase tracking-widest text-gray-500 max-[380px]:text-[8px]"
+                >
+                  2 SOAT OLDIN • TAHRIRIYAT
+                </p>
+              </div>
+
+              <!-- NEWS 2 -->
+              <div class="border-b border-[#252225] pb-5">
+                <h4
+                  class="text-base font-bold uppercase leading-6 text-white max-[380px]:text-sm max-[380px]:leading-5"
+                >
+                  TEXNIK TAHLIL: MARKES GP23 GA QANDAY MOSLASHMOQDA
+                </h4>
+
+                <p
+                  class="mt-3 text-[9px] uppercase tracking-widest text-gray-500 max-[380px]:text-[8px]"
+                >
+                  8 SOAT OLDIN • MA’LUMOTLAR LABORATORIYASI
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#090909] py-20 max-[380px]:py-10">
+        <div class="max-w-6xl mx-auto">
+          <div class="chart-box">
+            <div style="width: 700px">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#090909] py-20">
+        <div class="max-w-6xl mx-auto px-5">
+          <h1 class="text-white text-[36px] pb-10">MASHINALAR</h1>
+
+          <div class="service-cards owl-carousel owl-theme">
+            <div class="service-card item">
+              <img
+                src="../images/moto2.png"
+                alt=""
+                class="w-full h-[250px] object-cover"
+              />
+            </div>
+
+            <div class="service-card item">
+              <img
+                src="../images/moto.png"
+                alt=""
+                class="w-full h-[250px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+    <script>
+      const ctx = document.getElementById("myChart");
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: [
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+          ],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [6, 8, 12, 10, 11, 13, 2.5, 2, 5, 19],
+              borderWidth: 1,
+              borderColor: "black",
+              backgroundColor: "#5D3F3B",
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jotfor.ms/agent/embedjs/019f8d4dc1187000863ec7524c2174217463/embed.js"></script>
+  </body>
+</html>
