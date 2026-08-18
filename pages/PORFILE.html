@@ -105,122 +105,187 @@
     </header>
 
     <main>
-      <section class="bg-black py-10 max-[380px]:py-5">
-        <div class="max-w-7xl mx-auto px-4 max-[380px]:px-3">
+      <section class="bg-black py-10 max-[380px]:py-4">
+        <div class="max-w-7xl mx-auto px-4 max-[380px]:px-2">
           <div
             class="flex flex-col lg:flex-row border border-red-900 overflow-hidden"
           >
             <!-- ================= SIDEBAR ================= -->
             <aside
-              class="w-full lg:w-64 bg-[#090909] border-r border-red-900 max-[380px]:border-r-0 max-[380px]:border-b max-[380px]:border-red-900"
+              class="w-full lg:w-64 bg-[#090909] border-r border-red-900 max-[380px]:border-r-0 max-[380px]:border-b"
             >
-              <div class="p-6 max-[380px]:p-4">
+              <div class="p-6 max-[380px]:p-3">
                 <h3
-                  class="text-xs uppercase tracking-[4px] text-gray-500 mb-8 max-[380px]:mb-4 max-[380px]:text-[9px] max-[380px]:tracking-[2px]"
+                  class="text-xs uppercase tracking-[4px] text-gray-500 mb-8 max-[380px]:mb-3 max-[380px]:text-[8px] max-[380px]:tracking-[2px]"
                 >
                   Poyga Boshqaruvi
                 </h3>
 
-                <div class="md:flex">
+                <!-- TABS -->
+                <div class="mb-4 border-b border-gray-800">
                   <ul
-                    class="flex-column space-y space-y-4 text-sm font-medium text-body md:me-4 mb-4 md:mb-0"
+                    class="flex flex-nowrap overflow-x-auto -mb-px text-sm font-medium text-center max-[380px]:text-[10px]"
+                    id="default-tab"
+                    data-tabs-toggle="#default-tab-content"
+                    role="tablist"
                   >
-                    <li>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-4 py-2.5 text-white bg-brand rounded-base active w-full"
-                        aria-current="page"
+                    <li class="me-1 shrink-0" role="presentation">
+                      <button
+                        class="inline-block px-3 py-3 border-b-2 rounded-t-base whitespace-nowrap max-[380px]:px-2 max-[380px]:py-2"
+                        id="profile-tab"
+                        data-tabs-target="#profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile"
+                        aria-selected="false"
                       >
-                      <img src="../images/asosiy icon .png" alt="">
-                        ASOSIY
-                      </a>
+                        Profile
+                      </button>
                     </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="inline-flex items-center px-4 py-3 text-white rounded-base hover:text-heading hover:bg-neutral-secondary-soft w-full"
+
+                    <li class="me-1 shrink-0" role="presentation">
+                      <button
+                        class="inline-block px-3 py-3 border-b-2 rounded-t-base whitespace-nowrap hover:text-red-500 hover:border-red-500 max-[380px]:px-2 max-[380px]:py-2"
+                        id="dashboard-tab"
+                        data-tabs-target="#dashboard"
+                        type="button"
+                        role="tab"
+                        aria-controls="dashboard"
+                        aria-selected="false"
                       >
-                      <img src="../images/yangiliklar icon.png" alt="">
-                        SO'NGI YANGILIKLAR
-                      </a>
+                        Dashboard
+                      </button>
                     </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="inline-flex items-center text-[#5C0001] px-4 py-3 rounded-base hover:text-heading hover:bg-neutral-secondary-soft w-full"
+
+                    <li class="me-1 shrink-0" role="presentation">
+                      <button
+                        class="inline-block px-3 py-3 border-b-2 rounded-t-base whitespace-nowrap hover:text-red-500 hover:border-red-500 max-[380px]:px-2 max-[380px]:py-2"
+                        id="settings-tab"
+                        data-tabs-target="#settings"
+                        type="button"
+                        role="tab"
+                        aria-controls="settings"
+                        aria-selected="false"
                       >
-                      <img src="../images/jonli icon.png" alt="">
-                        JONLI TELEMETRIYA
-                      </a>
+                        Settings
+                      </button>
                     </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="inline-flex items-center text-white px-4 py-3 rounded-base hover:text-heading hover:bg-neutral-secondary-soft w-full"
+
+                    <li class="shrink-0" role="presentation">
+                      <button
+                        class="inline-block px-3 py-3 border-b-2 rounded-t-base whitespace-nowrap hover:text-red-500 hover:border-red-500 max-[380px]:px-2 max-[380px]:py-2"
+                        id="contacts-tab"
+                        data-tabs-target="#contacts"
+                        type="button"
+                        role="tab"
+                        aria-controls="contacts"
+                        aria-selected="false"
                       >
-                      <img src="../images/poyga icon.png" alt="">
-                        POYGA NATIJALARI
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="inline-flex items-center text-white px-4 py-3 text-fg-disabled rounded-base cursor-not-allowed w-full"
-                      >
-                      <img src="../images/poyga icon.png" alt="">
-                      POYGACHILAR
-                      REYTINGI
-                      </a>
+                        Contacts
+                      </button>
                     </li>
                   </ul>
+                </div>
+
+                <!-- TAB CONTENT -->
+                <div id="default-tab-content">
+                  <div
+                    class="hidden p-3 rounded-base bg-neutral-secondary-soft max-[380px]:p-2"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                    <p class="text-xs text-gray-300">
+                      Profile tab's associated content.
+                    </p>
+                  </div>
+
+                  <div
+                    class="hidden p-3 rounded-base bg-neutral-secondary-soft max-[380px]:p-2"
+                    id="dashboard"
+                    role="tabpanel"
+                    aria-labelledby="dashboard-tab"
+                  >
+                    <p class="text-xs text-gray-300">
+                      Dashboard tab's associated content.
+                    </p>
+                  </div>
+
+                  <div
+                    class="hidden p-3 rounded-base bg-neutral-secondary-soft max-[380px]:p-2"
+                    id="settings"
+                    role="tabpanel"
+                    aria-labelledby="settings-tab"
+                  >
+                    <p class="text-xs text-gray-300">
+                      Settings tab's associated content.
+                    </p>
+                  </div>
+
+                  <div
+                    class="hidden p-3 rounded-base bg-neutral-secondary-soft max-[380px]:p-2"
+                    id="contacts"
+                    role="tabpanel"
+                    aria-labelledby="contacts-tab"
+                  >
+                    <p class="text-xs text-gray-300">
+                      Contacts tab's associated content.
+                    </p>
+                  </div>
                 </div>
               </div>
             </aside>
 
             <!-- ================= MAIN ================= -->
             <div
-              class="relative flex-1 min-h-[700px] bg-cover bg-center max-[380px]:min-h-[650px]"
+              class="relative flex-1 min-h-[700px] bg-cover bg-center max-[380px]:min-h-[570px]"
               style="background-image: url(&quot;../images/bg.png&quot;)"
             >
-              <!-- DARK OVERLAY -->
+              <!-- OVERLAY -->
               <div class="absolute inset-0 bg-black/70"></div>
 
               <!-- CONTENT -->
               <div class="relative h-full flex flex-col justify-end">
                 <!-- DRIVER INFO -->
-                <div class="p-8 lg:p-14 max-[380px]:p-5 max-[380px]:pb-32">
+                <div class="p-8 lg:p-14 max-[380px]:p-4 max-[380px]:pb-28">
                   <!-- NUMBER + COUNTRY -->
                   <div
-                    class="flex items-center gap-3 mb-6 max-[380px]:gap-2 max-[380px]:mb-4"
+                    class="flex items-center gap-3 mb-6 max-[380px]:gap-2 max-[380px]:mb-3"
                   >
                     <span
-                      class="bg-red-600 px-3 py-1 font-bold text-black max-[380px]:px-2 max-[380px]:py-1 max-[380px]:text-sm"
+                      class="bg-red-600 px-3 py-1 font-bold text-black max-[380px]:px-2 max-[380px]:py-1 max-[380px]:text-xs"
                     >
                       93
                     </span>
 
                     <span
-                      class="uppercase tracking-[3px] text-gray-300 max-[380px]:tracking-[1px] max-[380px]:text-[9px]"
+                      class="uppercase tracking-[3px] text-gray-300 max-[380px]:tracking-[1px] max-[380px]:text-[8px]"
                     >
                       ISPANIYA
                     </span>
-                    <img src="../images/spain flag.png" alt="" />
+
+                    <img
+                      src="../images/spain flag.png"
+                      alt=""
+                      class="w-5 max-[380px]:w-4"
+                    />
                   </div>
 
                   <!-- NAME -->
                   <h2
-                    class="text-6xl md:text-7xl font-extrabold text-white leading-none max-[380px]:text-5xl"
+                    class="text-6xl md:text-7xl font-extrabold text-white leading-none max-[380px]:text-[40px]"
                   >
                     MARK
                   </h2>
 
                   <h2
-                    class="text-6xl md:text-7xl font-extrabold text-red-600 leading-none mb-4 max-[380px]:text-5xl max-[380px]:mb-3"
+                    class="text-6xl md:text-7xl font-extrabold text-red-600 leading-none mb-4 max-[380px]:text-[40px] max-[380px]:mb-2"
                   >
                     MARKEZ
                   </h2>
 
                   <p
-                    class="uppercase tracking-[6px] text-gray-400 max-[380px]:tracking-[2px] max-[380px]:text-[9px]"
+                    class="uppercase tracking-[6px] text-gray-400 max-[380px]:tracking-[2px] max-[380px]:text-[8px]"
                   >
                     Gresini Racing MotoGP
                   </p>
@@ -228,86 +293,90 @@
 
                 <!-- BIKE -->
                 <div
-                  class="absolute bottom-44 right-10 text-right max-[380px]:bottom-36 max-[380px]:right-5"
+                  class="absolute bottom-44 right-10 text-right max-[380px]:bottom-28 max-[380px]:right-4"
                 >
                   <p
-                    class="text-xs tracking-[4px] text-gray-400 max-[380px]:text-[8px] max-[380px]:tracking-[2px]"
+                    class="text-xs tracking-[4px] text-gray-400 max-[380px]:text-[7px] max-[380px]:tracking-[1px]"
                   >
                     Hozirda Faol
                   </p>
 
                   <h2
-                    class="text-5xl font-black text-white max-[380px]:text-3xl"
+                    class="text-5xl font-black text-white max-[380px]:text-2xl"
                   >
                     GP23
                   </h2>
 
-                  <p class="text-gray-400 max-[380px]:text-xs">Ducati</p>
+                  <p class="text-gray-400 text-sm max-[380px]:text-[10px]">
+                    Ducati
+                  </p>
                 </div>
 
                 <!-- ================= STATS ================= -->
                 <div class="grid grid-cols-2 md:grid-cols-5 bg-[#181818]">
                   <!-- 1 -->
-                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                  <div class="p-8 border border-gray-800 max-[380px]:p-3">
                     <p
-                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[7px]"
                     >
                       Chempionatlar
                     </p>
 
-                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-xl">
                       08
                     </h3>
                   </div>
 
                   <!-- 2 -->
-                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                  <div class="p-8 border border-gray-800 max-[380px]:p-3">
                     <p
-                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[7px]"
                     >
                       Gran Pri
                     </p>
 
-                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-xl">
                       85
                     </h3>
                   </div>
 
                   <!-- 3 -->
-                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                  <div class="p-8 border border-gray-800 max-[380px]:p-3">
                     <p
-                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[7px]"
                     >
                       Shoxsupalar
                     </p>
 
-                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-xl">
                       140
                     </h3>
                   </div>
 
                   <!-- 4 -->
-                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                  <div class="p-8 border border-gray-800 max-[380px]:p-3">
                     <p
-                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[7px]"
                     >
                       Poyga G'alaba
                     </p>
 
-                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-xl">
                       92
                     </h3>
                   </div>
 
                   <!-- 5 -->
-                  <div class="p-8 border border-gray-800 max-[380px]:p-4">
+                  <div
+                    class="p-8 border border-gray-800 max-[380px]:p-3 col-span-2 md:col-span-1"
+                  >
                     <p
-                      class="text-gray-500 uppercase text-xs max-[380px]:text-[8px]"
+                      class="text-gray-500 uppercase text-xs max-[380px]:text-[7px]"
                     >
                       Eng Tez Aylana
                     </p>
 
-                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-2xl">
+                    <h3 class="text-4xl text-white mt-2 max-[380px]:text-xl">
                       59
                     </h3>
                   </div>
@@ -549,9 +618,9 @@
       >
         <div class="max-w-6xl mx-auto">
           <div
-            class="grid grid-cols-1 lg:grid-cols-[1.7fr_0.8fr] gap-8 max-[380px]:gap-10"
+            class="grid grid-cols-1 lg:grid-cols-[1.7fr_0.8fr] gap-8 max-[380px]:gap-8"
           >
-            <!-- KARYERA TAHLILI -->
+            <!-- ================= KARYERA TAHLILI ================= -->
             <div>
               <h2
                 class="text-3xl font-black uppercase text-white mb-6 max-[380px]:text-2xl max-[380px]:mb-4"
@@ -561,18 +630,24 @@
 
               <!-- TABLE -->
               <div
-                class="overflow-x-auto rounded-lg border border-[#292c32] max-[380px]:w-full"
+                class="overflow-x-auto rounded-lg border border-[#292c32] w-full"
               >
                 <table class="w-full min-w-[850px] text-left">
                   <thead class="bg-[#1a1d22]">
                     <tr class="text-[10px] uppercase text-gray-400">
-                      <th class="px-4 py-4">YIL</th>
-                      <th class="px-4 py-4">TOIFA</th>
-                      <th class="px-4 py-4">JAMOA</th>
-                      <th class="px-4 py-4">MOTOSIKL</th>
-                      <th class="px-4 py-4">G‘ALABALAR</th>
-                      <th class="px-4 py-4">OCHKOLAR</th>
-                      <th class="px-4 py-4">O‘RIN</th>
+                      <th class="px-4 py-4 max-[380px]:px-3">YIL</th>
+
+                      <th class="px-4 py-4 max-[380px]:px-3">TOIFA</th>
+
+                      <th class="px-4 py-4 max-[380px]:px-3">JAMOA</th>
+
+                      <th class="px-4 py-4 max-[380px]:px-3">MOTOSIKL</th>
+
+                      <th class="px-4 py-4 max-[380px]:px-3">G‘ALABALAR</th>
+
+                      <th class="px-4 py-4 max-[380px]:px-3">OCHKOLAR</th>
+
+                      <th class="px-4 py-4 max-[380px]:px-3">O‘RIN</th>
                     </tr>
                   </thead>
 
@@ -580,23 +655,33 @@
                     <!-- 2023 -->
                     <tr class="border-t border-[#202329] bg-[#0d0f12]">
                       <td class="px-4 py-5 text-white">2023</td>
+
                       <td class="px-4 py-5 text-white">MotoGP</td>
 
-                      <td class="px-4 py-5 text-gray-400">Repsol<br />Honda</td>
+                      <td class="px-4 py-5 text-gray-400">
+                        Repsol<br />
+                        Honda
+                      </td>
 
                       <td class="px-4 py-5 text-gray-400">RC213V</td>
 
                       <td class="px-4 py-5 text-white">0</td>
+
                       <td class="px-4 py-5 text-white">96</td>
+
                       <td class="px-4 py-5 text-white">14-chi</td>
                     </tr>
 
                     <!-- 2019 -->
                     <tr class="border-t border-[#302b2d] bg-[#252123]">
                       <td class="px-4 py-5 text-white">2019</td>
+
                       <td class="px-4 py-5 text-white">MotoGP</td>
 
-                      <td class="px-4 py-5 text-gray-400">Repsol<br />Honda</td>
+                      <td class="px-4 py-5 text-gray-400">
+                        Repsol<br />
+                        Honda
+                      </td>
 
                       <td class="px-4 py-5 text-gray-400">RC213V</td>
 
@@ -610,13 +695,18 @@
                     <!-- 2018 -->
                     <tr class="border-t border-[#202329] bg-[#0d0f12]">
                       <td class="px-4 py-5 text-white">2018</td>
+
                       <td class="px-4 py-5 text-white">MotoGP</td>
 
-                      <td class="px-4 py-5 text-gray-400">Repsol<br />Honda</td>
+                      <td class="px-4 py-5 text-gray-400">
+                        Repsol<br />
+                        Honda
+                      </td>
 
                       <td class="px-4 py-5 text-gray-400">RC213V</td>
 
                       <td class="px-4 py-5 text-white">9</td>
+
                       <td class="px-4 py-5 text-white">321</td>
 
                       <td class="px-4 py-5 text-red-400">1-chi</td>
@@ -625,13 +715,18 @@
                     <!-- 2017 -->
                     <tr class="border-t border-[#202329] bg-[#0d0f12]">
                       <td class="px-4 py-5 text-white">2017</td>
+
                       <td class="px-4 py-5 text-white">MotoGP</td>
 
-                      <td class="px-4 py-5 text-gray-400">Repsol<br />Honda</td>
+                      <td class="px-4 py-5 text-gray-400">
+                        Repsol<br />
+                        Honda
+                      </td>
 
                       <td class="px-4 py-5 text-gray-400">RC213V</td>
 
                       <td class="px-4 py-5 text-white">6</td>
+
                       <td class="px-4 py-5 text-white">298</td>
 
                       <td class="px-4 py-5 text-red-400">1-chi</td>
@@ -641,10 +736,10 @@
               </div>
             </div>
 
-            <!-- YANGILIKLAR -->
+            <!-- ================= YANGILIKLAR ================= -->
             <div>
               <h3
-                class="text-xs font-bold uppercase tracking-[4px] text-gray-400 mb-7 max-[380px]:text-[9px] max-[380px]:tracking-[3px]"
+                class="text-xs font-bold uppercase tracking-[4px] text-gray-400 mb-7 max-[380px]:text-[9px] max-[380px]:tracking-[2px] max-[380px]:mb-5"
               >
                 MARKESGA OID SO‘NGGI<br />
                 YANGILIKLAR
@@ -661,14 +756,14 @@
                 </h4>
 
                 <p
-                  class="mt-3 text-[9px] uppercase tracking-widest text-gray-500 max-[380px]:text-[8px]"
+                  class="mt-3 text-[9px] uppercase tracking-widest text-gray-500 max-[380px]:text-[7px] max-[380px]:tracking-[1.5px]"
                 >
                   2 SOAT OLDIN • TAHRIRIYAT
                 </p>
               </div>
 
               <!-- NEWS 2 -->
-              <div class="border-b border-[#252225] pb-5">
+              <div class="border-b border-[#252225] pb-5 max-[380px]:pb-4">
                 <h4
                   class="text-base font-bold uppercase leading-6 text-white max-[380px]:text-sm max-[380px]:leading-5"
                 >
@@ -676,7 +771,7 @@
                 </h4>
 
                 <p
-                  class="mt-3 text-[9px] uppercase tracking-widest text-gray-500 max-[380px]:text-[8px]"
+                  class="mt-3 text-[9px] uppercase tracking-widest text-gray-500 max-[380px]:text-[7px] max-[380px]:tracking-[1.5px]"
                 >
                   8 SOAT OLDIN • MA’LUMOTLAR LABORATORIYASI
                 </p>
@@ -696,16 +791,20 @@
         </div>
       </section>
 
-      <section class="bg-[#090909] py-20">
-        <div class="max-w-6xl mx-auto px-5">
-          <h1 class="text-white text-[36px] pb-10">MASHINALAR</h1>
+      <section class="bg-black py-20 max-[380px]:py-10">
+        <div class="max-w-6xl mx-auto px-5 max-[380px]:px-3">
+          <h1
+            class="text-white text-[36px] pb-10 font-['Bebas_Neue'] max-[380px]:text-[28px] max-[380px]:pb-5"
+          >
+            MASHINALAR
+          </h1>
 
           <div class="service-cards owl-carousel owl-theme">
             <div class="service-card item">
               <img
                 src="../images/moto2.png"
                 alt=""
-                class="w-full h-[250px] object-cover"
+                class="w-full h-[250px] object-cover max-[380px]:h-[180px]"
               />
             </div>
 
@@ -713,13 +812,356 @@
               <img
                 src="../images/moto.png"
                 alt=""
-                class="w-full h-[250px] object-cover"
+                class="w-full h-[250px] object-cover max-[380px]:h-[180px]"
+              />
+            </div>
+
+            <div class="service-card item">
+              <img
+                src="../images/moto2.png"
+                alt=""
+                class="w-full h-[250px] object-cover max-[380px]:h-[180px]"
+              />
+            </div>
+
+            <div class="service-card item">
+              <img
+                src="../images/moto.png"
+                alt=""
+                class="w-full h-[250px] object-cover max-[380px]:h-[180px]"
+              />
+            </div>
+
+            <div class="service-card item">
+              <img
+                src="../images/moto2.png"
+                alt=""
+                class="w-full h-[250px] object-cover max-[380px]:h-[180px]"
+              />
+            </div>
+
+            <div class="service-card item">
+              <img
+                src="../images/moto.png"
+                alt=""
+                class="w-full h-[250px] object-cover max-[380px]:h-[180px]"
+              />
+            </div>
+
+            <div class="service-card item">
+              <img
+                src="../images/moto2.png"
+                alt=""
+                class="w-full h-[250px] object-cover max-[380px]:h-[180px]"
+              />
+            </div>
+
+            <div class="service-card item">
+              <img
+                src="../images/moto.png"
+                alt=""
+                class="w-full h-[250px] object-cover max-[380px]:h-[180px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#08090A] py-10 max-[380px]:py-6">
+        <div class="max-w-[1120px] mx-auto px-5 max-[380px]:px-3">
+          <h2
+            class="font-['Bebas_Neue'] text-white text-[32px] sm:text-[36px] mb-5 max-[380px]:text-[27px] max-[380px]:mb-4"
+          >
+            MUHIM BOSQICHLAR
+          </h2>
+
+          <div id="accordion-open" data-accordion="collapse" class="space-y-2">
+            <!-- 2013 -->
+            <div>
+              <h2 id="accordion-heading-1">
+                <button
+                  type="button"
+                  class="cursor-pointer accordion-btn flex items-center justify-between w-full px-7 py-7 text-left bg-[#191C20] border border-[#24282D] rounded-md transition-all duration-300 max-[380px]:px-4 max-[380px]:py-5 max-[380px]:gap-3"
+                  data-accordion-target="#accordion-body-1"
+                  aria-expanded="false"
+                  aria-controls="accordion-body-1"
+                >
+                  <div
+                    class="flex items-center gap-7 min-w-0 max-[380px]:gap-3"
+                  >
+                    <span
+                      class="year text-[#92969E] text-[16px] shrink-0 max-[380px]:text-[12px]"
+                    >
+                      2013
+                    </span>
+
+                    <span
+                      class="text-white text-[12px] font-bold tracking-[4px] uppercase max-[380px]:text-[9px] max-[380px]:tracking-[1.5px]"
+                    >
+                      ENG YOSH JAHON CHEMPIONI
+                    </span>
+                  </div>
+
+                  <svg
+                    data-accordion-icon
+                    class="w-4 h-4 shrink-0 max-[380px]:w-3 max-[380px]:h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="m5 9 7 7 7-7"
+                    />
+                  </svg>
+                </button>
+              </h2>
+
+              <div
+                id="accordion-body-1"
+                class="hidden"
+                aria-labelledby="accordion-heading-1"
+              >
+                <div
+                  class="px-7 py-5 bg-[#191C20] border-x border-b border-[#704944] max-[380px]:px-4 max-[380px]:py-4"
+                >
+                  <p
+                    class="text-[#92969E] text-[17px] leading-[1.5] max-[380px]:text-[12px]"
+                  >
+                    20 yoshida Mark Markes oliy toifadagi debyut mavsumidayoq
+                    jahon chempionligini qo‘lga kiritib, Valensiyadagi keskin
+                    finalda tojga egalik qildi va rekordni yangiladi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2014 -->
+            <div>
+              <h2 id="accordion-heading-2">
+                <button
+                  type="button"
+                  class="cursor-pointer accordion-btn flex items-center justify-between w-full px-7 py-7 text-left bg-[#191C20] border border-[#24282D] rounded-md transition-all duration-300 max-[380px]:px-4 max-[380px]:py-5 max-[380px]:gap-3"
+                  data-accordion-target="#accordion-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-body-2"
+                >
+                  <div
+                    class="flex items-center gap-7 min-w-0 max-[380px]:gap-3"
+                  >
+                    <span
+                      class="year text-[#92969E] text-[16px] shrink-0 max-[380px]:text-[12px]"
+                    >
+                      2014
+                    </span>
+
+                    <span
+                      class="text-white text-[12px] font-bold tracking-[4px] uppercase max-[380px]:text-[9px] max-[380px]:tracking-[1.5px]"
+                    >
+                      KETMA-KET 10 TA G‘ALABA
+                    </span>
+                  </div>
+
+                  <svg
+                    data-accordion-icon
+                    class="w-4 h-4 shrink-0 max-[380px]:w-3 max-[380px]:h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="m5 9 7 7 7-7"
+                    />
+                  </svg>
+                </button>
+              </h2>
+
+              <div
+                id="accordion-body-2"
+                class="hidden"
+                aria-labelledby="accordion-heading-2"
+              >
+                <div
+                  class="px-7 py-5 bg-[#191C20] border-x border-b border-[#704944] max-[380px]:px-4 max-[380px]:py-4"
+                >
+                  <p
+                    class="text-[#92969E] text-[17px] leading-[1.5] max-[380px]:text-[12px]"
+                  >
+                    Mark Markes ketma-ket 10 ta g‘alabaga erishdi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2024 -->
+            <div>
+              <h2 id="accordion-heading-3">
+                <button
+                  type="button"
+                  class="cursor-pointer accordion-btn flex items-center justify-between w-full px-7 py-7 text-left bg-[#191C20] border border-[#24282D] rounded-md transition-all duration-300 max-[380px]:px-4 max-[380px]:py-5 max-[380px]:gap-3"
+                  data-accordion-target="#accordion-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-body-3"
+                >
+                  <div
+                    class="flex items-center gap-7 min-w-0 max-[380px]:gap-3"
+                  >
+                    <span
+                      class="year text-[#92969E] text-[16px] shrink-0 max-[380px]:text-[12px]"
+                    >
+                      2024
+                    </span>
+
+                    <span
+                      class="text-white text-[12px] font-bold tracking-[4px] uppercase max-[380px]:text-[9px] max-[380px]:tracking-[1.5px]"
+                    >
+                      DUCATI BILAN YANGI SAHIFA
+                    </span>
+                  </div>
+
+                  <svg
+                    data-accordion-icon
+                    class="w-4 h-4 shrink-0 max-[380px]:w-3 max-[380px]:h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="m5 9 7 7 7-7"
+                    />
+                  </svg>
+                </button>
+              </h2>
+
+              <div
+                id="accordion-body-3"
+                class="hidden"
+                aria-labelledby="accordion-heading-3"
+              >
+                <div
+                  class="px-7 py-5 bg-[#191C20] border-x border-b border-[#704944] max-[380px]:px-4 max-[380px]:py-4"
+                >
+                  <p
+                    class="text-[#92969E] text-[17px] leading-[1.5] max-[380px]:text-[12px]"
+                  >
+                    Ducati bilan yangi sahifa boshlandi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#08090A] py-8 max-[380px]:py-6">
+        <div class="max-w-[1120px] mx-auto px-4 max-[380px]:px-3">
+          <!-- Title -->
+          <h2
+            class="text-white text-[32px] md:text-[36px] font-['Bebas_Neue'] tracking-wide mb-6 max-[380px]:text-[27px] max-[380px]:mb-4"
+          >
+            MEDIA GALEREYA
+          </h2>
+
+          <!-- Gallery -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-[380px]:gap-2">
+            <!-- Card 1 -->
+            <div class="group overflow-hidden cursor-pointer rounded-sm">
+              <img
+                src="../images/media1.png"
+                alt="MotoGP"
+                class="w-full aspect-square object-cover transition duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group overflow-hidden cursor-pointer rounded-sm">
+              <img
+                src="../images/media2.png"
+                alt="MotoGP"
+                class="w-full aspect-square object-cover transition duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group overflow-hidden cursor-pointer rounded-sm">
+              <img
+                src="../images/media3.png"
+                alt="MotoGP"
+                class="w-full aspect-square object-cover transition duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            <!-- Card 4 -->
+            <div class="group overflow-hidden cursor-pointer rounded-sm">
+              <img
+                src="../images/media4.png"
+                alt="MotoGP"
+                class="w-full aspect-square object-cover transition duration-300 group-hover:scale-105"
               />
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="bg-[#08090a] px-5 py-[45px]">
+      <div class="max-w-[1120px] mx-auto text-center">
+        <!-- Logo -->
+        <h2
+          class="text-[#c9c9c9] text-[24px] font-bold tracking-[-1px] mb-[45px]"
+        >
+          APEX
+        </h2>
+
+        <!-- Links -->
+        <div
+          class="flex justify-between items-center gap-6 mb-10 max-[600px]:flex-col max-[600px]:gap-[18px]"
+        >
+          <a
+            href="#"
+            class="text-[#c9a39c] text-[13px] underline underline-offset-4 transition duration-300 hover:text-white max-[600px]:text-[12px]"
+          >
+            Maxfiylik siyosati
+          </a>
+
+          <a
+            href="#"
+            class="text-[#c9a39c] text-[13px] underline underline-offset-4 transition duration-300 hover:text-white max-[600px]:text-[12px]"
+          >
+            Foydalanish shartlari
+          </a>
+
+          <a
+            href="#"
+            class="text-[#c9a39c] text-[13px] underline underline-offset-4 transition duration-300 hover:text-white max-[600px]:text-[12px]"
+          >
+            Cookie sozlamalari
+          </a>
+
+          <a
+            href="#"
+            class="text-[#c9a39c] text-[13px] underline underline-offset-4 transition duration-300 hover:text-white max-[600px]:text-[12px]"
+          >
+            Ma'lumot to'plami
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <p
+          class="text-[#777b80] text-[9px] tracking-[0.2px] max-[600px]:text-[8px] max-[600px]:leading-[1.6]"
+        >
+          © 2024 APEX MOTORSPORT TAHRIRIYATI. BARCHA HUQUQLAR HIMOYA LANGAN.
+        </p>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -739,6 +1181,10 @@
         loop: true,
         margin: 10,
         nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        dotsSpeed: true,
         responsive: {
           0: {
             items: 1,
@@ -747,7 +1193,7 @@
             items: 3,
           },
           1000: {
-            items: 5,
+            items: 2,
           },
         },
       });

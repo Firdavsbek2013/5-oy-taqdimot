@@ -74,3 +74,31 @@
     object-fit: cover;
 }
 
+.service-cards{
+    position: relative;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.owl-next span{
+    display: inline-block;
+    background-color: red;
+}
+
+.accordion-btn:hover {
+  border-color: #ff4b3e;
+  box-shadow: 0 0 0 1px #ff4b3e;
+}
+
+.accordion-btn:hover .year {
+  color: #ffaaa0;
+}
+
+.accordion-btn:hover svg {
+  color: #ff4b3e;
+}
+
