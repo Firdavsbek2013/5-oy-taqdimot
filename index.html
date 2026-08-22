@@ -10,34 +10,53 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./css/sytle.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="bg-[#1F0F0D]">
-      <nav class="max-w-[1120px] mx-auto px-5 py-4">
+      <nav
+        class="max-w-[1120px] mx-auto px-5 py-4 max-[380px]:px-3 max-[380px]:py-3"
+      >
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <a href="../index.html">
-            <img src="../images/Link.png" alt="" />
+            <img
+              src="../images/Link.png"
+              alt=""
+              class="max-[380px]:w-[110px]"
+            />
           </a>
 
           <!-- Desktop Menu -->
           <div class="hidden lg:flex items-center gap-10">
             <ul class="flex gap-10">
-              <li><a class="nav-link" href="#">POYGALAR</a></li>
               <li>
-                <a class="nav-link" href="./pages/about.html">CHEMPIONAT</a>
+                <a class="nav-link" href="#">POYGALAR</a>
               </li>
+
               <li>
-                <a class="nav-link" href="./pages/PORFILE.html">PROFILE</a>
+                <a class="nav-link" href="./pages/about.html"> CHEMPIONAT </a>
               </li>
-              <li><a class="nav-link" href="#">TELEMETRIYA</a></li>
-              <li><a class="nav-link" href="#">JURNAL</a></li>
+
+              <li>
+                <a class="nav-link" href="./pages/PORFILE.html"> PROFILE </a>
+              </li>
+
+              <li>
+                <a class="nav-link" href="#">TELEMETRIYA</a>
+              </li>
+
+              <li>
+                <a class="nav-link" href="#">JURNAL</a>
+              </li>
             </ul>
 
             <div class="flex items-center gap-5">
               <p class="text-white text-xs">JONLI TOMOSHA QILING</p>
 
-              <button class="bg-[#FF3D2E] text-white rounded-md px-6 py-3">
+              <button
+                class="bg-[#FF3D2E] text-white rounded-md px-6 py-3 hover:bg-red-600 duration-300 cursor-pointer"
+              >
                 OBUNA BO'LING
               </button>
             </div>
@@ -47,10 +66,12 @@
           <button
             data-collapse-toggle="mobile-menu"
             type="button"
-            class="lg:hidden text-white"
+            class="lg:hidden text-white cursor-pointer max-[380px]:p-1"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
           >
             <svg
-              class="w-8 h-8"
+              class="w-8 h-8 max-[380px]:w-7 max-[380px]:h-7"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
@@ -66,24 +87,55 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden pt-8">
-          <ul class="space-y-8 text-[#FFB4A9]">
-            <li><a href="./pages/about.html" class="block">POYGALAR</a></li>
+        <div id="mobile-menu" class="hidden lg:hidden pt-8 max-[380px]:pt-6">
+          <ul
+            class="space-y-8 text-[#FFB4A9] max-[380px]:space-y-5 max-[380px]:text-sm"
+          >
+            <li>
+              <a
+                href="./pages/about.html"
+                class="block hover:text-white duration-300"
+              >
+                POYGALAR
+              </a>
+            </li>
 
-            <li><a href="#" class="block">CHEMPIONAT</a></li>
+            <li>
+              <a href="#" class="block hover:text-white duration-300">
+                CHEMPIONAT
+              </a>
+            </li>
 
-            <li><a href="#" class="block">PROFILE</a></li>
+            <li>
+              <a href="#" class="block hover:text-white duration-300">
+                PROFILE
+              </a>
+            </li>
 
-            <li><a href="#" class="block">TELEMETRIYA</a></li>
+            <li>
+              <a href="#" class="block hover:text-white duration-300">
+                TELEMETRIYA
+              </a>
+            </li>
 
-            <li><a href="#" class="block">JURNAL</a></li>
+            <li>
+              <a href="#" class="block hover:text-white duration-300">
+                JURNAL
+              </a>
+            </li>
           </ul>
 
-          <hr class="border-[#3d2b2b] my-8" />
+          <hr class="border-[#3d2b2b] my-8 max-[380px]:my-6" />
 
-          <p class="text-white text-sm mb-5">JONLI TOMOSHA QILING</p>
+          <p
+            class="text-white text-sm mb-5 max-[380px]:text-xs max-[380px]:mb-4"
+          >
+            JONLI TOMOSHA QILING
+          </p>
 
-          <button class="w-full bg-[#FF3D2E] text-white py-4 rounded-md">
+          <button
+            class="w-full bg-[#FF3D2E] text-white py-4 rounded-md hover:bg-red-600 duration-300 cursor-pointer max-[380px]:py-3"
+          >
             OBUNA BO'LING
           </button>
         </div>
@@ -94,34 +146,38 @@
       <section
         class="bg-[url('./images/bg.jpg')] bg-cover bg-center min-h-screen flex items-center"
       >
-        <div class="max-w-[1120px] mx-auto w-full px-5 py-16">
+        <div
+          class="max-w-[1120px] mx-auto w-full px-5 py-16 max-[380px]:px-3 max-[380px]:py-10"
+        >
           <div
-            class="flex flex-col lg:flex-row justify-between items-start gap-10"
+            class="flex flex-col lg:flex-row justify-between items-start gap-10 max-[380px]:gap-8"
           >
             <!-- Left Content -->
-            <div class="max-w-[650px]">
+            <div class="max-w-[650px] w-full">
               <p
-                class="text-[#FF3D2E] text-sm sm:text-base uppercase tracking-wider mb-4"
+                class="text-[#FF3D2E] text-sm sm:text-base uppercase tracking-wider mb-4 max-[380px]:text-[11px] max-[380px]:mb-3"
               >
                 2024 MOTOGP JAHON CHEMPIONATI
               </p>
 
               <h1
-                class="text-5xl sm:text-6xl md:text-7xl lg:text-[96px] font-bold text-white leading-none"
+                class="text-5xl sm:text-6xl md:text-7xl lg:text-[96px] font-bold text-white leading-none max-[380px]:text-[48px]"
               >
                 APEXNI /<br />
                 QUVALAB
               </h1>
 
-              <div class="flex flex-col sm:flex-row gap-4 mt-8">
+              <div
+                class="flex flex-col sm:flex-row gap-4 mt-8 max-[380px]:mt-6 max-[380px]:gap-3"
+              >
                 <button
-                  class="bg-[#FF3D2E] cursor-pointer hover:bg-red-600 duration-300 text-white rounded-md px-6 py-4"
+                  class="bg-[#FF3D2E] cursor-pointer hover:bg-red-600 duration-300 text-white rounded-md px-6 py-4 max-[380px]:px-4 max-[380px]:py-3 max-[380px]:text-[12px]"
                 >
                   MAVSUMNI O'RGANISH
                 </button>
 
                 <button
-                  class="border border-white cursor-pointer text-white hover:bg-white hover:text-black duration-300 rounded-md px-6 py-4"
+                  class="border border-white cursor-pointer text-white hover:bg-white hover:text-black duration-300 rounded-md px-6 py-4 max-[380px]:px-4 max-[380px]:py-3 max-[380px]:text-[12px]"
                 >
                   JONLI MA'LUMOTLAR
                 </button>
@@ -129,58 +185,78 @@
             </div>
 
             <!-- Right Cards -->
-            <div class="w-full max-w-[300px] space-y-4">
+            <div
+              class="w-full max-w-[300px] space-y-4 max-[380px]:max-w-full max-[380px]:space-y-3"
+            >
               <!-- SPEED -->
               <div
-                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
+                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5 max-[380px]:p-4"
               >
                 <div class="flex justify-between items-start">
                   <div>
-                    <p class="text-gray-400 uppercase text-xs">
+                    <p
+                      class="text-gray-400 uppercase text-xs max-[380px]:text-[10px]"
+                    >
                       Maksimal Tezlik
                     </p>
-                    <span class="text-[10px] text-gray-500">KM/H</span>
+
+                    <span
+                      class="text-[10px] text-gray-500 max-[380px]:text-[9px]"
+                    >
+                      KM/H
+                    </span>
                   </div>
 
                   <div class="text-right">
                     <h2
-                      class="text-[#ff5038] text-4xl sm:text-5xl font-light leading-none"
+                      class="text-[#ff5038] text-4xl sm:text-5xl font-light leading-none max-[380px]:text-4xl"
                     >
                       354
                     </h2>
-                    <span class="text-[10px] text-gray-500">
+
+                    <span
+                      class="text-[10px] text-gray-500 max-[380px]:text-[9px]"
+                    >
                       Maks : 366.1
                     </span>
                   </div>
                 </div>
 
-                <div class="w-full h-[2px] bg-[#3d2a2a] mt-4 rounded-full">
+                <div
+                  class="w-full h-[2px] bg-[#3d2a2a] mt-4 rounded-full max-[380px]:mt-3"
+                >
                   <div class="w-[92%] h-full bg-[#ff5038] rounded-full"></div>
                 </div>
               </div>
 
               <!-- LEAN ANGLE -->
               <div
-                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
+                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5 max-[380px]:p-4"
               >
                 <div class="flex justify-between items-center">
-                  <p class="uppercase text-gray-400 text-xs">
+                  <p
+                    class="uppercase text-gray-400 text-xs max-[380px]:text-[10px]"
+                  >
                     Qiyalik Burchagi
                   </p>
 
-                  <h2 class="text-white text-4xl sm:text-5xl font-light">
+                  <h2
+                    class="text-white text-4xl sm:text-5xl font-light max-[380px]:text-4xl"
+                  >
                     64°
                   </h2>
                 </div>
 
-                <div class="flex justify-center mt-6">
-                  <div class="relative w-28 h-14 overflow-hidden">
+                <div class="flex justify-center mt-6 max-[380px]:mt-5">
+                  <div
+                    class="relative w-28 h-14 overflow-hidden max-[380px]:w-24 max-[380px]:h-12"
+                  >
                     <div
-                      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-28 rounded-full border-[5px] border-gray-700 border-b-0"
+                      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-28 rounded-full border-[5px] border-gray-700 border-b-0 max-[380px]:w-24 max-[380px]:h-24"
                     ></div>
 
                     <div
-                      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-28 rounded-full border-[5px] border-red-500 border-r-transparent border-t-red-500 border-l-red-500 border-b-0 rotate-[-45deg]"
+                      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-28 rounded-full border-[5px] border-red-500 border-r-transparent border-t-red-500 border-l-red-500 border-b-0 rotate-[-45deg] max-[380px]:w-24 max-[380px]:h-24"
                     ></div>
                   </div>
                 </div>
@@ -188,11 +264,17 @@
 
               <!-- LAP TIME -->
               <div
-                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5"
+                class="bg-[#18181B]/90 backdrop-blur-md border border-white/10 p-5 max-[380px]:p-4"
               >
-                <p class="uppercase text-gray-400 text-xs">Oxirgi Aylanish</p>
+                <p
+                  class="uppercase text-gray-400 text-xs max-[380px]:text-[10px]"
+                >
+                  Oxirgi Aylanish
+                </p>
 
-                <h2 class="text-[#00e676] text-3xl sm:text-4xl font-light mt-3">
+                <h2
+                  class="text-[#00e676] text-3xl sm:text-4xl font-light mt-3 max-[380px]:text-3xl max-[380px]:mt-2"
+                >
                   1:31.209
                 </h2>
               </div>
@@ -201,65 +283,119 @@
         </div>
       </section>
 
-      <section class="bg-black py-20">
-        <div class="max-w-[1120px] mx-auto px-5">
+      <section  class="bg-black py-20 max-[380px]:py-10">
+        <div data-aos="zoom-out-up" class="max-w-[1120px] mx-auto px-5 max-[380px]:px-3">
           <div
-            class="bg-[#262A31] p-6 lg:p-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8"
+            class="bg-[#262A31] p-6 lg:p-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 max-[380px]:p-4 max-[380px]:gap-6"
           >
             <!-- Left -->
             <div>
-              <p class="text-[#FF3D2E] text-sm sm:text-base mb-2">
+              <p
+                class="text-[#FF3D2E] text-sm sm:text-base mb-2 max-[380px]:text-[11px] max-[380px]:mb-1"
+              >
                 KELGUSI GRAN-PRI
               </p>
 
-              <h3 class="text-white text-3xl lg:text-[36px] font-bold mb-2">
+              <h3
+                class="text-white text-3xl lg:text-[36px] font-bold mb-2 max-[380px]:text-[26px] max-[380px]:leading-tight"
+              >
                 MISANO JAHON <br />
                 TRASSASI
               </h3>
 
-              <p class="text-[#8A9099] text-sm sm:text-base">
+              <p
+                class="text-[#8A9099] text-sm sm:text-base max-[380px]:text-[11px]"
+              >
                 San-Marino va Rimini Rivyerasi <br />
                 Gran-prisi
               </p>
             </div>
 
             <!-- Right -->
-            <div class="flex flex-col sm:flex-row items-center gap-6">
+            <div
+              class="flex flex-col sm:flex-row items-center gap-6 max-[380px]:gap-5"
+            >
               <!-- Countdown -->
-              <div class="flex items-center gap-4 sm:gap-6">
+              <div
+                class="flex items-center gap-4 sm:gap-6 max-[380px]:gap-2 w-full justify-center"
+              >
+                <!-- Kun -->
                 <div class="text-center">
-                  <h4 class="text-3xl lg:text-[36px] text-white">02</h4>
-                  <p class="text-sm text-[#8A9099]">KUN</p>
+                  <h4
+                    class="text-3xl lg:text-[36px] text-white max-[380px]:text-[25px]"
+                  >
+                    02
+                  </h4>
+                  <p class="text-sm text-[#8A9099] max-[380px]:text-[9px]">
+                    KUN
+                  </p>
                 </div>
 
-                <p class="text-2xl lg:text-[36px] text-[#8A9099]">:</p>
+                <p
+                  class="text-2xl lg:text-[36px] text-[#8A9099] max-[380px]:text-xl"
+                >
+                  :
+                </p>
 
+                <!-- Soat -->
                 <div class="text-center">
-                  <h4 class="text-3xl lg:text-[36px] text-white">14</h4>
-                  <p class="text-sm text-[#8A9099]">SOAT</p>
+                  <h4
+                    class="text-3xl lg:text-[36px] text-white max-[380px]:text-[25px]"
+                  >
+                    14
+                  </h4>
+                  <p class="text-sm text-[#8A9099] max-[380px]:text-[9px]">
+                    SOAT
+                  </p>
                 </div>
 
-                <p class="text-2xl lg:text-[36px] text-[#8A9099]">:</p>
+                <p
+                  class="text-2xl lg:text-[36px] text-[#8A9099] max-[380px]:text-xl"
+                >
+                  :
+                </p>
 
+                <!-- Min -->
                 <div class="text-center">
-                  <h4 class="text-3xl lg:text-[36px] text-white">39</h4>
-                  <p class="text-sm text-[#8A9099]">MIN</p>
+                  <h4
+                    class="text-3xl lg:text-[36px] text-white max-[380px]:text-[25px]"
+                  >
+                    39
+                  </h4>
+                  <p class="text-sm text-[#8A9099] max-[380px]:text-[9px]">
+                    MIN
+                  </p>
                 </div>
 
-                <p class="text-2xl lg:text-[36px] text-[#8A9099]">:</p>
+                <p
+                  class="text-2xl lg:text-[36px] text-[#8A9099] max-[380px]:text-xl"
+                >
+                  :
+                </p>
 
+                <!-- Sek -->
                 <div class="text-center">
-                  <h4 class="text-3xl lg:text-[36px] text-[#FF3D2E]">12</h4>
-                  <p class="text-sm text-[#8A9099]">SEK</p>
+                  <h4
+                    class="text-3xl lg:text-[36px] text-[#FF3D2E] max-[380px]:text-[25px]"
+                  >
+                    12
+                  </h4>
+                  <p class="text-sm text-[#8A9099] max-[380px]:text-[9px]">
+                    SEK
+                  </p>
                 </div>
               </div>
 
               <!-- Flag -->
-              <img src="./images/SVG (2).png" alt="" class="w-12 sm:w-14" />
+              <img
+                src="./images/SVG (2).png"
+                alt=""
+                class="w-12 sm:w-14 max-[380px]:w-11"
+              />
 
               <!-- Button -->
               <button
-                class="bg-[#FFFFFF1A] cursor-pointer hover:bg-[#ffffff2d] duration-300 text-white rounded-md px-8 py-4 whitespace-nowrap"
+                class="bg-[#FFFFFF1A] cursor-pointer hover:bg-[#ffffff2d] duration-300 text-white rounded-md px-8 py-4 whitespace-nowrap max-[380px]:w-full max-[380px]:px-5 max-[380px]:py-3 max-[380px]:text-[12px]"
               >
                 TO'LIQ <br />
                 JADVAL
@@ -269,166 +405,333 @@
         </div>
       </section>
 
-      <section class="bg-black py-20">
-        <div class="max-w-[1120px] mx-auto px-5">
-          <!-- Top -->
-          <div
-            class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8"
-          >
-            <h1 class="text-white text-4xl lg:text-[52px] font-bold">
-              REYTINGLAR
-            </h1>
+      <section class="rating-section">
+        <div  class="rating-container">
+          <!-- TOP -->
+          <div class="rating-top">
+            <!-- TITLE -->
+            <div>
+              <h2 class="rating-title">REYTINGLAR</h2>
 
-            <div
-              class="flex items-center gap-2 bg-[#0F1014] p-2 w-fit rounded-md"
-            >
-              <button
-                class="bg-[#FF5543] cursor-pointer text-white px-5 py-2 text-xs uppercase rounded transition-all duration-300"
-              >
-                MOTOGP
-              </button>
-
-              <button
-                class="bg-[#1D2026] cursor-pointer text-gray-300 px-5 py-2 text-xs uppercase rounded hover:bg-[#FF5543] hover:text-white transition-all duration-300"
-              >
-                MOTO2
-              </button>
-
-              <button
-                class="bg-[#1D2026] cursor-pointer text-gray-300 px-5 py-2 text-xs uppercase rounded hover:bg-[#FF5543] hover:text-white transition-all duration-300"
-              >
-                MOTO3
-              </button>
+              <div class="rating-line"></div>
             </div>
+
+            <ul
+              class="flex items-center bg-[#111214] p-0.5 max-[380px]:w-full"
+              id="rating-tabs"
+              data-tabs-toggle="#rating-tab-content"
+              role="tablist"
+            >
+              <li role="presentation" class="max-[380px]:flex-1">
+                <button
+                  class="w-full bg-[#18191C] text-[#777] text-[10px] uppercase px-5 py-2.5"
+                  id="motogp-tab"
+                  data-tabs-target="#motogp"
+                  type="button"
+                  role="tab"
+                  aria-controls="motogp"
+                  aria-selected="true"
+                >
+                  MOTOGP
+                </button>
+              </li>
+
+              <li role="presentation" class="max-[380px]:flex-1">
+                <button
+                  class="w-full bg-[#18191C] text-[#777] text-[10px] uppercase px-5 py-2.5"
+                  id="moto2-tab"
+                  data-tabs-target="#moto2"
+                  type="button"
+                  role="tab"
+                  aria-controls="moto2"
+                  aria-selected="false"
+                >
+                  MOTO2
+                </button>
+              </li>
+
+              <li role="presentation" class="max-[380px]:flex-1">
+                <button
+                  class="w-full bg-[#18191C] text-[#777] text-[10px] uppercase px-5 py-2.5"
+                  id="moto3-tab"
+                  data-tabs-target="#moto3"
+                  type="button"
+                  role="tab"
+                  aria-controls="moto3"
+                  aria-selected="false"
+                >
+                  MOTO3
+                </button>
+              </li>
+            </ul>
           </div>
 
-          <!-- Table -->
-          <div class="overflow-x-auto rounded-lg border border-[#2c2c2c]">
-            <table class="min-w-[900px] w-full">
-              <thead class="bg-[#111111]">
-                <tr>
-                  <th class="px-6 py-4 text-left text-[#8A9099]">O'RIN</th>
-                  <th class="px-6 py-4 text-left text-[#8A9099]">POYGACHI</th>
-                  <th class="px-6 py-4 text-left text-[#8A9099]">JAMOA</th>
-                  <th class="px-6 py-4 text-left text-[#8A9099]">MOTOSIKL</th>
-                  <th class="px-6 py-4 text-left text-[#8A9099]">OCHKOLAR</th>
-                </tr>
-              </thead>
+          <!-- TAB CONTENT -->
+          <div id="rating-tab-content">
+            <!-- ================= MOTOGP ================= -->
+            <div id="motogp" role="tabpanel" aria-labelledby="motogp-tab">
+              <div class="rating-table-scroll">
+                <div class="rating-table">
+                  <!-- HEADER -->
+                  <div class="rating-row rating-header">
+                    <div>O'RIN</div>
+                    <div>POYGACHI</div>
+                    <div>JAMOA</div>
+                    <div>MOTOSIKL</div>
+                    <div>OCHKOLAR</div>
+                  </div>
 
-              <tbody>
-                <tr class="border-t border-[#2c2c2c]">
-                  <td class="px-6 py-5 text-5xl font-bold text-[#FF3D2E]">
-                    01
-                  </td>
+                  <!-- ROW 1 -->
+                  <div class="rating-row">
+                    <div class="position first">01</div>
 
-                  <td class="px-6 py-5">
-                    <div class="flex items-center gap-4">
-                      <img
-                        src="./images/table.png"
-                        class="w-14 h-14 rounded-full"
-                      />
+                    <div class="driver">
+                      <img src="./images/table.png" alt="" />
 
                       <div>
-                        <h3 class="text-white text-lg">FRANCHESKO BAGNAIA</h3>
-
-                        <p class="text-[#8A9099] text-sm">ITALIYA</p>
+                        <h3>FRANCHESKO BAGNAIA</h3>
+                        <p>ITALIYA</p>
                       </div>
                     </div>
-                  </td>
 
-                  <td class="px-6 text-[#8A9099]">Ducati Lenovo Team</td>
+                    <div class="gray-text">Ducati Lenovo Team</div>
 
-                  <td class="px-6 text-[#8A9099]">Ducati Desmosedici</td>
+                    <div class="gray-text">Ducati Desmosedici</div>
 
-                  <td class="px-6 text-white text-2xl font-semibold">298</td>
-                </tr>
+                    <div class="points">298</div>
+                  </div>
 
-                <tr class="border-t border-[#2c2c2c]">
-                  <td class="px-6 py-5 text-5xl font-bold text-[#666]">02</td>
+                  <!-- ROW 2 -->
+                  <div class="rating-row">
+                    <div class="position">02</div>
 
-                  <td class="px-6 py-5">
-                    <div class="flex items-center gap-4">
-                      <img
-                        src="./images/table2.png"
-                        class="w-14 h-14 rounded-full"
-                      />
+                    <div class="driver">
+                      <img src="./images/table2.png" alt="" />
 
                       <div>
-                        <h3 class="text-white text-lg">XORXE MARTIN</h3>
-
-                        <p class="text-[#8A9099] text-sm">ISPANIYA</p>
+                        <h3>XORXE MARTIN</h3>
+                        <p>ISPANIYA</p>
                       </div>
                     </div>
-                  </td>
 
-                  <td class="px-6 text-[#8A9099]">Prima Pramac Racing</td>
+                    <div class="gray-text">Prima Pramac Racing</div>
 
-                  <td class="px-6 text-[#8A9099]">Ducati Desmosedici</td>
+                    <div class="gray-text">Ducati Desmosedici</div>
 
-                  <td class="px-6 text-white text-2xl font-semibold">293</td>
-                </tr>
+                    <div class="points">293</div>
+                  </div>
 
-                <tr class="border-t border-[#2c2c2c]">
-                  <td class="px-6 py-5 text-5xl font-bold text-[#666]">03</td>
+                  <!-- ROW 3 -->
+                  <div class="rating-row">
+                    <div class="position">03</div>
 
-                  <td class="px-6 py-5">
-                    <div class="flex items-center gap-4">
-                      <img
-                        src="./images/table3.png"
-                        class="w-14 h-14 rounded-full"
-                      />
+                    <div class="driver">
+                      <img src="./images/table3.png" alt="" />
 
                       <div>
-                        <h3 class="text-white text-lg">MARK MARKES</h3>
-
-                        <p class="text-[#8A9099] text-sm">ISPANIYA</p>
+                        <h3>MARK MARKEZ</h3>
+                        <p>ISPANIYA</p>
                       </div>
                     </div>
-                  </td>
 
-                  <td class="px-6 text-[#8A9099]">Gresini Racing MotoGP</td>
+                    <div class="gray-text">Gresini Racing MotoGP</div>
 
-                  <td class="px-6 text-[#8A9099]">Ducati Desmosedici</td>
+                    <div class="gray-text">Ducati Desmosedici</div>
 
-                  <td class="px-6 text-white text-2xl font-semibold">229</td>
-                </tr>
-              </tbody>
-            </table>
+                    <div class="points">229</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= MOTO2 ================= -->
+            <div
+              id="moto2"
+              class="hidden"
+              role="tabpanel"
+              aria-labelledby="moto2-tab"
+            >
+              <div class="rating-table-scroll">
+                <div class="rating-table">
+                  <div class="rating-row rating-header">
+                    <div>O'RIN</div>
+                    <div>POYGACHI</div>
+                    <div>JAMOA</div>
+                    <div>MOTOSIKL</div>
+                    <div>OCHKOLAR</div>
+                  </div>
+
+                  <div class="rating-row">
+                    <div class="position first">01</div>
+
+                    <div class="driver">
+                      <img src="./images/image copy 2.png" alt="" />
+                      <div>
+                        <h3>AI OYCHI</h3>
+                        <p>ISPANIYA</p>
+                      </div>
+                    </div>
+
+                    <div class="gray-text">Red Bull KTM</div>
+
+                    <div class="gray-text">KTM Moto2</div>
+
+                    <div class="points">245</div>
+                  </div>
+
+                  <div class="rating-row">
+                    <div class="position">02</div>
+
+                    <div class="driver">
+                      <img src="./images/image copy 3.png" alt="" />
+                      <div>
+                        <h3>TONI ARBOLINO</h3>
+                        <p>ITALIYA</p>
+                      </div>
+                    </div>
+
+                    <div class="gray-text">Elf Marc VDS</div>
+
+                    <div class="gray-text">Kalex</div>
+
+                    <div class="points">218</div>
+                  </div>
+
+                  <div class="rating-row">
+                    <div class="position">03</div>
+
+                    <div class="driver">
+                      <img src="./images/image copy 4.png" alt="" />
+                      <div>
+                        <h3>PEDRO AKOSTA</h3>
+                        <p>ISPANIYA</p>
+                      </div>
+                    </div>
+
+                    <div class="gray-text">Red Bull KTM</div>
+
+                    <div class="gray-text">Kalex</div>
+
+                    <div class="points">201</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= MOTO3 ================= -->
+            <div
+              id="moto3"
+              class="hidden"
+              role="tabpanel"
+              aria-labelledby="moto3-tab"
+            >
+              <div class="rating-table-scroll">
+                <div class="rating-table">
+                  <div class="rating-row rating-header">
+                    <div>O'RIN</div>
+                    <div>POYGACHI</div>
+                    <div>JAMOA</div>
+                    <div>MOTOSIKL</div>
+                    <div>OCHKOLAR</div>
+                  </div>
+
+                  <div class="rating-row">
+                    <div class="position first">01</div>
+
+                    <div class="driver">
+                      <div>
+                        <img src="./images/image copy 5.png" alt="" />
+                        <h3>DAVID ALONSO</h3>
+                        <p>KOLUMBIYA</p>
+                      </div>
+                    </div>
+
+                    <div class="gray-text">CFMOTO Aspar Team</div>
+
+                    <div class="gray-text">CFMOTO</div>
+
+                    <div class="points">278</div>
+                  </div>
+
+                  <div class="rating-row">
+                    <div class="position">02</div>
+
+                    <div class="driver">
+                      <div>
+                        <img src="./images/image copy.png" alt="" />
+                        <h3>IVAN ORTOLA</h3>
+                        <p>ISPANIYA</p>
+                      </div>
+                    </div>
+
+                    <div class="gray-text">MT Helmets</div>
+
+                    <div class="gray-text">KTM</div>
+
+                    <div class="points">240</div>
+                  </div>
+
+                  <div class="rating-row">
+                    <div class="position">03</div>
+
+                    <div class="driver">
+                      <img src="./images/image.png" alt="" />
+                      <div>
+                        <h3>DANIEL HOLGADO</h3>
+                        <p>ISPANIYA</p>
+                      </div>
+                    </div>
+
+                    <div class="gray-text">Red Bull KTM</div>
+
+                    <div class="gray-text">KTM</div>
+
+                    <div class="points">225</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-[#121317] py-20">
-        <div class="max-w-[1120px] w-full mx-auto px-5">
+      <section class="bg-[#121317] py-20 max-[380px]:py-10">
+        <div data-aos="flip-up" class="max-w-[1120px] w-full mx-auto px-5 max-[380px]:px-3">
           <!-- Title -->
           <h1
-            class="text-3xl sm:text-4xl lg:text-[52px] font-bold text-white mb-10"
+            class="text-3xl sm:text-4xl lg:text-[52px] font-bold text-white mb-10 max-[380px]:text-[28px] max-[380px]:leading-tight max-[380px]:mb-6"
           >
             GRID <span class="text-[#FF3D2E]">/</span> SO'NGGI YANGILIKLAR
           </h1>
 
           <!-- Cards -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-[380px]:gap-8"
+          >
             <!-- Card 1 -->
             <div class="group">
               <img
                 src="./images/owl card 1.png"
                 alt=""
-                class="w-full rounded-md object-cover"
+                class="w-full rounded-md object-cover max-[380px]:rounded-sm"
               />
 
               <h3
-                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300"
+                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300 max-[380px]:mt-4 max-[380px]:text-[18px] max-[380px]:leading-snug"
               >
                 TEXNIK YANGILANISH: DUCATI ARAGON UCHUN YANGI AERODINAMIK
                 PAKETNI TAQDIM ETDI
               </h3>
 
-              <p class="mt-3 text-[#8A9099] text-sm lg:text-base">
+              <p
+                class="mt-3 text-[#8A9099] text-sm lg:text-base max-[380px]:mt-2 max-[380px]:text-[13px] max-[380px]:leading-relaxed"
+              >
                 Ducati Corse aerodinamik kuch chegaralarini kengaytirmoqda...
               </p>
 
-              <p class="mt-4 text-xs text-[#8A9099]">
+              <p
+                class="mt-4 text-xs text-[#8A9099] max-[380px]:mt-3 max-[380px]:text-[10px]"
+              >
                 14 OKT 2024 • 5 MIN O'QISH
               </p>
             </div>
@@ -438,22 +741,26 @@
               <img
                 src="./images/owl card 2.png"
                 alt=""
-                class="w-full rounded-md object-cover"
+                class="w-full rounded-md object-cover max-[380px]:rounded-sm"
               />
 
               <h3
-                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300"
+                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300 max-[380px]:mt-4 max-[380px]:text-[18px] max-[380px]:leading-snug"
               >
                 QIYALIK MAHORATI: AKOSTA QANDAY QILIB FIZIKA QONUNLARINI
                 O'ZGARTIRMOQDA
               </h3>
 
-              <p class="mt-3 text-[#8A9099] text-sm lg:text-base">
+              <p
+                class="mt-3 text-[#8A9099] text-sm lg:text-base max-[380px]:mt-2 max-[380px]:text-[13px] max-[380px]:leading-relaxed"
+              >
                 MotoGP debyutanti tomonidan amalga oshirilgan 66 darajali
                 qiyalik haqida batafsil ma'lumotlar.
               </p>
 
-              <p class="mt-4 text-xs text-[#8A9099]">
+              <p
+                class="mt-4 text-xs text-[#8A9099] max-[380px]:mt-3 max-[380px]:text-[10px]"
+              >
                 12 OKT 2024 • 8 MIN O'QISH
               </p>
             </div>
@@ -463,22 +770,26 @@
               <img
                 src="./images/owl card 3.png"
                 alt=""
-                class="w-full rounded-md object-cover"
+                class="w-full rounded-md object-cover max-[380px]:rounded-sm"
               />
 
               <h3
-                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300"
+                class="mt-5 text-white text-xl lg:text-[22px] font-semibold group-hover:text-[#FF3D2E] duration-300 max-[380px]:mt-4 max-[380px]:text-[18px] max-[380px]:leading-snug"
               >
                 SHINA STRATEGIYASIDAGI XAOS: YOMG'IR ASOSIY POYGANING TAQDIRINI
                 HAL QILISHI MUMKIN
               </h3>
 
-              <p class="mt-3 text-[#8A9099] text-sm lg:text-base">
+              <p
+                class="mt-3 text-[#8A9099] text-sm lg:text-base max-[380px]:mt-2 max-[380px]:text-[13px] max-[380px]:leading-relaxed"
+              >
                 Phillip Island trassasida kutilayotgan yomg'ir jamoalarni
                 sozlamalarni o'zgartirishga majbur…
               </p>
 
-              <p class="mt-4 text-xs text-[#8A9099]">
+              <p
+                class="mt-4 text-xs text-[#8A9099] max-[380px]:mt-3 max-[380px]:text-[10px]"
+              >
                 10 OKT 2024 • 4 MIN O'QISH
               </p>
             </div>
@@ -486,115 +797,235 @@
         </div>
       </section>
 
-      <section class="bg-black py-20">
-        <div class="max-w-[1120px] w-full mx-auto px-5">
+      <section class="bg-black py-20 max-[380px]:py-10">
+        <div data-aos="zoom-in" class="max-w-[1120px] w-full mx-auto px-5 max-[380px]:px-3">
+          <!-- Title -->
           <div>
-            <p class="text-[16px] text-[#FF3D2E]">MUHANDISLIK CHO'QQISI</p>
-            <h1 class="text-[52px] text-white font-bold pb-10">
+            <p class="text-[16px] text-[#FF3D2E] max-[380px]:text-[11px]">
+              MUHANDISLIK CHO'QQISI
+            </p>
+
+            <h1
+              class="text-[52px] text-white font-bold pb-10 max-[380px]:text-[30px] max-[380px]:pb-6"
+            >
               AFSONAVIY MASHINALAR
             </h1>
           </div>
-          <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-8">
+
+          <!-- Cards -->
+          <div
+            class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-8 max-[380px]:px-0 max-[380px]:gap-5"
+          >
             <!-- Ducati -->
             <div
-              class="bg-[#15161A] border border-[#23252A] p-5 hover:border-red-600 transition duration-300"
+              class="bg-[#15161A] border border-[#23252A] p-5 hover:border-red-600 transition duration-300 max-[380px]:p-3"
             >
-              <div class="flex justify-between items-start">
+              <!-- Card Header -->
+              <div class="flex justify-between items-start gap-2">
                 <div>
                   <span
-                    class="bg-[#D92D20] text-white text-[10px] px-3 py-1 uppercase font-semibold"
+                    class="bg-[#D92D20] text-white text-[10px] px-3 py-1 uppercase font-semibold max-[380px]:text-[8px] max-[380px]:px-2"
                   >
                     Zavod Sinfi
                   </span>
 
-                  <h2 class="text-white text-3xl italic mt-4">
+                  <h2
+                    class="text-white text-3xl italic mt-4 max-[380px]:text-[22px] max-[380px]:mt-3"
+                  >
                     DUCATI DESMOSEDICI GP24
                   </h2>
                 </div>
 
-                <span class="text-6xl text-gray-600 font-light"> 01 </span>
+                <span
+                  class="text-6xl text-gray-600 font-light max-[380px]:text-4xl"
+                >
+                  01
+                </span>
               </div>
 
-              <div class="bg-[#0F1013] p-4 mt-8">
+              <!-- Image -->
+              <div
+                class="bg-[#0F1013] p-4 mt-8 max-[380px]:p-2 max-[380px]:mt-5"
+              >
                 <img
                   src="./images/1.png"
-                  class="w-full h-[260px] object-cover"
+                  class="w-full h-[260px] object-cover max-[380px]:h-[150px]"
                 />
               </div>
 
-              <div class="grid grid-cols-2 gap-3 mt-5">
-                <div class="bg-[#1B1D22] border-l-2 border-red-600 p-4">
-                  <p class="text-gray-500 uppercase text-[10px]">Dvigatel</p>
-                  <p class="text-white mt-2 leading-8">
+              <!-- Stats -->
+              <div
+                class="grid grid-cols-2 gap-3 mt-5 max-[380px]:gap-2 max-[380px]:mt-3"
+              >
+                <div
+                  class="bg-[#1B1D22] border-l-2 border-red-600 p-4 max-[380px]:p-3"
+                >
+                  <p
+                    class="text-gray-500 uppercase text-[10px] max-[380px]:text-[8px]"
+                  >
+                    Dvigatel
+                  </p>
+
+                  <p
+                    class="text-white mt-2 leading-8 max-[380px]:mt-1 max-[380px]:text-[11px] max-[380px]:leading-5"
+                  >
                     1000cc • V4 • 4-Taktli
                   </p>
                 </div>
 
-                <div class="bg-[#1B1D22] border-l-2 border-red-600 p-4">
-                  <p class="text-gray-500 uppercase text-[10px]">
+                <div
+                  class="bg-[#1B1D22] border-l-2 border-red-600 p-4 max-[380px]:p-3"
+                >
+                  <p
+                    class="text-gray-500 uppercase text-[10px] max-[380px]:text-[8px]"
+                  >
                     Maks. Tezlik
                   </p>
-                  <p class="text-white mt-2">&gt; 360 KM/H</p>
+
+                  <p
+                    class="text-white mt-2 max-[380px]:mt-1 max-[380px]:text-[11px]"
+                  >
+                    &gt; 360 KM/H
+                  </p>
                 </div>
 
-                <div class="bg-[#1B1D22] border-l-2 border-red-600 p-4">
-                  <p class="text-gray-500 uppercase text-[10px]">Vazni</p>
-                  <p class="text-white mt-2">157 KG</p>
+                <div
+                  class="bg-[#1B1D22] border-l-2 border-red-600 p-4 max-[380px]:p-3"
+                >
+                  <p
+                    class="text-gray-500 uppercase text-[10px] max-[380px]:text-[8px]"
+                  >
+                    Vazni
+                  </p>
+
+                  <p
+                    class="text-white mt-2 max-[380px]:mt-1 max-[380px]:text-[11px]"
+                  >
+                    157 KG
+                  </p>
                 </div>
 
-                <div class="bg-[#1B1D22] border-l-2 border-red-600 p-4">
-                  <p class="text-gray-500 uppercase text-[10px]">Quvvat</p>
-                  <p class="text-white mt-2">&gt; 250 HP</p>
+                <div
+                  class="bg-[#1B1D22] border-l-2 border-red-600 p-4 max-[380px]:p-3"
+                >
+                  <p
+                    class="text-gray-500 uppercase text-[10px] max-[380px]:text-[8px]"
+                  >
+                    Quvvat
+                  </p>
+
+                  <p
+                    class="text-white mt-2 max-[380px]:mt-1 max-[380px]:text-[11px]"
+                  >
+                    &gt; 250 HP
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- KTM -->
             <div
-              class="bg-[#15161A] border border-[#23252A] p-5 hover:border-orange-500 transition duration-300"
+              class="bg-[#15161A] border border-[#23252A] p-5 hover:border-orange-500 transition duration-300 max-[380px]:p-3"
             >
-              <div class="flex justify-between items-start">
+              <!-- Card Header -->
+              <div class="flex justify-between items-start gap-2">
                 <div>
                   <span
-                    class="bg-[#3A3B40] text-white text-[10px] px-3 py-1 uppercase font-semibold"
+                    class="bg-[#3A3B40] text-white text-[10px] px-3 py-1 uppercase font-semibold max-[380px]:text-[8px] max-[380px]:px-2"
                   >
                     Zavod Sinfi
                   </span>
 
-                  <h2 class="text-white text-3xl italic mt-4">KTM RC16</h2>
+                  <h2
+                    class="text-white text-3xl italic mt-4 max-[380px]:text-[22px] max-[380px]:mt-3"
+                  >
+                    KTM RC16
+                  </h2>
                 </div>
 
-                <span class="text-6xl text-gray-600 font-light"> 02 </span>
+                <span
+                  class="text-6xl text-gray-600 font-light max-[380px]:text-4xl"
+                >
+                  02
+                </span>
               </div>
 
-              <div class="bg-[#0F1013] p-4 mt-8">
+              <!-- Image -->
+              <div
+                class="bg-[#0F1013] p-4 mt-8 max-[380px]:p-2 max-[380px]:mt-5"
+              >
                 <img
                   src="./images/2.png"
-                  class="w-full h-[260px] object-cover"
+                  class="w-full h-[260px] object-cover max-[380px]:h-[150px]"
                 />
               </div>
 
-              <div class="grid grid-cols-2 gap-3 mt-5">
-                <div class="bg-[#1B1D22] border-l-2 border-gray-500 p-4">
-                  <p class="text-gray-500 uppercase text-[10px]">Dvigatel</p>
-                  <p class="text-white mt-2">1000cc • V4 • 4-Taktli</p>
+              <!-- Stats -->
+              <div
+                class="grid grid-cols-2 gap-3 mt-5 max-[380px]:gap-2 max-[380px]:mt-3"
+              >
+                <div
+                  class="bg-[#1B1D22] border-l-2 border-gray-500 p-4 max-[380px]:p-3"
+                >
+                  <p
+                    class="text-gray-500 uppercase text-[10px] max-[380px]:text-[8px]"
+                  >
+                    Dvigatel
+                  </p>
+
+                  <p
+                    class="text-white mt-2 max-[380px]:mt-1 max-[380px]:text-[11px]"
+                  >
+                    1000cc • V4 • 4-Taktli
+                  </p>
                 </div>
 
-                <div class="bg-[#1B1D22] border-l-2 border-gray-500 p-4">
-                  <p class="text-gray-500 uppercase text-[10px]">
+                <div
+                  class="bg-[#1B1D22] border-l-2 border-gray-500 p-4 max-[380px]:p-3"
+                >
+                  <p
+                    class="text-gray-500 uppercase text-[10px] max-[380px]:text-[8px]"
+                  >
                     Maks. Tezlik
                   </p>
-                  <p class="text-white mt-2">358 KM/H</p>
+
+                  <p
+                    class="text-white mt-2 max-[380px]:mt-1 max-[380px]:text-[11px]"
+                  >
+                    358 KM/H
+                  </p>
                 </div>
 
-                <div class="bg-[#1B1D22] border-l-2 border-gray-500 p-4">
-                  <p class="text-gray-500 uppercase text-[10px]">Vazni</p>
-                  <p class="text-white mt-2">157 KG</p>
+                <div
+                  class="bg-[#1B1D22] border-l-2 border-gray-500 p-4 max-[380px]:p-3"
+                >
+                  <p
+                    class="text-gray-500 uppercase text-[10px] max-[380px]:text-[8px]"
+                  >
+                    Vazni
+                  </p>
+
+                  <p
+                    class="text-white mt-2 max-[380px]:mt-1 max-[380px]:text-[11px]"
+                  >
+                    157 KG
+                  </p>
                 </div>
 
-                <div class="bg-[#1B1D22] border-l-2 border-gray-500 p-4">
-                  <p class="text-gray-500 uppercase text-[10px]">Quvvat</p>
-                  <p class="text-white mt-2">&gt; 250 HP</p>
+                <div
+                  class="bg-[#1B1D22] border-l-2 border-gray-500 p-4 max-[380px]:p-3"
+                >
+                  <p
+                    class="text-gray-500 uppercase text-[10px] max-[380px]:text-[8px]"
+                  >
+                    Quvvat
+                  </p>
+
+                  <p
+                    class="text-white mt-2 max-[380px]:mt-1 max-[380px]:text-[11px]"
+                  >
+                    &gt; 250 HP
+                  </p>
                 </div>
               </div>
             </div>
@@ -602,53 +1033,69 @@
         </div>
       </section>
 
-      <section class="bg-[#070709] py-20">
-        <div
-          class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center"
+      <section class="bg-[#070709] py-20 max-[380px]:py-10">
+        <div data-aos="zoom-in-up"
+          class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center max-[380px]:px-3 max-[380px]:gap-10"
         >
           <!-- Left -->
           <div>
-            <p class="text-red-500 uppercase tracking-widest text-sm mb-5">
+            <p
+              class="text-red-500 uppercase tracking-widest text-sm mb-5 max-[380px]:text-[10px] max-[380px]:mb-3"
+            >
               Jonli ma'lumotlar oqimi
             </p>
 
             <h2
-              class="text-white text-5xl lg:text-6xl italic font-light leading-tight"
+              class="text-white text-5xl lg:text-6xl italic font-light leading-tight max-[380px]:text-[38px]"
             >
               REAL VAQTDA <br />
               INTELLEKT
             </h2>
 
-            <p class="text-gray-400 mt-8 leading-8 max-w-lg">
+            <p
+              class="text-gray-400 mt-8 leading-8 max-w-lg max-[380px]:mt-5 max-[380px]:text-[13px] max-[380px]:leading-6"
+            >
               Poyganing har bir millisekundasi qayd etiladi. Bizning telemetriya
               tizimimiz har bir mototsiklning qiyalik burchagi, tormoz bosimi va
               drossel javobi haqida chuqur tushuncha beradi.
             </p>
 
-            <div class="mt-12 space-y-7">
-              <div class="flex items-center gap-5 group cursor-pointer">
+            <div class="mt-12 space-y-7 max-[380px]:mt-8 max-[380px]:space-y-5">
+              <!-- Item 1 -->
+              <div
+                class="flex items-center gap-5 group cursor-pointer max-[380px]:gap-3"
+              >
                 <div
-                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300"
+                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300 max-[380px]:w-7"
                 ></div>
-                <span class="text-white italic text-xl">
+
+                <span class="text-white italic text-xl max-[380px]:text-[14px]">
                   TORMOZLANISH TAHLILI
                 </span>
               </div>
 
-              <div class="flex items-center gap-5 group cursor-pointer">
+              <!-- Item 2 -->
+              <div
+                class="flex items-center gap-5 group cursor-pointer max-[380px]:gap-3"
+              >
                 <div
-                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300"
+                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300 max-[380px]:w-7"
                 ></div>
-                <span class="text-white italic text-xl">
+
+                <span class="text-white italic text-xl max-[380px]:text-[14px]">
                   YOQILG'I XARITASI TAHLILI
                 </span>
               </div>
 
-              <div class="flex items-center gap-5 group cursor-pointer">
+              <!-- Item 3 -->
+              <div
+                class="flex items-center gap-5 group cursor-pointer max-[380px]:gap-3"
+              >
                 <div
-                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300"
+                  class="w-10 h-[2px] bg-gray-700 group-hover:bg-red-500 duration-300 max-[380px]:w-7"
                 ></div>
-                <span class="text-white italic text-xl">
+
+                <span class="text-white italic text-xl max-[380px]:text-[14px]">
                   SHINA HARORATI DATCHIKLARI
                 </span>
               </div>
@@ -656,80 +1103,124 @@
           </div>
 
           <!-- Right -->
-          <div class="border border-gray-800 bg-[#0c0c10] p-10">
+          <div class="border border-gray-800 bg-[#0c0c10] p-10 max-[380px]:p-5">
             <!-- Speed -->
-            <div class="flex justify-center mb-14">
-              <div class="relative w-72 h-72 flex items-center justify-center">
+            <div class="flex justify-center mb-14 max-[380px]:mb-9">
+              <div
+                class="relative w-72 h-72 flex items-center justify-center max-[380px]:w-52 max-[380px]:h-52"
+              >
                 <!-- Circle -->
                 <div
-                  class="absolute inset-0 rounded-full border-[14px] border-gray-800"
+                  class="absolute inset-0 rounded-full border-[14px] border-gray-800 max-[380px]:border-[10px]"
                 ></div>
 
                 <!-- Red Arc -->
                 <div
-                  class="absolute inset-0 rounded-full border-[14px] border-transparent border-t-red-500 border-l-red-500 rotate-[40deg]"
+                  class="absolute inset-0 rounded-full border-[14px] border-transparent border-t-red-500 border-l-red-500 rotate-[40deg] max-[380px]:border-[10px]"
                 ></div>
 
                 <div class="text-center">
-                  <h1 class="text-white text-7xl font-bold">342</h1>
-                  <p class="text-gray-500 tracking-[8px] text-xs mt-1">KM/H</p>
+                  <h1
+                    class="text-white text-7xl font-bold max-[380px]:text-5xl"
+                  >
+                    342
+                  </h1>
+
+                  <p
+                    class="text-gray-500 tracking-[8px] text-xs mt-1 max-[380px]:tracking-[5px] max-[380px]:text-[9px]"
+                  >
+                    KM/H
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- Stats -->
-            <div class="grid grid-cols-3 gap-10">
+            <div class="grid grid-cols-3 gap-10 max-[380px]:gap-3">
+              <!-- Drossel -->
               <div class="text-center">
-                <p class="text-gray-500 text-xs uppercase mb-4">DROSSEL</p>
+                <p
+                  class="text-gray-500 text-xs uppercase mb-4 max-[380px]:text-[8px] max-[380px]:mb-3"
+                >
+                  DROSSEL
+                </p>
 
                 <div
-                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden"
+                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden max-[380px]:w-3 max-[380px]:h-24"
                 >
                   <div class="bg-green-400 w-full h-[82%] mt-auto"></div>
                 </div>
 
-                <p class="text-gray-400 mt-3 text-sm">82%</p>
+                <p
+                  class="text-gray-400 mt-3 text-sm max-[380px]:text-xs max-[380px]:mt-2"
+                >
+                  82%
+                </p>
               </div>
 
+              <!-- Tormoz -->
               <div class="text-center">
-                <p class="text-gray-500 text-xs uppercase mb-4">TORMOZ</p>
+                <p
+                  class="text-gray-500 text-xs uppercase mb-4 max-[380px]:text-[8px] max-[380px]:mb-3"
+                >
+                  TORMOZ
+                </p>
 
                 <div
-                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden"
+                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden max-[380px]:w-3 max-[380px]:h-24"
                 >
                   <div class="bg-red-500 w-full h-[14%] mt-auto"></div>
                 </div>
 
-                <p class="text-gray-400 mt-3 text-sm">14%</p>
+                <p
+                  class="text-gray-400 mt-3 text-sm max-[380px]:text-xs max-[380px]:mt-2"
+                >
+                  14%
+                </p>
               </div>
 
+              <!-- G-kuchlanish -->
               <div class="text-center">
-                <p class="text-gray-500 text-xs uppercase mb-4">G-KUCHLANISH</p>
+                <p
+                  class="text-gray-500 text-xs uppercase mb-4 max-[380px]:text-[8px] max-[380px]:mb-3"
+                >
+                  G-KUCHLANISH
+                </p>
 
                 <div
-                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden"
+                  class="mx-auto w-4 h-28 bg-gray-800 rounded-full overflow-hidden max-[380px]:w-3 max-[380px]:h-24"
                 >
                   <div class="bg-yellow-400 w-full h-[36%] mt-auto"></div>
                 </div>
 
-                <p class="text-gray-400 mt-3 text-sm">1.86</p>
+                <p
+                  class="text-gray-400 mt-3 text-sm max-[380px]:text-xs max-[380px]:mt-2"
+                >
+                  1.86
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-[#070709] py-16">
-        <div class="max-w-[1120px] mx-auto px-5">
+      <section class="bg-[#070709] py-16 max-[380px]:py-10">
+        <div data-aos="zoom-in-down" class="max-w-[1120px] mx-auto px-5 max-[380px]:px-3">
           <!-- Title -->
-          <h2 class="text-3xl md:text-4xl italic font-bold text-white mb-10">
+          <h2
+            class="text-3xl md:text-4xl italic font-bold text-white mb-10 max-[380px]:text-[28px] max-[380px]:mb-6"
+          >
             AFSONALAR <span class="text-[#FF5543]">ZALI</span>
           </h2>
 
           <!-- Cards -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Card -->
-            <div class="relative overflow-hidden rounded-md group h-[420px]">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-[380px]:gap-4"
+          >
+            <!-- Card 1 -->
+            <div
+              class="relative overflow-hidden rounded-md group h-[420px] max-[380px]:h-[360px]"
+            >
               <img
                 src="./images/section 7 image 1.png"
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 duration-500"
@@ -741,22 +1232,30 @@
               ></div>
 
               <span
-                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50"
+                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50 max-[380px]:text-4xl max-[380px]:top-3 max-[380px]:left-3"
               >
                 #46
               </span>
 
-              <div class="absolute bottom-5 left-5">
-                <p class="text-[#FF5543] text-[10px] uppercase">
+              <div
+                class="absolute bottom-5 left-5 max-[380px]:bottom-4 max-[380px]:left-4"
+              >
+                <p
+                  class="text-[#FF5543] text-[10px] uppercase max-[380px]:text-[8px]"
+                >
                   9 Karra Jahon Chempioni
                 </p>
 
-                <h3 class="text-white italic text-3xl">VALENTINO ROSSI</h3>
+                <h3 class="text-white italic text-3xl max-[380px]:text-[24px]">
+                  VALENTINO ROSSI
+                </h3>
               </div>
             </div>
 
-            <!-- Card -->
-            <div class="relative overflow-hidden rounded-md group h-[420px]">
+            <!-- Card 2 -->
+            <div
+              class="relative overflow-hidden rounded-md group h-[420px] max-[380px]:h-[360px]"
+            >
               <img
                 src="./images/section 7 image 2.png"
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 duration-500"
@@ -768,22 +1267,30 @@
               ></div>
 
               <span
-                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50"
+                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50 max-[380px]:text-4xl max-[380px]:top-3 max-[380px]:left-3"
               >
                 #93
               </span>
 
-              <div class="absolute bottom-5 left-5">
-                <p class="text-[#FF5543] text-[10px] uppercase">
+              <div
+                class="absolute bottom-5 left-5 max-[380px]:bottom-4 max-[380px]:left-4"
+              >
+                <p
+                  class="text-[#FF5543] text-[10px] uppercase max-[380px]:text-[8px]"
+                >
                   8 Karra Jahon Chempioni
                 </p>
 
-                <h3 class="text-white italic text-3xl">MARK MARKEZ</h3>
+                <h3 class="text-white italic text-3xl max-[380px]:text-[24px]">
+                  MARK MARKEZ
+                </h3>
               </div>
             </div>
 
-            <!-- Card -->
-            <div class="relative overflow-hidden rounded-md group h-[420px]">
+            <!-- Card 3 -->
+            <div
+              class="relative overflow-hidden rounded-md group h-[420px] max-[380px]:h-[360px]"
+            >
               <img
                 src="./images/section 7 image 3.png"
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 duration-500"
@@ -795,22 +1302,30 @@
               ></div>
 
               <span
-                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50"
+                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50 max-[380px]:text-4xl max-[380px]:top-3 max-[380px]:left-3"
               >
                 #99
               </span>
 
-              <div class="absolute bottom-5 left-5">
-                <p class="text-[#FF5543] text-[10px] uppercase">
+              <div
+                class="absolute bottom-5 left-5 max-[380px]:bottom-4 max-[380px]:left-4"
+              >
+                <p
+                  class="text-[#FF5543] text-[10px] uppercase max-[380px]:text-[8px]"
+                >
                   5 Karra Jahon Chempioni
                 </p>
 
-                <h3 class="text-white italic text-3xl">XORXE LORENTSO</h3>
+                <h3 class="text-white italic text-3xl max-[380px]:text-[24px]">
+                  XORXE LORENTSO
+                </h3>
               </div>
             </div>
 
-            <!-- Card -->
-            <div class="relative overflow-hidden rounded-md group h-[420px]">
+            <!-- Card 4 -->
+            <div
+              class="relative overflow-hidden rounded-md group h-[420px] max-[380px]:h-[360px]"
+            >
               <img
                 src="./images/section 7 image 4.png"
                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 duration-500"
@@ -822,56 +1337,74 @@
               ></div>
 
               <span
-                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50"
+                class="absolute top-4 left-4 text-5xl text-gray-500 font-bold opacity-50 max-[380px]:text-4xl max-[380px]:top-3 max-[380px]:left-3"
               >
                 #27
               </span>
 
-              <div class="absolute bottom-5 left-5">
-                <p class="text-[#FF5543] text-[10px] uppercase">
+              <div
+                class="absolute bottom-5 left-5 max-[380px]:bottom-4 max-[380px]:left-4"
+              >
+                <p
+                  class="text-[#FF5543] text-[10px] uppercase max-[380px]:text-[8px]"
+                >
                   2 Karra Jahon Chempioni
                 </p>
 
-                <h3 class="text-white italic text-3xl">KEYSI STONER</h3>
+                <h3 class="text-white italic text-3xl max-[380px]:text-[24px]">
+                  KEYSI STONER
+                </h3>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-[#18191F] py-20">
-        <div class="max-w-7xl mx-auto px-5">
+      <section class="bg-[#18191F] py-20 max-[380px]:py-10">
+        <div class="max-w-7xl mx-auto px-5 max-[380px]:px-3">
           <!-- Title -->
-          <h2 class="text-5xl font-extrabold italic text-white mb-12">
+          <h2
+            class="text-5xl font-extrabold italic text-white mb-12 max-[380px]:text-[30px] max-[380px]:mb-7"
+          >
             AFSONAVIY <span class="text-red-500">TRASSALAR</span>
           </h2>
 
           <!-- Cards -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-[380px]:gap-4"
+          >
             <!-- Card 1 -->
-            <div class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300">
-              <div class="flex justify-center mb-12">
+            <div
+              class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300 max-[380px]:p-4"
+            >
+              <div class="flex justify-center mb-12 max-[380px]:mb-7">
                 <img
                   src="./images/section 8 card image1.png"
-                  class="w-24"
+                  class="w-24 max-[380px]:w-20"
                   alt=""
                 />
               </div>
 
-              <h3 class="text-white italic text-xl mb-6">MUDJELLO TRASSASI</h3>
+              <h3
+                class="text-white italic text-xl mb-6 max-[380px]:text-[18px] max-[380px]:mb-5"
+              >
+                MUDJELLO TRASSASI
+              </h3>
 
-              <div class="space-y-3 text-xs uppercase tracking-widest">
-                <div class="flex justify-between">
+              <div
+                class="space-y-3 text-xs uppercase tracking-widest max-[380px]:text-[9px] max-[380px]:tracking-wider max-[380px]:space-y-2"
+              >
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Davlat</span>
                   <span class="text-gray-200">Italiya</span>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Uzunlik</span>
                   <span class="text-gray-200">5.245 km</span>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Aylanish rekordi</span>
                   <span class="text-green-500">1:44.504</span>
                 </div>
@@ -879,29 +1412,37 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300">
-              <div class="flex justify-center mb-12">
+            <div
+              class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300 max-[380px]:p-4"
+            >
+              <div class="flex justify-center mb-12 max-[380px]:mb-7">
                 <img
                   src="./images/section 8 card image2.png"
-                  class="w-24"
+                  class="w-24 max-[380px]:w-20"
                   alt=""
                 />
               </div>
 
-              <h3 class="text-white italic text-xl mb-6">PHILLIP ISLAND</h3>
+              <h3
+                class="text-white italic text-xl mb-6 max-[380px]:text-[18px] max-[380px]:mb-5"
+              >
+                PHILLIP ISLAND
+              </h3>
 
-              <div class="space-y-3 text-xs uppercase tracking-widest">
-                <div class="flex justify-between">
+              <div
+                class="space-y-3 text-xs uppercase tracking-widest max-[380px]:text-[9px] max-[380px]:tracking-wider max-[380px]:space-y-2"
+              >
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Davlat</span>
                   <span class="text-gray-200">Avstraliya</span>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Uzunlik</span>
                   <span class="text-gray-200">4.445 km</span>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Aylanish rekordi</span>
                   <span class="text-green-500">1:27.246</span>
                 </div>
@@ -909,29 +1450,37 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300">
-              <div class="flex justify-center mb-12">
+            <div
+              class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300 max-[380px]:p-4"
+            >
+              <div class="flex justify-center mb-12 max-[380px]:mb-7">
                 <img
                   src="./images/section 8 card image3.png"
-                  class="w-24"
+                  class="w-24 max-[380px]:w-20"
                   alt=""
                 />
               </div>
 
-              <h3 class="text-white italic text-xl mb-6">SILVERSTOUN</h3>
+              <h3
+                class="text-white italic text-xl mb-6 max-[380px]:text-[18px] max-[380px]:mb-5"
+              >
+                SILVERSTOUN
+              </h3>
 
-              <div class="space-y-3 text-xs uppercase tracking-widest">
-                <div class="flex justify-between">
+              <div
+                class="space-y-3 text-xs uppercase tracking-widest max-[380px]:text-[9px] max-[380px]:tracking-wider max-[380px]:space-y-2"
+              >
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Davlat</span>
                   <span class="text-gray-200">Buyuk Britaniya</span>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Uzunlik</span>
                   <span class="text-gray-200">5.906 km</span>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Aylanish rekordi</span>
                   <span class="text-green-500">1:57.767</span>
                 </div>
@@ -939,29 +1488,37 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300">
-              <div class="flex justify-center mb-12">
+            <div
+              class="bg-[#0D0E12] p-6 hover:bg-[#111319] duration-300 max-[380px]:p-4"
+            >
+              <div class="flex justify-center mb-12 max-[380px]:mb-7">
                 <img
                   src="./images/section 8 card image 4.png"
-                  class="w-24"
+                  class="w-24 max-[380px]:w-20"
                   alt=""
                 />
               </div>
 
-              <h3 class="text-white italic text-xl mb-6">MOTEGI</h3>
+              <h3
+                class="text-white italic text-xl mb-6 max-[380px]:text-[18px] max-[380px]:mb-5"
+              >
+                MOTEGI
+              </h3>
 
-              <div class="space-y-3 text-xs uppercase tracking-widest">
-                <div class="flex justify-between">
+              <div
+                class="space-y-3 text-xs uppercase tracking-widest max-[380px]:text-[9px] max-[380px]:tracking-wider max-[380px]:space-y-2"
+              >
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Davlat</span>
                   <span class="text-gray-200">Yaponiya</span>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Uzunlik</span>
                   <span class="text-gray-200">4.801 km</span>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-3">
                   <span class="text-gray-500">Aylanish rekordi</span>
                   <span class="text-green-500">1:43.198</span>
                 </div>
@@ -976,16 +1533,18 @@
           <!-- Top -->
           <div class="grid lg:grid-cols-2">
             <!-- Left -->
-            <div class="flex items-center px-6 md:px-12 py-16">
+            <div
+              class="flex items-center px-6 md:px-12 py-16 max-[380px]:px-3 max-[380px]:py-10"
+            >
               <div class="max-w-md">
                 <p
-                  class="text-[#ff4b3e] uppercase text-sm tracking-widest mb-6"
+                  class="text-[#ff4b3e] uppercase text-sm tracking-widest mb-6 max-[380px]:text-[10px] max-[380px]:tracking-[3px] max-[380px]:mb-4"
                 >
                   TAHRIRIYAT MAQOLASI
                 </p>
 
                 <h2
-                  class="text-white italic uppercase font-light leading-none text-4xl md:text-6xl"
+                  class="text-white italic uppercase font-light leading-none text-4xl md:text-6xl max-[380px]:text-[36px]"
                 >
                   ISLE OF MAN TT:
                   <br />
@@ -996,19 +1555,21 @@
                   G'ALABA
                 </h2>
 
-                <p class="text-gray-400 leading-8 mt-8">
+                <p
+                  class="text-gray-400 leading-8 mt-8 max-[380px]:mt-5 max-[380px]:text-[13px] max-[380px]:leading-6"
+                >
                   Dunyoning eng xavfli yo'l poygasi dunyosiga sayohat.
                   Mashinalar, xavf-xatarlar va 377 millik tog' yo'lini zabt
                   etgan afsonalar haqida chuqur tahlil.
                 </p>
 
                 <button
-                  class="mt-10 cursor-pointer bg-white text-black px-8 py-4 uppercase italic font-semibold relative hover:bg-red-500 hover:text-white duration-300"
+                  class="mt-10 cursor-pointer bg-white text-black px-8 py-4 uppercase italic font-semibold relative hover:bg-red-500 hover:text-white duration-300 max-[380px]:mt-6 max-[380px]:px-6 max-[380px]:py-3 max-[380px]:text-[11px]"
                 >
                   MAQOLANI O'QISH
 
                   <span
-                    class="absolute bottom-0 right-0 w-4 h-4 bg-[#111111] [clip-path:polygon(100%_0,0_100%,100%_100%)]"
+                    class="absolute bottom-0 right-0 w-4 h-4 bg-[#111111] [clip-path:polygon(100%_0,0_100%,100%_100%)] max-[380px]:w-3 max-[380px]:h-3"
                   >
                   </span>
                 </button>
@@ -1020,42 +1581,69 @@
               <img
                 src="./images/section 9 image.png"
                 alt=""
-                class="w-full h-full object-cover min-h-[350px]"
+                class="w-full h-full object-cover min-h-[350px] max-[380px]:min-h-[260px] max-[380px]:max-h-[300px]"
               />
             </div>
           </div>
 
           <!-- Bottom Stats -->
           <div class="grid grid-cols-2 lg:grid-cols-4 border-t border-gray-800">
-            <!-- Item -->
+            <!-- Item 1 -->
             <div
-              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800"
+              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800 max-[380px]:py-7"
             >
-              <h3 class="text-white text-5xl font-bold">75</h3>
-              <p class="text-gray-500 uppercase text-xs mt-3">Yillik tarix</p>
+              <h3 class="text-white text-5xl font-bold max-[380px]:text-[32px]">
+                75
+              </h3>
+
+              <p
+                class="text-gray-500 uppercase text-xs mt-3 max-[380px]:text-[9px] max-[380px]:mt-2"
+              >
+                Yillik tarix
+              </p>
             </div>
 
+            <!-- Item 2 -->
             <div
-              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800"
+              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800 max-[380px]:py-7"
             >
-              <h3 class="text-white text-5xl font-bold">366.1</h3>
-              <p class="text-gray-500 uppercase text-xs mt-3">
+              <h3 class="text-white text-5xl font-bold max-[380px]:text-[32px]">
+                366.1
+              </h3>
+
+              <p
+                class="text-gray-500 uppercase text-xs mt-3 max-[380px]:text-[9px] max-[380px]:mt-2"
+              >
                 Maks. tezlik (km/h)
               </p>
             </div>
 
+            <!-- Item 3 -->
             <div
-              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800"
+              class="text-center py-10 border-b lg:border-b-0 lg:border-r border-gray-800 max-[380px]:py-7"
             >
-              <h3 class="text-white text-5xl font-bold">22</h3>
-              <p class="text-gray-500 uppercase text-xs mt-3">
+              <h3 class="text-white text-5xl font-bold max-[380px]:text-[32px]">
+                22
+              </h3>
+
+              <p
+                class="text-gray-500 uppercase text-xs mt-3 max-[380px]:text-[9px] max-[380px]:mt-2"
+              >
                 Mavsumdagi poygalar
               </p>
             </div>
 
-            <div class="text-center py-10">
-              <h3 class="text-[#ff4b3e] text-5xl font-bold">0.01s</h3>
-              <p class="text-gray-500 uppercase text-xs mt-3">
+            <!-- Item 4 -->
+            <div class="text-center py-10 max-[380px]:py-7">
+              <h3
+                class="text-[#ff4b3e] text-5xl font-bold max-[380px]:text-[32px]"
+              >
+                0.01s
+              </h3>
+
+              <p
+                class="text-gray-500 uppercase text-xs mt-3 max-[380px]:text-[9px] max-[380px]:mt-2"
+              >
                 Eng yaqin finish
               </p>
             </div>
@@ -1063,11 +1651,11 @@
         </div>
       </section>
 
-      <section class="bg-[#18191F] py-20">
-        <div class="max-w-4xl mx-auto px-5">
+      <section class="bg-[#18191F] py-20 max-[380px]:py-10">
+        <div class="max-w-4xl mx-auto px-5 max-[380px]:px-3">
           <!-- Title -->
           <h2
-            class="text-center text-4xl md:text-5xl italic font-bold text-white mb-14"
+            class="text-center text-4xl md:text-5xl italic font-bold text-white mb-14 max-[380px]:text-[28px] max-[380px]:leading-tight max-[380px]:mb-8"
           >
             KO'P SO'RALADIGAN
             <span class="text-[#ff4d3d]">SAVOLLAR</span>
@@ -1075,88 +1663,120 @@
 
           <!-- Accordion -->
           <div id="accordion-collapse" data-accordion="collapse">
-            <!-- Item -->
+            <!-- Item 1 -->
             <h2 id="accordion-heading-1">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800 group"
+                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800 group max-[380px]:py-4 max-[380px]:gap-3"
                 data-accordion-target="#accordion-body-1"
                 aria-expanded="false"
                 aria-controls="accordion-body-1"
               >
-                <span class="text-white italic uppercase text-sm md:text-base">
+                <span
+                  class="text-white italic uppercase text-sm md:text-base max-[380px]:text-[11px] max-[380px]:leading-5"
+                >
                   Jonli telemetriyaga qanday kirish mumkin?
                 </span>
 
-                <span class="text-[#ff4d3d] text-2xl font-bold">+</span>
+                <span
+                  class="text-[#ff4d3d] text-2xl font-bold flex-shrink-0 max-[380px]:text-xl"
+                >
+                  +
+                </span>
               </button>
             </h2>
 
             <div id="accordion-body-1" class="hidden">
-              <div class="pb-6 text-gray-400">
+              <div
+                class="pb-6 text-gray-400 max-[380px]:pb-4 max-[380px]:text-[12px] max-[380px]:leading-5"
+              >
                 Jonli telemetriyaga Premium a'zolik orqali kirishingiz mumkin.
               </div>
             </div>
 
-            <!-- Item -->
+            <!-- Item 2 -->
             <h2 id="accordion-heading-2">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800"
+                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800 max-[380px]:py-4 max-[380px]:gap-3"
                 data-accordion-target="#accordion-body-2"
               >
-                <span class="text-white italic uppercase text-sm md:text-base">
+                <span
+                  class="text-white italic uppercase text-sm md:text-base max-[380px]:text-[11px] max-[380px]:leading-5"
+                >
                   Apex Junior dasturi uchun minimal yosh qancha?
                 </span>
 
-                <span class="text-[#ff4d3d] text-2xl font-bold">+</span>
+                <span
+                  class="text-[#ff4d3d] text-2xl font-bold flex-shrink-0 max-[380px]:text-xl"
+                >
+                  +
+                </span>
               </button>
             </h2>
 
             <div id="accordion-body-2" class="hidden">
-              <div class="pb-6 text-gray-400">
+              <div
+                class="pb-6 text-gray-400 max-[380px]:pb-4 max-[380px]:text-[12px] max-[380px]:leading-5"
+              >
                 Minimal yosh odatda 12 yoshdan boshlanadi.
               </div>
             </div>
 
-            <!-- Item -->
+            <!-- Item 3 -->
             <h2 id="accordion-heading-3">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800"
+                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800 max-[380px]:py-4 max-[380px]:gap-3"
                 data-accordion-target="#accordion-body-3"
               >
-                <span class="text-white italic uppercase text-sm md:text-base">
+                <span
+                  class="text-white italic uppercase text-sm md:text-base max-[380px]:text-[11px] max-[380px]:leading-5"
+                >
                   Rasmiy jamoa merchandayzini qayerdan sotib olish mumkin?
                 </span>
 
-                <span class="text-[#ff4d3d] text-2xl font-bold">+</span>
+                <span
+                  class="text-[#ff4d3d] text-2xl font-bold flex-shrink-0 max-[380px]:text-xl"
+                >
+                  +
+                </span>
               </button>
             </h2>
 
             <div id="accordion-body-3" class="hidden">
-              <div class="pb-6 text-gray-400">
+              <div
+                class="pb-6 text-gray-400 max-[380px]:pb-4 max-[380px]:text-[12px] max-[380px]:leading-5"
+              >
                 Rasmiy internet do'koni orqali xarid qilishingiz mumkin.
               </div>
             </div>
 
-            <!-- Item -->
+            <!-- Item 4 -->
             <h2 id="accordion-heading-4">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800"
+                class="flex items-center justify-between w-full py-6 text-left border-b border-gray-800 max-[380px]:py-4 max-[380px]:gap-3"
                 data-accordion-target="#accordion-body-4"
               >
-                <span class="text-white italic uppercase text-sm md:text-base">
+                <span
+                  class="text-white italic uppercase text-sm md:text-base max-[380px]:text-[11px] max-[380px]:leading-5"
+                >
                   Apex tahririyat kengashiga qanday qo'shilish mumkin?
                 </span>
 
-                <span class="text-[#ff4d3d] text-2xl font-bold">+</span>
+                <span
+                  class="text-[#ff4d3d] text-2xl font-bold flex-shrink-0 max-[380px]:text-xl"
+                >
+                  +
+                </span>
               </button>
             </h2>
 
             <div id="accordion-body-4" class="hidden">
-              <div class="pb-6 text-gray-400">
+              <div
+                class="pb-6 text-gray-400 max-[380px]:pb-4 max-[380px]:text-[12px] max-[380px]:leading-5"
+              >
                 Saytdagi murojaat formasi orqali ariza yuborishingiz mumkin.
               </div>
             </div>
@@ -1164,41 +1784,45 @@
         </div>
       </section>
 
-      <section class="bg-[#ff3b30] py-10">
+      <section class="bg-[#ff3b30] py-10 max-[380px]:py-8">
         <div
-          class="max-w-7xl mx-auto px-5 flex flex-col lg:flex-row items-center justify-between gap-8"
+          class="max-w-7xl mx-auto px-5 flex flex-col lg:flex-row items-center justify-between gap-8 max-[380px]:px-3 max-[380px]:gap-6"
         >
           <!-- Left -->
-          <div class="max-w-xl">
+          <div class="max-w-xl max-[380px]:w-full">
             <h2
-              class="text-white text-3xl md:text-4xl italic uppercase font-semibold"
+              class="text-white text-3xl md:text-4xl italic uppercase font-semibold max-[380px]:text-[26px] max-[380px]:leading-tight"
             >
               ICHKI DOIRAGA QO'SHILING
             </h2>
 
-            <p class="text-white/80 text-sm mt-4 leading-6">
+            <p
+              class="text-white/80 text-sm mt-4 leading-6 max-[380px]:text-[12px] max-[380px]:mt-3 max-[380px]:leading-5"
+            >
               Eksklyuziv texnik hisobotlar va poyga tahlillarini
               to'g'ridan-to'g'ri elektron pochtangizga oling.
             </p>
           </div>
 
           <!-- Right -->
-          <form class="flex flex-col sm:flex-row w-full lg:w-auto">
+          <form
+            class="flex flex-col sm:flex-row w-full lg:w-auto max-[380px]:gap-3"
+          >
             <input
               type="email"
               placeholder="ELEKTRON POCHTA MANZILINGIZ"
-              class="bg-[#cf3128] text-white placeholder:text-white/60 uppercase text-xs px-5 py-4 w-full sm:w-[320px] border-none focus:ring-0 focus:outline-none"
+              class="bg-[#cf3128] text-white placeholder:text-white/60 uppercase text-xs px-5 py-4 w-full sm:w-[320px] border-none focus:ring-0 focus:outline-none max-[380px]:text-[10px] max-[380px]:px-4 max-[380px]:py-3"
             />
 
             <button
               type="submit"
-              class="bg-white cursor-pointer text-black italic font-bold uppercase text-xs px-8 py-4 relative hover:bg-black hover:text-white transition duration-300"
+              class="bg-white cursor-pointer text-black italic font-bold uppercase text-xs px-8 py-4 relative hover:bg-black hover:text-white transition duration-300 max-[380px]:w-full max-[380px]:text-[11px] max-[380px]:px-6 max-[380px]:py-3"
             >
               OBUNA BO'LISH
 
               <!-- Pastki burchak -->
               <span
-                class="absolute bottom-0 right-0 w-4 h-4 bg-[#ff3b30]"
+                class="absolute bottom-0 right-0 w-4 h-4 bg-[#ff3b30] max-[380px]:w-3 max-[380px]:h-3"
                 style="clip-path: polygon(100% 0, 0 100%, 100% 100%)"
               ></span>
             </button>
@@ -1208,35 +1832,44 @@
     </main>
 
     <footer class="bg-black text-gray-300">
-      <div class="max-w-7xl mx-auto px-6 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div
+        class="max-w-7xl mx-auto px-6 py-16 max-[380px]:px-3 max-[380px]:py-10"
+      >
+        <!-- Main Footer -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-[380px]:gap-8"
+        >
           <!-- Logo -->
           <div>
-            <h2 class="text-4xl font-bold text-white">
+            <h2 class="text-4xl font-bold text-white max-[380px]:text-3xl">
               APEX<span class="text-red-600">/</span>
             </h2>
 
-            <p class="mt-6 text-gray-400 leading-7">
+            <p
+              class="mt-6 text-gray-400 leading-7 max-[380px]:mt-4 max-[380px]:text-[13px] max-[380px]:leading-6"
+            >
               Motosport intellekti, muhandislik va cheksiz tezlikka intilish
               bo‘yicha dunyodagi yetakchi nashr.
             </p>
 
-            <div class="flex gap-3 mt-8">
+            <div class="flex gap-3 mt-8 max-[380px]:mt-5">
               <a
                 href="#"
-                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition"
+                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition max-[380px]:w-9 max-[380px]:h-9"
               >
                 🌐
               </a>
+
               <a
                 href="#"
-                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition"
+                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition max-[380px]:w-9 max-[380px]:h-9"
               >
                 🔗
               </a>
+
               <a
                 href="#"
-                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition"
+                class="w-10 h-10 flex items-center justify-center border border-gray-700 hover:bg-red-600 hover:border-red-600 transition max-[380px]:w-9 max-[380px]:h-9"
               >
                 ✉️
               </a>
@@ -1246,74 +1879,114 @@
           <!-- Poygalar -->
           <div>
             <h3
-              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5"
+              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5 max-[380px]:text-base max-[380px]:mb-4"
             >
               POYGALAR
             </h3>
 
-            <ul class="space-y-4">
-              <li><a href="#" class="hover:text-red-500">MotoGP</a></li>
-              <li><a href="#" class="hover:text-red-500">Superbike</a></li>
-              <li><a href="#" class="hover:text-red-500">Isle of Man TT</a></li>
-              <li><a href="#" class="hover:text-red-500">Bardoshlilik</a></li>
+            <ul class="space-y-4 max-[380px]:space-y-3">
+              <li>
+                <a href="#" class="hover:text-red-500 transition"> MotoGP </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-red-500 transition">
+                  Superbike
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-red-500 transition">
+                  Isle of Man TT
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-red-500 transition">
+                  Bardoshlilik
+                </a>
+              </li>
             </ul>
           </div>
 
           <!-- Texnik -->
           <div>
             <h3
-              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5"
+              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5 max-[380px]:text-base max-[380px]:mb-4"
             >
               TEXNIK
             </h3>
 
-            <ul class="space-y-4">
+            <ul class="space-y-4 max-[380px]:space-y-3">
               <li>
-                <a href="#" class="hover:text-red-500">Telemetriya markazi</a>
+                <a href="#" class="hover:text-red-500 transition">
+                  Telemetriya markazi
+                </a>
               </li>
+
               <li>
-                <a href="#" class="hover:text-red-500"
-                  >Dvigatel xususiyatlari</a
-                >
+                <a href="#" class="hover:text-red-500 transition">
+                  Dvigatel xususiyatlari
+                </a>
               </li>
-              <li><a href="#" class="hover:text-red-500">Aero tahlili</a></li>
-              <li><a href="#" class="hover:text-red-500">Arxiv</a></li>
+
+              <li>
+                <a href="#" class="hover:text-red-500 transition">
+                  Aero tahlili
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-red-500 transition"> Arxiv </a>
+              </li>
             </ul>
           </div>
 
           <!-- Tahririyat -->
           <div>
             <h3
-              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5"
+              class="text-white text-lg font-semibold border-l-2 border-red-600 pl-3 mb-5 max-[380px]:text-base max-[380px]:mb-4"
             >
               TAHRIRIYAT
             </h3>
 
-            <ul class="space-y-4">
+            <ul class="space-y-4 max-[380px]:space-y-3">
               <li>
-                <a href="#" class="hover:text-red-500">Maxfiylik siyosati</a>
+                <a href="#" class="hover:text-red-500 transition">
+                  Maxfiylik siyosati
+                </a>
               </li>
+
               <li>
-                <a href="#" class="hover:text-red-500"
-                  >Xizmat ko‘rsatish shartlari</a
-                >
+                <a href="#" class="hover:text-red-500 transition">
+                  Xizmat ko‘rsatish shartlari
+                </a>
               </li>
+
               <li>
-                <a href="#" class="hover:text-red-500"
-                  >Tahririyat standartlari</a
-                >
+                <a href="#" class="hover:text-red-500 transition">
+                  Tahririyat standartlari
+                </a>
               </li>
-              <li><a href="#" class="hover:text-red-500">Bog‘lanish</a></li>
+
+              <li>
+                <a href="#" class="hover:text-red-500 transition">
+                  Bog‘lanish
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
+        <!-- Bottom -->
         <div
-          class="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500"
+          class="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 max-[380px]:mt-8 max-[380px]:pt-5 max-[380px]:items-start max-[380px]:gap-3 max-[380px]:text-[11px]"
         >
-          <p>© 2024 APEX Motorsport. Barcha huquqlar himoyalangan.</p>
+          <p class="max-[380px]:leading-5">
+            © 2024 APEX Motorsport. Barcha huquqlar himoyalangan.
+          </p>
 
-          <p class="mt-3 md:mt-0">
+          <p class="mt-3 md:mt-0 max-[380px]:mt-0">
             Dizayn holati:
             <span class="text-green-400">●</span>
             <span class="text-white">NORMAL</span>
@@ -1323,5 +1996,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.jotfor.ms/agent/embedjs/019f8d4dc1187000863ec7524c2174217463/embed.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>

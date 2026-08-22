@@ -58,6 +58,37 @@
     color:#fff;
 }
 
+.nav-link{
+    position: relative;
+    color:#FFB4A9;
+    transition:.3s;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:2px;
+    background:#FF3D2E;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#fff;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width:100%;
+}
+
+.nav-link.active{
+    color:#fff;
+}
+
+
 .chart-box {
   background: #191b20;
   width: 700px;
@@ -102,3 +133,441 @@
   color: #ff4b3e;
 }
 
+.rating-section {
+  background: #08090b;
+  padding: 64px 0;
+}
+
+.rating-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* ================= TOP ================= */
+
+.rating-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.rating-title {
+  margin: 0;
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+}
+
+.rating-line {
+  width: 68px;
+  height: 3px;
+  background: #ff3d2e;
+  margin-top: 16px;
+}
+
+
+/* ================= TABS ================= */
+
+.rating-tabs {
+  display: flex;
+  align-items: center;
+  background: #111214;
+  padding: 2px;
+  margin: 0;
+  list-style: none;
+}
+
+.rating-tab {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: #18191c;
+  color: #777;
+
+  font-size: 10px;
+  text-transform: uppercase;
+
+  padding: 10px 20px;
+
+  transition: 0.3s;
+}
+
+/* FAOL TAB */
+.rating-tab.active {
+  background: #ff3d2e;
+  color: white;
+}
+
+/* HOVER */
+.rating-tab:hover {
+  color: white;
+}
+
+
+/* ================= TABLE ================= */
+
+.rating-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.rating-table {
+  min-width: 800px;
+}
+
+.rating-row {
+  display: grid;
+  grid-template-columns: 90px 2fr 1fr 1fr 70px;
+
+  align-items: center;
+
+  border-top: 1px solid #1d1f23;
+
+  padding: 16px 0;
+}
+
+.rating-header {
+  border-top: none;
+
+  padding-top: 0;
+  padding-bottom: 16px;
+
+  color: #777;
+
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+
+/* ================= POSITION ================= */
+
+.position {
+  color: #444;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.position.first {
+  color: #ff3d2e;
+}
+
+
+/* ================= DRIVER ================= */
+
+.driver {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.driver img {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.driver h3 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.driver p {
+  margin: 4px 0 0;
+
+  color: #666;
+
+  font-size: 9px;
+}
+
+.gray-text {
+  color: #888;
+  font-size: 12px;
+}
+
+.points {
+  color: white;
+  font-size: 18px;
+}
+
+/* ================================
+   RATING SECTION
+================================ */
+
+.rating-section {
+  width: 100%;
+  background: #08090b;
+  padding: 64px 20px;
+}
+
+.rating-container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* TOP */
+.rating-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.rating-title {
+  margin: 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.rating-line {
+  width: 45px;
+  height: 3px;
+  background: #e31b23;
+  margin-top: 12px;
+}
+
+/* ================================
+   TABLE
+================================ */
+
+.rating-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.rating-table-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.rating-table {
+  min-width: 900px;
+  width: 100%;
+}
+
+.rating-row {
+  display: grid;
+  grid-template-columns: 80px 2fr 1.5fr 1.5fr 100px;
+  align-items: center;
+  min-height: 82px;
+  border-bottom: 1px solid #242528;
+  gap: 20px;
+}
+
+.rating-header {
+  min-height: 50px;
+  background: #111214;
+  color: #777;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rating-header > div {
+  padding: 0 15px;
+}
+
+.rating-row > div {
+  padding: 0 15px;
+}
+
+/* POSITION */
+.position {
+  color: #777;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.position.first {
+  color: #e31b23;
+}
+
+/* DRIVER */
+.driver {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.driver img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.driver h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.driver p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.gray-text {
+  color: #777;
+  font-size: 11px;
+}
+
+.points {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ================================
+   380px RESPONSIVE
+================================ */
+
+@media (max-width: 380px) {
+
+  .rating-section {
+    padding: 40px 12px;
+  }
+
+  .rating-container {
+    width: 100%;
+  }
+
+  /* TOP */
+  .rating-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+
+  .rating-title {
+    font-size: 26px;
+  }
+
+  .rating-line {
+    width: 35px;
+    height: 2px;
+    margin-top: 9px;
+  }
+
+  /* TABS */
+  #rating-tabs {
+    width: 100%;
+    display: flex;
+    gap: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  #rating-tabs li {
+    flex: 1;
+    width: 33.333%;
+  }
+
+  #rating-tabs button {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px 4px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  /* TABLE */
+  .rating-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .rating-table {
+    min-width: 850px;
+  }
+
+  .rating-row {
+    grid-template-columns: 55px 260px 180px 180px 80px;
+    min-height: 72px;
+    gap: 8px;
+  }
+
+  .rating-header {
+    min-height: 45px;
+  }
+
+  .rating-row > div {
+    padding: 0 8px;
+  }
+
+  .rating-header > div {
+    padding: 0 8px;
+  }
+
+  .position {
+    font-size: 15px;
+  }
+
+  .driver {
+    gap: 10px;
+  }
+
+  .driver img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .driver h3 {
+    font-size: 11px;
+  }
+
+  .driver p {
+    font-size: 8px;
+    margin-top: 3px;
+  }
+
+  .gray-text {
+    font-size: 9px;
+  }
+
+  .points {
+    font-size: 17px;
+  }
+}
+
+
+
+/* Faol tab */
+#rating-tabs button[aria-selected="true"] {
+  background-color: #ff3d2e !important;
+  color: white !important;
+}
+
+/* Faol bo'lmagan tab */
+#rating-tabs button[aria-selected="false"] {
+  background-color: #18191c !important;
+  color: #777 !important;
+}
+
+/* Hover */
+#rating-tabs button[aria-selected="false"]:hover {
+  color: white !important;
+}
